@@ -1,7 +1,8 @@
 name: Run Deployment and Tool Tests
-on: [push]
-  #schedule:
-  #  - cron: "0 8 * * *"
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch: {}
 jobs:
   deploy:
     env:
