@@ -51,6 +51,7 @@ jobs:
               --set galaxy.terra.launch.workspace=\"De novo transcriptome reconstruction with RNA-Seq\"\
               --set galaxy.terra.launch.namespace=\"galaxy-anvil\"\
               --set cvmfs.cache.preload.enabled=false\
+              --set galaxy.configs.\"galaxy\.yml\".galaxy.master_api_key=${{secrets.COMMON_PASSWORD}}\
               --set galaxy.configs.\"galaxy\.yml\".galaxy.single_user=\"alex@fake.org\"\
               --set galaxy.configs.\"galaxy\.yml\".galaxy.admin_users=\"alex@fake.org\"\
               --set persistence.nfs.name=\"${{steps.prefix.outputs.prefix}}-nfs-disk\"\
@@ -71,6 +72,26 @@ jobs:
           python-version: '3.x'
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" ${{ secrets.GIT_TOKEN }}
+      - name: Get Galaxy IP and port
+        id: gxyservice
+        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
+      - name: Install dependencies
+        run: python -m pip install planemo ephemeris pysam galaxy-tool-util>=21.1.0.dev6
+      - name: Get tool list
+        run: get-tool-list -g "${{steps.gxyservice.outputs.address}}" -o anvil/reports/tools.yaml
+      - name: Create reports dir for this date
+        run: mkdir reports/anvil/${{steps.prefix.outputs.prefix}}
+      - name: Split tool tests
+        run: python .github/scripts/subset_tools.py reports/anvil/${{steps.prefix.outputs.prefix}}/tools.yaml
+      - name: Run tool tests
+        run: galaxy-tool-test --history-per-suite -u "{{steps.gxyservice.outputs.address}}" -k "${{secrets.COMMON_PASSWORD}}" -a "${{secrets.COMMON_PASSWORD}}" --no-history-cleanup --download-attempts 30 --download-sleep 20 --parallel-tests 4 -t reports/anvil/${{steps.prefix.outputs.prefix}}/tools.yaml --output-json reports/anvil/${{steps.prefix.outputs.prefix}}/results.json --retries 5
+      - name: Create HTML report
+        run: planemo test_reports reports/anvil/${{steps.prefix.outputs.prefix}}/results.json --test_output_xunit reports/anvil/${{steps.prefix.outputs.prefix}}/results.xunit --test_output reports/anvil/${{steps.prefix.outputs.prefix}}/results.html
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Adding tool test report for ${{steps.prefix.outputs.prefix}}"
 
   cleanup:
     if: always()
