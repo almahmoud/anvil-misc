@@ -1,7 +1,7 @@
 name: Run Deployment and Tool Tests
-on: [push]
-  # schedule:
-  #   - cron: "0 23 * * *"
+on:
+  schedule:
+    - cron: "0 8 * * *"
 jobs:
   deploy:
     env:
@@ -107,6 +107,7 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
       - name: Delete the GKE cluster
+        continue-on-error: true
         run: gcloud container clusters delete "${{needs.deploy.outputs.prefix}}" --zone "$GKE_ZONE" --quiet
       - name: Delete the two GCP Disks
         run: gcloud compute disks delete "${{needs.deploy.outputs.prefix}}-postgres-pd" --zone "$GKE_ZONE" --quiet && gcloud compute disks delete "${{needs.deploy.outputs.prefix}}-nfs-pd" --zone "$GKE_ZONE" --quiet
