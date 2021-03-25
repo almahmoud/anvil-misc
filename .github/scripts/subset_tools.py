@@ -18,7 +18,7 @@ l = out.get('tools', [])
 num_per_run = int(len(l)/total_days)
 start = (weekday * runs_per_day + time_of_day) * num_per_run
 end = (weekday * runs_per_day + time_of_day + 1) * num_per_run
-end = len(l) if end > len(l)
+end = len(l) if end > len(l) else end
 out['tools'] = l[start:end]
 
 
