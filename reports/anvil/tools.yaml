@@ -8,8 +8,8 @@ tools:
 - name: sra_tools
   owner: iuc
   revisions:
-  - f5ea3ce9b9b0
   - e08a7ad4378b
+  - f5ea3ce9b9b0
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ncbi_acc_download
@@ -117,12 +117,12 @@ tools:
 - name: text_processing
   owner: bgruening
   revisions:
-  - 6378f8384f30
-  - fb4ff3c42cd3
-  - 37e1eb05b1b4
+  - 0a8c6b61f0f4
   - 74a8bef53a00
   - ddf54b12c295
-  - 0a8c6b61f0f4
+  - fb4ff3c42cd3
+  - 6378f8384f30
+  - 37e1eb05b1b4
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: reshape2_melt
@@ -172,12 +172,6 @@ tools:
   revisions:
   - d533e4b75800
   tool_panel_section_label: Text Manipulation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: join
-  owner: devteam
-  revisions:
-  - 11a49f94d086
-  tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: datamash_reverse
   owner: iuc
@@ -699,9 +693,9 @@ tools:
 - name: bedtools
   owner: iuc
   revisions:
-  - 87ee588b3d45
   - 0a5c785ac6db
   - b28e0cfa7ba1
+  - 87ee588b3d45
   tool_panel_section_label: BED
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_consensus
@@ -1310,6 +1304,12 @@ tools:
   - 7bf44b9d7a8b
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: join
+  owner: devteam
+  revisions:
+  - 11a49f94d086
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: intersect
   owner: devteam
   revisions:
@@ -1373,8 +1373,8 @@ tools:
 - name: bandage
   owner: iuc
   revisions:
-  - b2860df42e16
   - 94fe43e75ddc
+  - b2860df42e16
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: unicycler
@@ -1512,8 +1512,8 @@ tools:
 - name: progressivemauve
   owner: iuc
   revisions:
-  - bdb752f3c6bb
   - 97a43bcbf44d
+  - bdb752f3c6bb
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mlst
@@ -1747,9 +1747,9 @@ tools:
 - name: snpsift
   owner: iuc
   revisions:
+  - 09d6806c609e
   - 2b3e65a4252f
   - 2e497a770bca
-  - 09d6806c609e
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_filter
@@ -1803,10 +1803,10 @@ tools:
 - name: snpeff
   owner: iuc
   revisions:
-  - 5a29ab10dba6
-  - 36dc3690a82c
   - 74aebe30fb52
+  - 36dc3690a82c
   - 268d162b9c49
+  - 5a29ab10dba6
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: varscan_mpileup
@@ -1945,8 +1945,8 @@ tools:
   owner: iuc
   revisions:
   - 424aefbd7777
-  - c16dbe4e2db2
   - beb902da6e5f
+  - c16dbe4e2db2
   tool_panel_section_label: ChIP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ngsutils_bam_filter
@@ -2210,8 +2210,8 @@ tools:
 - name: diamond
   owner: bgruening
   revisions:
-  - fd14bf35c9fd
   - 62c9df8382c2
+  - fd14bf35c9fd
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: diamond
@@ -2530,8 +2530,8 @@ tools:
 - name: kraken_report
   owner: devteam
   revisions:
-  - 6c09bed3444f
   - 1902d3de4a4f
+  - 6c09bed3444f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: valet
@@ -3643,17 +3643,17 @@ tools:
 - name: emboss_5
   owner: devteam
   revisions:
-  - ce385837c160
   - ce22ceec214a
   - dc492eb6a4fc
+  - ce385837c160
   tool_panel_section_label: EMBOSS
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rseqc
   owner: nilesh
   revisions:
-  - 5873cd7afb67
   - f437057e46f1
   - 34e4c586e3c0
+  - 5873cd7afb67
   tool_panel_section_label: RSeQC
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mimodd_main
@@ -3689,19 +3689,19 @@ tools:
 - name: seqtk
   owner: iuc
   revisions:
-  - a09586d5149a
   - 58c8ece95b53
+  - a09586d5149a
   tool_panel_section_label: Seqtk
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: genome_diversity
   owner: miller-lab
   revisions:
   - 4188853b940b
-  - f739a296a339
   - 95a05c1ef5d5
+  - f739a296a339
   - 884ccb07885b
-  - cba0d7a63b82
   - d6b961721037
+  - cba0d7a63b82
   tool_panel_section_label: Genome Diversity
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: iwtomics_loadandplot
@@ -4164,8 +4164,8 @@ tools:
 - name: str_fm
   owner: arkarachai-fungtammasan
   revisions:
-  - 48b5f719e36a
   - 20dc70f85ff7
+  - 48b5f719e36a
   tool_panel_section_label: 'STR-FM: Microsatellite Analysis'
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: meme_meme
@@ -4630,10 +4630,4 @@ tools:
   revisions:
   - 19ece8afbaab
   tool_panel_section_label: ''
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: hisat
-  owner: devteam
-  revisions:
-  - 0505bdb7d6b1
-  tool_panel_section_label: Mine
   tool_shed_url: toolshed.g2.bx.psu.edu
