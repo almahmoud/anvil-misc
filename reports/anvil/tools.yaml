@@ -117,12 +117,12 @@ tools:
 - name: text_processing
   owner: bgruening
   revisions:
-  - 74a8bef53a00
   - 0a8c6b61f0f4
-  - 37e1eb05b1b4
-  - fb4ff3c42cd3
-  - ddf54b12c295
   - 6378f8384f30
+  - ddf54b12c295
+  - fb4ff3c42cd3
+  - 37e1eb05b1b4
+  - 74a8bef53a00
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: reshape2_melt
@@ -542,8 +542,8 @@ tools:
 - name: bamtools_split
   owner: devteam
   revisions:
-  - 9676127a1ed2
   - e2c1b62e1db1
+  - 9676127a1ed2
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sam2interval
@@ -693,9 +693,9 @@ tools:
 - name: bedtools
   owner: iuc
   revisions:
-  - 87ee588b3d45
-  - b28e0cfa7ba1
   - 0a5c785ac6db
+  - b28e0cfa7ba1
+  - 87ee588b3d45
   tool_panel_section_label: BED
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_consensus
@@ -1373,8 +1373,8 @@ tools:
 - name: bandage
   owner: iuc
   revisions:
-  - b2860df42e16
   - 94fe43e75ddc
+  - b2860df42e16
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: unicycler
@@ -1512,8 +1512,8 @@ tools:
 - name: progressivemauve
   owner: iuc
   revisions:
-  - bdb752f3c6bb
   - 97a43bcbf44d
+  - bdb752f3c6bb
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mlst
@@ -1747,9 +1747,9 @@ tools:
 - name: snpsift
   owner: iuc
   revisions:
+  - 2e497a770bca
   - 09d6806c609e
   - 2b3e65a4252f
-  - 2e497a770bca
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_filter
@@ -1803,9 +1803,9 @@ tools:
 - name: snpeff
   owner: iuc
   revisions:
-  - 74aebe30fb52
-  - 268d162b9c49
   - 36dc3690a82c
+  - 268d162b9c49
+  - 74aebe30fb52
   - 5a29ab10dba6
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -1944,9 +1944,9 @@ tools:
 - name: macs2
   owner: iuc
   revisions:
-  - c16dbe4e2db2
   - 424aefbd7777
   - beb902da6e5f
+  - c16dbe4e2db2
   tool_panel_section_label: ChIP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ngsutils_bam_filter
@@ -3539,9 +3539,9 @@ tools:
 - name: picard
   owner: devteam
   revisions:
-  - 2a17c789e0a5
-  - 7d34178f2812
   - a1f0b3f4b781
+  - 7d34178f2812
+  - 2a17c789e0a5
   tool_panel_section_label: Picard
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_compute_matrix
@@ -3643,17 +3643,17 @@ tools:
 - name: emboss_5
   owner: devteam
   revisions:
-  - dc492eb6a4fc
   - ce385837c160
+  - dc492eb6a4fc
   - ce22ceec214a
   tool_panel_section_label: EMBOSS
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rseqc
   owner: nilesh
   revisions:
+  - f437057e46f1
   - 34e4c586e3c0
   - 5873cd7afb67
-  - f437057e46f1
   tool_panel_section_label: RSeQC
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mimodd_main
@@ -3696,12 +3696,12 @@ tools:
 - name: genome_diversity
   owner: miller-lab
   revisions:
+  - d6b961721037
+  - 4188853b940b
   - 95a05c1ef5d5
   - 884ccb07885b
-  - 4188853b940b
-  - d6b961721037
-  - f739a296a339
   - cba0d7a63b82
+  - f739a296a339
   tool_panel_section_label: Genome Diversity
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: iwtomics_loadandplot
@@ -4513,8 +4513,8 @@ tools:
 - name: springsuite
   owner: guerler
   revisions:
-  - 75d1aedc9b3f
   - f316caf098a6
+  - 75d1aedc9b3f
   tool_panel_section_label: Protein Modeling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hhsuite
