@@ -1,6 +1,7 @@
 import sys
 
-import bioblend
+from bioblend import galaxy
+from bioblend.galaxy.users import UserClient
 
 args = sys.argv
 
