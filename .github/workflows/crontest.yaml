@@ -82,7 +82,7 @@ jobs:
       - name: Create remote single user
         run: curl ${{steps.gxyservice.outputs.address}} > /dev/null
       - name: Get tool list
-        run: get-tool-list -g ${{steps.gxyservice.outputs.address}} -o reports/anvil/tools.yaml
+        run: cp production/anvil/tools.yaml reports/anvil/tools.yaml
       - name: Create reports dir for this date
         run: mkdir -p reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}
       - name: Split tool tests
