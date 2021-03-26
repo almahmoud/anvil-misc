@@ -1,5 +1,5 @@
 # Automated Tests for Galaxy on Kubernetes Stacks
-## Galaxy on GKE deployed via GalaxyKubeMan
+## Galaxy on GKE deployed via GalaxyKubeMan (AnVIL)
 ### Deployment Testing
 Twice a day, [GalaxyKubeMan (GKM)](https://github.com/galaxyproject/galaxykubeman-helm) is deployed on GKE, mimicking an AnVIL deployment. The purpose of these tests is to provide reasonable confidence that Galaxy is launchable on the AnVIL everyday.
 
