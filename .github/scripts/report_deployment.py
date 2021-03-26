@@ -30,6 +30,11 @@ def get_datetimes(timestring):
 dates = [datetime.strptime(d.get("date"), "%a %b %d %H:%M:%S %Y") for d in deps]
 times = [get_datetimes(d.get("time")) for d in deps]
 
+l = len(dates) if len(dates) <= 30 else 30
+
+dates = dates[:l]
+times = times[:l]
+
 figure(figsize=(12, 8), dpi=80)
 ax = plt.gca()
 myFmt = DateFormatter("%M min")
