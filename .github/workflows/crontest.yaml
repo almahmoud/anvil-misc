@@ -72,10 +72,10 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - name: Add report from this run
-        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" ${{ secrets.GIT_TOKEN }}
       - name: Install dependencies
         run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
+      - name: Add report from this run
+        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" ${{ secrets.GIT_TOKEN }}
       - name: Get Galaxy IP and port
         id: gxyservice
         run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
