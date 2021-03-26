@@ -1,5 +1,12 @@
+from datetime import datetime
 import json
 import sys
+
+from jinja2 import Template
+
+import matplotlib.pyplot as plt
+from matplotlib.dates import DateFormatter
+from matplotlib.pyplot import figure
 
 args = sys.argv
 project = args[1]
@@ -14,11 +21,31 @@ with open("reports/{}/deployments.json".format(project), "r+") as f:
     f.seek(0)
     f.write(json.dumps(out, indent=4))
     f.truncate()
-     
-with open("reports/{}/deployments.html".format(project), "r+") as f:
-    htmlout = "<table><thead><tr><th>Date</th><th>Status</th><th>GKM time</th></tr></thead><tbody>"
+
+def get_datetimes(timestring):
+    # Remove milliseconds
+    timestring = timestring.split('.')[0]
+    return datetime.strptime(timestring, "%Mm%S")
+
+dates = [datetime.strptime(d.get("date"), "%a %b %d %H:%M:%S %Y") for d in deps]
+times = [get_datetimes(d.get("time")) for d in deps]
+
+figure(figsize=(12, 8), dpi=80)
+ax = plt.gca()
+myFmt = DateFormatter("%M min")
+ax.yaxis.set_major_formatter(myFmt)
+ax.plot(dates, times, linestyle='-', marker='.', color='b')
+plt.gcf().autofmt_xdate()
+plt.savefig("reports/anvil/deployments.svg")
+
+
+with open(".github/templates/deployments.html.j2", "r") as f:
+    template = Template(f.read())
+
+with open("reports/{}/deployments.html".format(project), "w") as f:
+    htmlout = "<thead><tr><th>Date</th><th>Status</th><th>GKM time</th></tr></thead><tbody>"
     for each in deps:
         htmlout += "<tr><td>{}</td><td>{}</td><td>{}</td></tr>".format(each.get("date"), each.get("status"), each.get("time"))
-    htmlout += "</tbody></table>"
-    f.write(htmlout)
+    htmlout += "</tbody>"
+    f.write(template.render(table=htmlout))
 
