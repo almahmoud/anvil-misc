@@ -41,6 +41,9 @@ myFmt = DateFormatter("%M min")
 ax.yaxis.set_major_formatter(myFmt)
 ax.plot(dates, times, linestyle='-', marker='.', color='b')
 plt.gcf().autofmt_xdate()
+plt.title("GalaxyKubeMan startup time")
+plt.xlabel("Date of Test")
+plt.ylabel("Startup Time")
 plt.savefig("reports/anvil/deployments.svg")
 
 
