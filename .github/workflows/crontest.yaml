@@ -89,7 +89,7 @@ jobs:
         run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
         id: api
       - name: Run tool tests
-        run: shed-tools test -g ${{steps.gxyservice.outputs.address}} -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil/${{steps.prefix.outputs.prefix}}/tools.yaml --test_json reports/anvil/${{steps.prefix.outputs.prefix}}/results.json
+        run: shed-tools test -g ${{steps.gxyservice.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil/${{steps.prefix.outputs.prefix}}/tools.yaml --test_json reports/anvil/${{steps.prefix.outputs.prefix}}/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil/${{steps.prefix.outputs.prefix}}/results.json --test_output_xunit reports/anvil/${{steps.prefix.outputs.prefix}}/results.xunit --test_output reports/anvil/${{steps.prefix.outputs.prefix}}/results.html
       - name: Commit & Push changes
