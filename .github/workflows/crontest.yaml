@@ -91,7 +91,7 @@ jobs:
       - name: Split tool tests
         run: python .github/scripts/subset_tools.py reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml
       - name: Run tool tests
-        run: shed-tools test -g ${{steps.gxyservice.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml --test_json reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.json
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml --test_json reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.json --test_output_xunit reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.xunit --test_output reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.html
       - name: Commit & Push changes
