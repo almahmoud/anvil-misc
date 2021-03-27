@@ -37,7 +37,7 @@ times = times[:l]
 
 figure(figsize=(12, 8), dpi=80)
 ax = plt.gca()
-myFmt = DateFormatter("%M min")
+myFmt = DateFormatter("%Mmin %Ss")
 ax.yaxis.set_major_formatter(myFmt)
 ax.plot(dates, times, linestyle='-', marker='.', color='b')
 plt.gcf().autofmt_xdate()
