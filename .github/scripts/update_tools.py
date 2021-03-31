@@ -42,7 +42,7 @@ def validate(tool):
         tool[REVISIONS] = []
 
 def append(tool, revision):
-    if len(tool[REVISIONS]) == 0 or tool[REVISIONS][-1] != revision:
+    if revision not in tool[REVISIONS]:
         tool[REVISIONS].append(revision)
 
 def replace(tool, revision):
