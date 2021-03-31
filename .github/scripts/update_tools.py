@@ -22,7 +22,9 @@ python .github/scripts/update_tools.py [append|replace] ./production/anvil/tools
 
 DEFAULT_TOOLSHED = 'https://toolshed.g2.bx.psu.edu'
 
-# Common keys into the tools dict. Defined solely so our IDE can do completions.
+# Common keys into the tools dict. Defined solely so our IDE can do completions
+# and I don't consistently misspell revisisions or have to remember if it is
+# toolshed_url or tool_shed_url
 NAME = 'name'
 OWNER = 'owner'
 TOOLS = 'tools'
@@ -60,7 +62,7 @@ def update_file(add_to_list, infile, outfile):
         else:
             ts = toolshed.ToolShedInstance(url)
             tool_sheds[url] = ts
-        revs = ts.repositories.get_ordered_installable_revisions(tool['name'], tool['owner'])
+        revs = ts.repositories.get_ordered_installable_revisions(tool[NAME], tool[OWNER])
         if revs and len(revs) > 0:
             add_to_list(tool, revs[-1])
 
