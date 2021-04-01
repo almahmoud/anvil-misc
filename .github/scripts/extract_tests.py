@@ -2,6 +2,11 @@ import os
 import sys
 import json
 
+"""
+A script to extract the test results from the results.json file generated
+by planemo.
+"""
+
 def main(infile):
     with open(infile) as f:
         data = json.load(f)
@@ -20,7 +25,7 @@ def main(infile):
 
 if __name__ == "__main__":
     if len(sys.argv)  != 2:
-        print(f"USAGE: python {sys.argv[0]} [failed|passed]")
+        print(f"USAGE: python {sys.argv[0]} /path/to/results.json")
         sys.exit(1)
 
     infile = sys.argv[1]
