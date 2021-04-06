@@ -1,16 +1,19 @@
 import yaml
+import json
 import sys
-import datetime
+from datetime import datetime
 
 args = sys.argv
 infile = args[1]
-outfile = args[2]
-today = datetime.datetime.today()
+outdir = args[2]
+today = datetime.today()
 weekday = today.weekday()
 time_of_day = 0 if today.strftime("%p") == 'AM' else 1
 runs_per_day = 2 # run twice a day
 total_chunks = 7 * runs_per_day
 
+github_base = "https://github.com/almahmoud/anvil-misc/blob/master"
+preview_base = "https://htmlpreview.github.io/?{}".format(github_base)
 
 with open(infile, 'r') as f:
     out = yaml.safe_load(f.read())
@@ -37,6 +40,13 @@ end = len(l) if end > len(l) else end
 out['tools'] = l[start:end]
 
 
-with open(outfile, 'w') as f:
+with open(f'{outdir}/tools.yaml', 'w') as f:
     f.write(yaml.safe_dump(out))
 
+chunk = {}
+chunk[str(current_num)] = {"run1": "{}/{}/results.html".format(preview_base, outdir),
+                           "date1": today.strftime("%a %b %d %H:%M:%S %Y"), 
+                           "tools": "{}/{}/tools.yaml".format(github_base, outdir)}
+
+with open(f'{outdir}/chunk.json', 'w') as f:
+    f.write(json.dumps(chunk, indent=4))
