@@ -44,7 +44,7 @@ plt.title("GalaxyKubeMan startup time")
 plt.xlabel("Date of Test")
 plt.ylabel("Startup Time")
 plt.gcf().autofmt_xdate()
-plt.savefig("reports/anvil/deployments.svg")
+plt.savefig("reports/{}/deployments.svg".format(project))
 
 
 with open(".github/templates/deployments.html.j2", "r") as f:
