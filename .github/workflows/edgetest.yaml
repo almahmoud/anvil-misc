@@ -95,7 +95,7 @@ jobs:
           python-version: '3.x'
       - name: Get Galaxy IP and port
         id: gxyservice2
-        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
+        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
       - name: Create remote single user
         run: curl ${{steps.gxyservice2.outputs.address}}
       - name: Create reports dir for this date
@@ -192,7 +192,7 @@ jobs:
           python-version: '3.x'
       - name: Get Galaxy IP and port
         id: gxyservice2
-        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
+        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
       - name: Create remote single user
         run: curl ${{steps.gxyservice2.outputs.address}}
       - name: Create reports dir for this date
