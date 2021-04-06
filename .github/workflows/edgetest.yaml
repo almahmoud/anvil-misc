@@ -65,7 +65,9 @@ jobs:
               --set nfs.persistence.size=\"250Gi\"\
               --set galaxy.postgresql.persistence.existingClaim=\"${{steps.prefix.outputs.prefix}}-postgres-disk-pvc\"\
               --set galaxy.persistence.size=\"200Gi\"\
-              --set galaxy.postgresql.galaxyDatabasePassword=${{secrets.COMMON_PASSWORD}}") 1> "$GXY_TMP" 2>> "$GXY_TMP"
+              --set galaxy.postgresql.galaxyDatabasePassword=${{secrets.COMMON_PASSWORD}}\
+              --set galaxy.postgresql.serviceAccount.name=\"${{steps.prefix.outputs.prefix}}-psql\"\
+              --set galaxy.postgresql.podServiceAccount.name=\"${{steps.prefix.outputs.prefix}}-psql-pod\"") 1> "$GXY_TMP" 2>> "$GXY_TMP"
 
       - uses: actions/checkout@master
       - uses: actions/setup-python@v2
