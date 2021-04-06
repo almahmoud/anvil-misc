@@ -4,7 +4,8 @@ set -xe
 DURATION=$(cat $1 | grep "real" | grep -o "[0-9][a-z0-9\.]\+")
 STATUS=$(cat $1 | grep "STATUS:" | grep -oP '(?<=STATUS\: )\w+')
 DATE=$(cat $1 | grep "LAST DEPLOYED:" | grep -oP '(?<=LAST DEPLOYED\: )[^\n]+')
-GIT_TOKEN=$2
+REPORT_DIR=$2
+GIT_TOKEN=$3
 GIT_BRANCH=master
 REMOTE="https://$GITHUB_ACTOR:$GIT_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 
@@ -22,5 +23,8 @@ push_report() {
 }
 
 setup_git
-python .github/scripts/report_deployment.py anvil "{\"status\": \"$STATUS\", \"time\": \"$DURATION\", \"date\": \"$DATE\"}"
+mkdir -p "reports/$REPORT_DIR"
+touch "reports/$REPORT_DIR/deployments.json"
+touch "reports/$REPORT_DIR/deployments.html"
+python .github/scripts/report_deployment.py $REPORT_DIR "{\"status\": \"$STATUS\", \"time\": \"$DURATION\", \"date\": \"$DATE\"}"
 push_report
