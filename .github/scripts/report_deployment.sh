@@ -17,8 +17,11 @@ setup_git() {
 }
 
 push_report() {
+  git stash
+  git pull origin master
+  git stash pop
   git add .
-  git commit -m "Submitting report for deployment from $DATE"
+  git commit -m "Submitting $REPORT_DIR report for deployment from $DATE"
   git push "$REMOTE" "HEAD:$GIT_BRANCH" -v -v
 }
 

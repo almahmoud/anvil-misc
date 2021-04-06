@@ -4,7 +4,7 @@ on:
     - cron: "0 * * * *"
   workflow_dispatch: {}
 jobs:
-  deploy:
+  deploygke:
     env:
       GKE_ZONE: us-east1-b
       GKE_VERSION: "1.18"
@@ -23,72 +23,198 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
-      - name: Create two GCP Disks
-        run: gcloud compute disks create "${{steps.prefix.outputs.prefix}}-postgres-pd" --size 10Gi --zone "$GKE_ZONE" && gcloud compute disks create "${{steps.prefix.outputs.prefix}}-nfs-pd" --size 250Gi --zone "$GKE_ZONE"
       - name: Create GKE cluster
         run: gcloud container clusters create "${{steps.prefix.outputs.prefix}}" --cluster-version="$GKE_VERSION" --disk-size=100 --num-nodes=1 --machine-type=n1-highmem-8 --zone "$GKE_ZONE"
+
+  testgalaxy1:
+    needs: deploygke
+    env:
+      GKE_ZONE: us-east1-b
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+      - name: Create two GCP Disks
+        run: gcloud compute disks create "${{needs.deploygke.outputs.prefix}}-1-postgres-pd" --size 10Gi --zone "$GKE_ZONE" && gcloud compute disks create "${{needs.deploygke.outputs.prefix}}-1-nfs-pd" --size 250Gi --zone "$GKE_ZONE"
       - name: Install Kubectl
         run: curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" && chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl && kubectl version
       - name: Install Helm
         run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
-      - name: Add Anvil repository
+      - name: Add Anvil-edge-2101 repository
         run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
-
-      - name: Deploy GalaxyKubeMan
+      - name: Deploy GalaxyKubeMan 1
         run: >
-          (time sh -c "kubectl create ns ${{steps.prefix.outputs.prefix}}; helm install -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-rls edge/galaxykubeman\
+          (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-1; helm install -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1 edge/galaxykubeman\
               --wait\
               --timeout 2800s\
               --set galaxy.image.tag=21.01-auto\
-              --set nfs.storageClass.name=\"nfs-${{steps.prefix.outputs.prefix}}\"\
-              --set cvmfs.repositories.cvmfs-gxy-data-${{steps.prefix.outputs.prefix}}=\"data.galaxyproject.org\"\
-              --set cvmfs.repositories.cvmfs-gxy-main-${{steps.prefix.outputs.prefix}}=\"main.galaxyproject.org\"\
-              --set cvmfs.cache.alienCache.storageClass=\"nfs-${{steps.prefix.outputs.prefix}}\"\
-              --set galaxy.persistence.storageClass=\"nfs-${{steps.prefix.outputs.prefix}}\"\
-              --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{steps.prefix.outputs.prefix}}\
-              --set galaxy.cvmfs.main.pvc.storageClassName=cvmfs-gxy-main-${{steps.prefix.outputs.prefix}}\
+              --set nfs.storageClass.name=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
+              --set cvmfs.repositories.cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1=\"data.galaxyproject.org\"\
+              --set cvmfs.repositories.cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-1=\"main.galaxyproject.org\"\
+              --set cvmfs.cache.alienCache.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
+              --set galaxy.persistence.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
+              --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1\
+              --set galaxy.cvmfs.main.pvc.storageClassName=cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-1\
               --set galaxy.service.type=LoadBalancer\
               --set galaxy.service.port=8000\
               --set rbac.enabled=false\
               --set galaxy.terra.launch.workspace=\"De novo transcriptome reconstruction with RNA-Seq\"\
-              --set galaxy.terra.launch.namespace=\"galaxy-anvil\"\
+              --set galaxy.terra.launch.namespace=\"galaxy-anvil-edge-2101\"\
               --set cvmfs.cache.preload.enabled=false\
               --set galaxy.configs.\"galaxy\.yml\".galaxy.master_api_key=${{secrets.COMMON_PASSWORD}}\
               --set galaxy.configs.\"galaxy\.yml\".galaxy.single_user=\"alex@fake.org\"\
               --set galaxy.configs.\"galaxy\.yml\".galaxy.admin_users=\"alex@fake.org\"\
-              --set persistence.nfs.name=\"${{steps.prefix.outputs.prefix}}-nfs-disk\"\
-              --set persistence.nfs.persistentVolume.extraSpec.gcePersistentDisk.pdName=\"${{steps.prefix.outputs.prefix}}-nfs-pd\"\
+              --set persistence.nfs.name=\"${{needs.deploygke.outputs.prefix}}-1-nfs-disk\"\
+              --set persistence.nfs.persistentVolume.extraSpec.gcePersistentDisk.pdName=\"${{needs.deploygke.outputs.prefix}}-1-nfs-pd\"\
               --set persistence.nfs.size=\"250Gi\"\
-              --set persistence.postgres.name=\"${{steps.prefix.outputs.prefix}}-postgres-disk\"\
-              --set persistence.postgres.persistentVolume.extraSpec.gcePersistentDisk.pdName=\"${{steps.prefix.outputs.prefix}}-postgres-pd\"\
+              --set persistence.postgres.name=\"${{needs.deploygke.outputs.prefix}}-1-postgres-disk\"\
+              --set persistence.postgres.persistentVolume.extraSpec.gcePersistentDisk.pdName=\"${{needs.deploygke.outputs.prefix}}-1-postgres-pd\"\
               --set persistence.postgres.size=\"10Gi\"\
-              --set nfs.persistence.existingClaim=\"${{steps.prefix.outputs.prefix}}-nfs-disk-pvc\"\
+              --set nfs.persistence.existingClaim=\"${{needs.deploygke.outputs.prefix}}-1-nfs-disk-pvc\"\
               --set nfs.persistence.size=\"250Gi\"\
-              --set galaxy.postgresql.persistence.existingClaim=\"${{steps.prefix.outputs.prefix}}-postgres-disk-pvc\"\
+              --set galaxy.postgresql.persistence.existingClaim=\"${{needs.deploygke.outputs.prefix}}-1-postgres-disk-pvc\"\
               --set galaxy.persistence.size=\"200Gi\"\
               --set galaxy.postgresql.galaxyDatabasePassword=${{secrets.COMMON_PASSWORD}}\
-              --set galaxy.postgresql.serviceAccount.name=\"${{steps.prefix.outputs.prefix}}-psql\"\
-              --set galaxy.postgresql.podServiceAccount.name=\"${{steps.prefix.outputs.prefix}}-psql-pod\"") 1> "$GXY_TMP" 2>> "$GXY_TMP"
+              --set galaxy.postgresql.serviceAccount.name=\"${{needs.deploygke.outputs.prefix}}-1-psql\"\
+              --set galaxy.postgresql.podServiceAccount.name=\"${{needs.deploygke.outputs.prefix}}-1-psql-pod\"\
+              --set galaxy.postgresql.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"default-pool\"\
+              --set galaxy.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"default-pool\"\
+              --set cvmfs.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"default-pool\"\
+              --set nfs.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"default-pool\"") 1> "$GXY_TMP" 2>> "$GXY_TMP"
 
       - uses: actions/checkout@master
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
       - name: Get Galaxy IP and port
-        id: gxyservice
-        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-rls-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-rls-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-rls-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
+        id: gxyservice2
+        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-gxy-rls-galaxy -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-gxy-rls-galaxy -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-gxy-rls-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
       - name: Create remote single user
-        run: curl ${{steps.gxyservice.outputs.address}}
+        run: curl ${{steps.gxyservice2.outputs.address}}
+      - name: Get tool list
+        run: cp reports/anvil/tool-tests/gxy-auto-04-05-21-02-00/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml
+      - name: Create reports dir for this date
+        run: mkdir -p reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1
       - name: Install dependencies
         run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
       - name: Create and get API key
-        run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
+        run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
         id: api
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
+      - name: Run tool tests
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json
+      - name: Create HTML report
+        run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.html
+      - uses: actions/checkout@master
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-1"
+
+
+  testgalaxy2:
+    needs: deploygke
+    env:
+      GKE_ZONE: us-east1-b
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+      - name: Add user 2 nodepool
+        run: gcloud container node-pools create "user2-pool" --cluster="${{needs.deploygke.outputs.prefix}}" --disk-size=100 --num-nodes=1 --machine-type=n1-highmem-8 --zone "$GKE_ZONE"
+      - name: Create two GCP Disks
+        run: gcloud compute disks create "${{needs.deploygke.outputs.prefix}}-2-postgres-pd" --size 10Gi --zone "$GKE_ZONE" && gcloud compute disks create "${{needs.deploygke.outputs.prefix}}-2-nfs-pd" --size 250Gi --zone "$GKE_ZONE"
+      - name: Install Kubectl
+        run: curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" && chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl && kubectl version
+      - name: Install Helm
+        run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+      - name: Add Anvil-edge-2101 repository
+        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
+      - name: Deploy GalaxyKubeMan 1
+        run: >
+          (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-2; helm install -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2 edge/galaxykubeman\
+              --wait\
+              --timeout 2800s\
+              --set galaxy.image.tag=21.01-auto\
+              --set nfs.storageClass.name=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
+              --set cvmfs.repositories.cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2=\"data.galaxyproject.org\"\
+              --set cvmfs.repositories.cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-2=\"main.galaxyproject.org\"\
+              --set cvmfs.cache.alienCache.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
+              --set galaxy.persistence.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
+              --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2\
+              --set galaxy.cvmfs.main.pvc.storageClassName=cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-2\
+              --set galaxy.service.type=LoadBalancer\
+              --set galaxy.service.port=8000\
+              --set rbac.enabled=false\
+              --set galaxy.terra.launch.workspace=\"De novo transcriptome reconstruction with RNA-Seq\"\
+              --set galaxy.terra.launch.namespace=\"galaxy-anvil-edge-2101\"\
+              --set cvmfs.cache.preload.enabled=false\
+              --set galaxy.configs.\"galaxy\.yml\".galaxy.master_api_key=${{secrets.COMMON_PASSWORD}}\
+              --set galaxy.configs.\"galaxy\.yml\".galaxy.single_user=\"alex@fake.org\"\
+              --set galaxy.configs.\"galaxy\.yml\".galaxy.admin_users=\"alex@fake.org\"\
+              --set persistence.nfs.name=\"${{needs.deploygke.outputs.prefix}}-2-nfs-disk\"\
+              --set persistence.nfs.persistentVolume.extraSpec.gcePersistentDisk.pdName=\"${{needs.deploygke.outputs.prefix}}-2-nfs-pd\"\
+              --set persistence.nfs.size=\"250Gi\"\
+              --set persistence.postgres.name=\"${{needs.deploygke.outputs.prefix}}-2-postgres-disk\"\
+              --set persistence.postgres.persistentVolume.extraSpec.gcePersistentDisk.pdName=\"${{needs.deploygke.outputs.prefix}}-2-postgres-pd\"\
+              --set persistence.postgres.size=\"10Gi\"\
+              --set nfs.persistence.existingClaim=\"${{needs.deploygke.outputs.prefix}}-2-nfs-disk-pvc\"\
+              --set nfs.persistence.size=\"250Gi\"\
+              --set galaxy.postgresql.persistence.existingClaim=\"${{needs.deploygke.outputs.prefix}}-2-postgres-disk-pvc\"\
+              --set galaxy.persistence.size=\"200Gi\"\
+              --set galaxy.postgresql.galaxyDatabasePassword=${{secrets.COMMON_PASSWORD}}\
+              --set galaxy.postgresql.serviceAccount.name=\"${{needs.deploygke.outputs.prefix}}-2-psql\"\
+              --set galaxy.postgresql.podServiceAccount.name=\"${{needs.deploygke.outputs.prefix}}-2-psql-pod\"\
+              --set galaxy.postgresql.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"user2-pool\"\
+              --set galaxy.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"user2-pool\"\
+              --set cvmfs.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"user2-pool\"\
+              --set nfs.nodeSelector.\"cloud\\.google\\.com\\/gke-nodepool\"=\"user2-pool\"") 1> "$GXY_TMP" 2>> "$GXY_TMP"
+
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Get Galaxy IP and port
+        id: gxyservice2
+        run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-gxy-rls-galaxy -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-gxy-rls-galaxy -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-gxy-rls-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
+      - name: Create remote single user
+        run: curl ${{steps.gxyservice2.outputs.address}}
+      - name: Get tool list
+        run: cp reports/anvil/tool-tests/gxy-auto-04-05-21-02-00/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml
+      - name: Create reports dir for this date
+        run: mkdir -p reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2
+      - name: Install dependencies
+        run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
+      - name: Create and get API key
+        run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
+        id: api
+      - name: Add report from this run
+        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
+      - name: Run tool tests
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
+      - name: Create HTML report
+        run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.html
+      - uses: actions/checkout@master
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-2"
+
+
   cleanup:
     if: always()
-    needs: deploy
+    needs: [deploygke,testgalaxy1,testgalaxy2]
     env:
       GKE_ZONE: us-east1-b
     runs-on: ubuntu-latest
@@ -101,6 +227,8 @@ jobs:
           export_default_credentials: true
       - name: Delete the GKE cluster
         continue-on-error: true
-        run: gcloud container clusters delete "${{needs.deploy.outputs.prefix}}" --zone "$GKE_ZONE" --quiet
-      - name: Delete the two GCP Disks
-        run: gcloud compute disks delete "${{needs.deploy.outputs.prefix}}-postgres-pd" --zone "$GKE_ZONE" --quiet && gcloud compute disks delete "${{needs.deploy.outputs.prefix}}-nfs-pd" --zone "$GKE_ZONE" --quiet
+        run: gcloud container clusters delete "${{needs.deploygke.outputs.prefix}}" --zone "$GKE_ZONE" --quiet
+      - name: Delete the two GCP Disks for first Galaxy
+        run: gcloud compute disks delete "${{needs.deploygke.outputs.prefix}}-1-postgres-pd" --zone "$GKE_ZONE" --quiet && gcloud compute disks delete "${{needs.deploygke.outputs.prefix}}-1-nfs-pd" --zone "$GKE_ZONE" --quiet
+      - name: Delete the two GCP Disks for second Galaxy
+        run: gcloud compute disks delete "${{needs.deploygke.outputs.prefix}}-2-postgres-pd" --zone "$GKE_ZONE" --quiet && gcloud compute disks delete "${{needs.deploygke.outputs.prefix}}-2-nfs-pd" --zone "$GKE_ZONE" --quiet
