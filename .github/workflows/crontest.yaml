@@ -3,7 +3,12 @@ on:
   schedule:
     - cron: "0 15 * * *"
     - cron: "0 3 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      chunk:
+        description: 'Chunk to run. Valid range [0:13]. Out of range inputs will be ignored.'
+        required: true
+        default: '999'
 jobs:
   deploy:
     env:
@@ -89,7 +94,7 @@ jobs:
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil ${{ secrets.GIT_TOKEN }}
       - name: Split tool tests
-        run: python .github/scripts/subset_tools.py reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml
+        run: python .github/scripts/subset_tools.py reports/anvil/tools.yaml reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml ${{ github.event.inputs.chunk }}
       - name: Run tool tests
         run: sleep 30 && shed-tools test -g ${{steps.gxyservice.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml --test_json reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.json
       - name: Create HTML report

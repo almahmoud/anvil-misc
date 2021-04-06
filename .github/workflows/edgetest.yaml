@@ -106,11 +106,11 @@ jobs:
         run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
       - name: Create and get API key
         run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
-        id: api
+        id: api1
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
       - name: Run tool tests
-        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api1.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.html
       - uses: actions/checkout@master
@@ -203,11 +203,11 @@ jobs:
         run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
       - name: Create and get API key
         run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
-        id: api
+        id: api2
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
       - name: Run tool tests
-        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api2.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.html
       - uses: actions/checkout@master
