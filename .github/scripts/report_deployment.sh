@@ -24,7 +24,9 @@ push_report() {
 
 setup_git
 mkdir -p "reports/$REPORT_DIR"
-touch "reports/$REPORT_DIR/deployments.json"
+if [ ! -f "reports/$REPORT_DIR/deployments.json" ]; then
+    cat "{}" > "reports/$REPORT_DIR/deployments.json"
+fi
 touch "reports/$REPORT_DIR/deployments.html"
 python .github/scripts/report_deployment.py $REPORT_DIR "{\"status\": \"$STATUS\", \"time\": \"$DURATION\", \"date\": \"$DATE\"}"
 push_report
