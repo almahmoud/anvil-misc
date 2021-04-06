@@ -39,6 +39,7 @@ jobs:
           (time sh -c "kubectl create ns ${{steps.prefix.outputs.prefix}}; helm install -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls edge/galaxykubeman\
               --wait\
               --timeout 2800s\
+              --set galaxy.image.tag=21.01-auto\
               --set nfs.storageClass.name=\"nfs-${{steps.prefix.outputs.prefix}}\"\
               --set cvmfs.repositories.cvmfs-gxy-data-${{steps.prefix.outputs.prefix}}=\"data.galaxyproject.org\"\
               --set cvmfs.repositories.cvmfs-gxy-main-${{steps.prefix.outputs.prefix}}=\"main.galaxyproject.org\"\
