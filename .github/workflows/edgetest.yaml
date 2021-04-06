@@ -98,10 +98,10 @@ jobs:
         run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
       - name: Create remote single user
         run: curl ${{steps.gxyservice2.outputs.address}}
-      - name: Get tool list
-        run: cp reports/anvil/tool-tests/gxy-auto-04-05-21-02-00/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml
       - name: Create reports dir for this date
         run: mkdir -p reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1
+      - name: Get tool list
+        run: cp reports/anvil/tool-tests/gxy-auto-04-05-21-02-00/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml
       - name: Install dependencies
         run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
       - name: Create and get API key
@@ -195,10 +195,10 @@ jobs:
         run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2-galaxy-nginx -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
       - name: Create remote single user
         run: curl ${{steps.gxyservice2.outputs.address}}
-      - name: Get tool list
-        run: cp reports/anvil/tool-tests/gxy-auto-04-05-21-02-00/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml
       - name: Create reports dir for this date
         run: mkdir -p reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2
+      - name: Get tool list
+        run: cp reports/anvil/tool-tests/gxy-auto-04-05-21-02-00/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml
       - name: Install dependencies
         run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
       - name: Create and get API key
