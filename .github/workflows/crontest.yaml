@@ -99,8 +99,8 @@ jobs:
         run: sleep 30 && shed-tools test -g ${{steps.gxyservice.outputs.address}} -u "alex@fake.org" -a "${{steps.api.outputs.key}}" --parallel_tests 4 -t reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/tools.yaml --test_json reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.json --test_output_xunit reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.xunit --test_output reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/results.html
-      - name: Split tool tests
-        run: python .github/scripts/subset_tools.py reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/chunk.json reports/anvil/tool-tests/chunks.json
+      - name: Update Readme
+        run: python .github/scripts/update_readme.py reports/anvil/tool-tests/${{steps.prefix.outputs.prefix}}/chunk.json reports/anvil/tool-tests/chunks.json
       - name: Add tool-test report from this run
         run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil tool test report for ${{needs.deploygke.outputs.prefix}}"
 
