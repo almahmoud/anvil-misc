@@ -21,7 +21,6 @@ with open(infile, 'r') as f:
 l = out.get('tools', [])
 num_per_run = int(len(l)/total_chunks)
 current_num = weekday * runs_per_day + time_of_day
-print(f'current chunk {current_num}')
 
 # option to override which section to run
 if len(args) > 3:
@@ -38,7 +37,8 @@ if len(args) > 3:
 start = current_num * num_per_run
 end = (current_num + 1) * num_per_run
 
-print(f'index range: [{start}:{end}]')
+print(f'Running on chunk {current_num}')
+print(f'Index range: [{start}:{end}]')
 
 end = len(l) if end > len(l) else end
 out['tools'] = l[start:end]
