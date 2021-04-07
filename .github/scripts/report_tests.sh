@@ -3,6 +3,7 @@ set -xe
 
 GIT_TOKEN=$1
 MESSAGE=$2
+ADD_DIR=$3
 GIT_BRANCH=master
 REMOTE="https://$GITHUB_ACTOR:$GIT_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 
@@ -16,8 +17,8 @@ setup_git() {
 push_report() {
   git stash
   git pull origin master
-  git stash pop
-  git add .
+  git stash pop | true
+  git add $ADD_DIR
   git commit -m "$MESSAGE"
   git push "$REMOTE" "HEAD:$GIT_BRANCH" -v -v
 }

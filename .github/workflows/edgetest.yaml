@@ -114,7 +114,7 @@ jobs:
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.html
       - name: Add tool-test report from this run
-        run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-1"
+        run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-1" reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1
 
 
   testgalaxy2:
@@ -207,7 +207,7 @@ jobs:
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.html
       - name: Add tool-test report from this run
-        run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-2"
+        run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-2" reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2
 
   cleanup:
     if: always()
