@@ -10,7 +10,7 @@ allchunks = args[2]
 
 with open(inchunk, 'r') as f:
     new_chunk = json.load(f)
-    chunk_id = new_chunk.keys()[0]
+    chunk_id = list(new_chunk.keys())[0]
 
 with open(allchunks, 'r+') as f:
     chunks = json.load(f)
