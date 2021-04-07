@@ -108,7 +108,7 @@ jobs:
         run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
         id: api1
       - name: Add report from this run
-        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
+        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" "anvil-edge-2101" ${{ secrets.GIT_TOKEN }}
       - name: Run tool tests
         run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api1.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json
       - name: Create HTML report
