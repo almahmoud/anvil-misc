@@ -1,11 +1,6 @@
 name: Run Deployment and Tool Tests on retest list
 on:
-  workflow_dispatch:
-    inputs:
-      chunk:
-        description: 'Chunk to run. Valid range [0:13]. Out of range inputs will be ignored.'
-        required: true
-        default: '999'
+  workflow_dispatch: {}
 jobs:
   deploy:
     env:
@@ -29,7 +24,7 @@ jobs:
       - name: Create two GCP Disks
         run: gcloud compute disks create "${{steps.prefix.outputs.prefix}}-postgres-pd" --size 10Gi --zone "$GKE_ZONE" && gcloud compute disks create "${{steps.prefix.outputs.prefix}}-nfs-pd" --size 250Gi --zone "$GKE_ZONE"
       - name: Create GKE cluster
-        run: gcloud container clusters create "${{steps.prefix.outputs.prefix}}" --cluster-version="$GKE_VERSION" --disk-size=100 --num-nodes=1 --machine-type=n1-highmem-8 --zone "$GKE_ZONE"
+        run: gcloud container clusters create "${{steps.prefix.outputs.prefix}}" --cluster-version="$GKE_VERSION" --disk-size=100 --num-nodes=1 --machine-type=n1-highmem-16 --zone "$GKE_ZONE"
       - name: Install Kubectl
         run: curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" && chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl && kubectl version
       - name: Install Helm
