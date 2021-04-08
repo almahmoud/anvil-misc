@@ -90,7 +90,7 @@ jobs:
       - name: Create HTML report
         run: planemo test_reports reports/anvil-retest/tool-tests/${{steps.prefix.outputs.prefix}}/results.json --test_output_xunit reports/anvil-retest/tool-tests/${{steps.prefix.outputs.prefix}}/results.xunit --test_output reports/anvil-retest/tool-tests/${{steps.prefix.outputs.prefix}}/results.html
       - name: Add tool-test report from this run
-        run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-retest tool test report for ${{needs.deploygke.outputs.prefix}}" reports/anvil-retest
+        run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-retest tool test report for ${{steps.prefix.outputs.prefix}}" reports/anvil-retest
 
 
   cleanup:
