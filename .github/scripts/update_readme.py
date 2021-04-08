@@ -11,6 +11,7 @@ allchunks = args[2]
 with open(inchunk, 'r') as f:
     new_chunk = json.load(f)
     chunk_id = list(new_chunk.keys())[0]
+    new_chunk = new_chunk.get(chunk_id)
 
 with open(allchunks, 'r+') as f:
     chunks = json.load(f)
@@ -26,9 +27,9 @@ with open(".github/templates/README.md.j2", "r") as f:
     template = Template(f.read())
 
 with open("README.md", "w") as f:
-    htmlout = "<thead><tr><th>Chunk ID</th><th>Tool List</th><th>Latest report</th><th>Date of latest</th><th>Previous report</th><th>Date of previous</th></tr></thead><tbody>"
+    htmlout = "<thead><tr><th>Chunk ID</th><th>Tool List</th><th>Latest report</th><th>Previous report</th></tr></thead><tbody>"
     for eachid in chunks:
         eachchunk = chunks.get(eachid)
-        htmlout += "<tr><td>{}</td><td>[Toolset]({})</td><td>[Latest report]({})</td><td>{}</td><td>[Previous report]({})</td><td>{}</td></tr>".format(eachid, eachchunk.get("tools"), eachchunk.get("run1"), eachchunk.get("date1"), eachchunk.get("run2"), eachchunk.get("date2"))
+        htmlout += "<tr><td>{}</td><td><a href=\"{}\">Toolset</a></td><td><a href=\"{}\">{}</a></td><td><a href=\"{}\">{}</a></td></tr>".format(eachid, eachchunk.get("tools"), eachchunk.get("run1"), eachchunk.get("date1"), eachchunk.get("run2"), eachchunk.get("date2"))
     htmlout += "</tbody>"
     f.write(template.render(anviltools=htmlout))
