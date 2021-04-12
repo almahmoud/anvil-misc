@@ -28,7 +28,11 @@ with open(".github/templates/README.md.j2", "r") as f:
 
 with open("README.md", "w") as f:
     htmlout = "<thead><tr><th>Chunk ID</th><th>Tool List</th><th>Latest report</th><th>Previous report</th></tr></thead><tbody>"
-    for eachid in chunks:
+    ids = list(chunks.keys())
+    ids = [int(x) for x in ids]
+    ids.sort()
+    ids = [str(x) for x in ids]
+    for eachid in ids:
         eachchunk = chunks.get(eachid)
         htmlout += "<tr><td>{}</td><td><a href=\"{}\">Toolset</a></td><td><a href=\"{}\">{}</a></td><td><a href=\"{}\">{}</a></td></tr>".format(eachid, eachchunk.get("tools"), eachchunk.get("run1"), eachchunk.get("date1"), eachchunk.get("run2"), eachchunk.get("date2"))
     htmlout += "</tbody>"
