@@ -57,11 +57,11 @@ jobs:
               --set galaxy.image.tag=21.01-auto\
               --set nfs.storageClass.name=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
               --set cvmfs.repositories.cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1=\"data.galaxyproject.org\"\
-              --set cvmfs.repositories.cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-1=\"main.galaxyproject.org\"\
+              --set cvmfs.repositories.cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-1=\"cloud.galaxyproject.org\"\
               --set cvmfs.cache.alienCache.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
               --set galaxy.persistence.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
               --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1\
-              --set galaxy.cvmfs.main.pvc.storageClassName=cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-1\
+              --set galaxy.cvmfs.cloud.pvc.storageClassName=cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-1\
               --set galaxy.service.type=LoadBalancer\
               --set galaxy.service.port=8000\
               --set rbac.enabled=false\
@@ -150,11 +150,11 @@ jobs:
               --set galaxy.image.tag=21.01-auto\
               --set nfs.storageClass.name=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
               --set cvmfs.repositories.cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2=\"data.galaxyproject.org\"\
-              --set cvmfs.repositories.cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-2=\"main.galaxyproject.org\"\
+              --set cvmfs.repositories.cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-2=\"cloud.galaxyproject.org\"\
               --set cvmfs.cache.alienCache.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
               --set galaxy.persistence.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
               --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2\
-              --set galaxy.cvmfs.main.pvc.storageClassName=cvmfs-gxy-main-${{needs.deploygke.outputs.prefix}}-2\
+              --set galaxy.cvmfs.cloud.pvc.storageClassName=cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-2\
               --set galaxy.service.type=LoadBalancer\
               --set galaxy.service.port=8000\
               --set rbac.enabled=false\
