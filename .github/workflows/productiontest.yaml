@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: "0 15 * * *"
     - cron: "0 3 * * *"
+    - cron: "0 9 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       chunk:
@@ -82,6 +84,14 @@ jobs:
       - name: Get Galaxy IP and port
         id: gxyservice
         run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{steps.prefix.outputs.prefix}} ${{steps.prefix.outputs.prefix}}-gxy-rls-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
+      - name: Get events
+        run: kubectl get events -n ${{steps.prefix.outputs.prefix}}
+      - name: Print web handler log
+        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n galaxy get pods | grep -o '[^ ]*-web-[^ ]*')"
+      - name: Print job handler log
+        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n galaxy get pods | grep -o '[^ ]*-job-0-[^ ]*')"
+      - name: Print workflow handler log
+        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n galaxy get pods | grep -o '[^ ]*-workflow-[^ ]*')"
       - name: Create remote single user
         run: curl ${{steps.gxyservice.outputs.address}}
       - name: Get tool list
