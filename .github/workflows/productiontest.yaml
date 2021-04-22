@@ -87,11 +87,11 @@ jobs:
       - name: Get events
         run: kubectl get events -n ${{steps.prefix.outputs.prefix}}
       - name: Print web handler log
-        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n galaxy get pods | grep -o '[^ ]*-web-[^ ]*')"
+        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n ${{steps.prefix.outputs.prefix}} get pods | grep -o '[^ ]*-web-[^ ]*')"
       - name: Print job handler log
-        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n galaxy get pods | grep -o '[^ ]*-job-0-[^ ]*')"
+        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n ${{steps.prefix.outputs.prefix}} get pods | grep -o '[^ ]*-job-0-[^ ]*')"
       - name: Print workflow handler log
-        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n galaxy get pods | grep -o '[^ ]*-workflow-[^ ]*')"
+        run: bash -c "kubectl logs -n ${{steps.prefix.outputs.prefix}} $(kubectl -n ${{steps.prefix.outputs.prefix}} get pods | grep -o '[^ ]*-workflow-[^ ]*')"
       - name: Create remote single user
         run: curl ${{steps.gxyservice.outputs.address}}
       - name: Get tool list
