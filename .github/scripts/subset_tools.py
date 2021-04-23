@@ -20,10 +20,14 @@ with open(infile, 'r') as f:
 
 l = out.get('tools', [])
 num_per_run = int(len(l)/total_chunks)
-current_num = weekday * runs_per_day + time_of_day
+weekly_num = weekday * runs_per_day + time_of_day
+daily_num = today.hour % total_chunks
+# Default to cycling every week
+current_num = weekly_num
 
 # option to override which section to run
 if len(args) > 3:
+    chunk_args = args[3]
     try:
         new_num = int(args[3])
         if new_num in range(0, total_chunks):
@@ -31,7 +35,12 @@ if len(args) > 3:
         elif not new_num == 999:
             print(f"Given input {new_num} is out of the valid range [0:{total_chunks-1}]")
     except ValueError:
-        print(f"Given input {args[3]} is invalid")
+        if "week" in chunk_args:
+            current_num = weekly_num
+        elif "dai" in chunk_args or "day" in chunk_args:
+            current_num = daily_num
+        else:
+            print(f"Given input {args[3]} is invalid")
         pass
 
 start = current_num * num_per_run

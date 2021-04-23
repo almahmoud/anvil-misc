@@ -7,7 +7,7 @@ on:
       chunk:
         description: 'Chunk to run. Valid range [0:13]. Out of range inputs will be ignored.'
         required: true
-        default: '999'
+        default: 'daily'
 jobs:
   deploygke:
     env:
