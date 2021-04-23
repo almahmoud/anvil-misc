@@ -2,7 +2,12 @@ name: Run Deployment and Tool Tests for 21.01 pre-release
 on:
   schedule:
     - cron: "0 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      chunk:
+        description: 'Chunk to run. Valid range [0:13]. Out of range inputs will be ignored.'
+        required: true
+        default: '999'
 jobs:
   deploygke:
     env:
@@ -87,12 +92,16 @@ jobs:
               --set cvmfs.nodeSelector.\"cloud\.google\.com\/gke-nodepool\"=\"default-pool\"\
               --set nfs.nodeSelector.\"cloud\.google\.com\/gke-nodepool\"=\"default-pool\"") 1> "$GXY_TMP" 2>> "$GXY_TMP"
 
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
+      - name: Install dependencies
+        run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Add report from this run
+        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
       - name: Get Galaxy IP and port
         id: gxyservice2
         run: echo "::set-output name=address::$(echo \"http://$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' | sed -e 's/\"//g'):$(kubectl get svc -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy-nginx -o jsonpath='{.spec.ports[0].port}')$(kubectl get ingress -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1-galaxy -o jsonpath='{.spec.rules[0].http.paths[0].path}')/\")"
@@ -102,15 +111,11 @@ jobs:
         run: mkdir -p reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1
       - name: Get tool list
         run: cp production/anvil/tools.yaml reports/anvil-edge-2101/tools.yaml
-      - name: Install dependencies
-        run: python -m pip install planemo ephemeris pysam "galaxy-tool-util>=21.1.0.dev6" bioblend Jinja2 matplotlib
       - name: Create and get API key
         run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
         id: api1
       - name: Split tool tests
-        run: python .github/scripts/subset_tools.py reports/anvil-edge-2101/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml ${{ github.event.inputs.chunk }}
-      - name: Add report from this run
-        run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" "anvil-edge-2101" ${{ secrets.GIT_TOKEN }}
+        run: python .github/scripts/subset_tools.py reports/anvil-edge-2101/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1 ${{ github.event.inputs.chunk }}
       - name: Run tool tests
         run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api1.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json
       - name: Create HTML report
@@ -143,7 +148,7 @@ jobs:
         run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
       - name: Add Anvil-edge-2101 repository
         run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
-      - name: Deploy GalaxyKubeMan 1
+      - name: Deploy GalaxyKubeMan 2
         run: >
           (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-2; helm install -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2 edge/galaxykubeman\
               --wait\
@@ -202,11 +207,11 @@ jobs:
         run: echo "::set-output name=key::$(python .github/scripts/create_api_key.py ${{steps.gxyservice2.outputs.address}} ${{secrets.COMMON_PASSWORD}})"
         id: api2
       - name: Split tool tests
-        run: python .github/scripts/subset_tools.py reports/anvil-edge-2101/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml
+        run: python .github/scripts/subset_tools.py reports/anvil-edge-2101/tools.yaml reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2 ${{ github.event.inputs.chunk }}
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
       - name: Run tool tests
-        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api2.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api2.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2 --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.html
       - name: Add tool-test report from this run
