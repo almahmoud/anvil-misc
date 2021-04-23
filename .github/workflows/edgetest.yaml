@@ -211,7 +211,7 @@ jobs:
       - name: Add report from this run
         run: bash ./.github/scripts/report_deployment.sh "$GXY_TMP" anvil-edge-2101 ${{ secrets.GIT_TOKEN }}
       - name: Run tool tests
-        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api2.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2 --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
+        run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api2.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.html
       - name: Add tool-test report from this run
