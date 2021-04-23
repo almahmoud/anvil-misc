@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Results (powered by Planemo)"
+           tests="44"
+           errors="0"
+           failures="44"
+           skip="0">
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0 (Test #1)" name="0" time="1821.1079239845276">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "advancedOpt|averageTypeBins": "sum",  "advancedOpt|binSize": "10",  "advancedOpt|showAdvancedOpt": "yes",  "advancedOpt|sortUsing": "sum",  "mode|afterRegionStartLength": "10",  "mode|beforeRegionStartLength": "10",  "mode|mode_select": "reference-point",  "multibigwig_conditional|bigwigfiles": {   "id": "f3270a9ea8850424",   "src": "hda"  },  "regionsFiles_0|regionsFile": {   "id": "e2e3d77e11bcc258",   "src": "hda"  } }, "job": {  "command_line": "ln -f -s \u0027/galaxy/server/database/objects/7/8/a/dataset_78a332a6-6d77-4eeb-a954-dc9add6305b7.dat\u0027 \u0027bamCoverage_result4.bw_0.bw\u0027 \u0026\u0026    ln -f -s \u0027/galaxy/server/database/objects/9/f/6/dataset_9f6e630d-c312-4a6d-bf66-c3c93c690c68.dat\u0027 \u0027computeMatrix1_bed_0.bed\u0027 \u0026\u0026  computeMatrix  reference-point --regionsFileName \u0027computeMatrix1_bed_0.bed\u0027  --scoreFileName \u0027bamCoverage_result4.bw_0.bw\u0027  --outFileName \u0027/galaxy/server/database/objects/a/a/7/dataset_aa748979-c2d3-469d-9966-ceb45d0c0fa1.dat\u0027 --samplesLabel \u0027bamCoverage_result4.bw\u0027  --numberOfProcessors \"${GALAXY_SLOTS:-4}\"   --referencePoint TSS  --beforeRegionStartLength 10 --afterRegionStartLength 10  --sortRegions \u0027keep\u0027 --sortUsing \u0027sum\u0027 --averageTypeBins \u0027sum\u0027   --binSize 10     --transcriptID transcript --exonID exon --transcript_id_designator transcript_id",  "command_version": null,  "create_time": "2021-04-23T18:26:14.146732",  "exit_code": null,  "external_id": "gxy-bsbbx",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "1440c73320861a78",  "inputs": {   "bigwigfiles": {    "id": "f3270a9ea8850424",    "src": "hda",    "uuid": "78a332a6-6d77-4eeb-a954-dc9add6305b7"   },   "regionsFiles_0|regionsFile": {    "id": "e2e3d77e11bcc258",    "src": "hda",    "uuid": "9f6e630d-c312-4a6d-bf66-c3c93c690c68"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outFileName": {    "id": "1440c73320861a78",    "src": "hda",    "uuid": "aa748979-c2d3-469d-9966-ceb45d0c0fa1"   }  },  "params": {   "__input_ext": "\"bed\"",   "advancedOpt": "{\"__current_case__\": 1, \"averageTypeBins\": \"sum\", \"binSize\": \"10\", \"blackListFileName\": null, \"exonID\": \"exon\", \"maxThreshold\": \"\", \"metagene\": \"false\", \"minThreshold\": \"\", \"missingDataAsZero\": \"false\", \"scale\": \"\", \"showAdvancedOpt\": \"yes\", \"skipZeros\": \"false\", \"sortRegions\": \"keep\", \"sortUsing\": \"sum\", \"transcriptID\": \"transcript\", \"transcript_id_designator\": \"transcript_id\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "custom_sample_labels_conditional": "{\"__current_case__\": 0, \"custom_labels_select\": \"No\"}",   "dbkey": "\"?\"",   "mode": "{\"__current_case__\": 1, \"afterRegionStartLength\": \"10\", \"beforeRegionStartLength\": \"10\", \"mode_select\": \"reference-point\", \"nanAfterEnd\": \"false\", \"referencePoint\": \"TSS\"}",   "multibigwig_conditional": "{\"__current_case__\": 0, \"bigwigfiles\": {\"values\": [{\"id\": 82, \"src\": \"hda\"}]}, \"orderMatters\": \"No\"}",   "output": "{\"__current_case__\": 0, \"showOutputSettings\": \"no\"}",   "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"id\": 81, \"src\": \"hda\"}]}}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:56:20.363915",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.1079239845276, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0", "tool_version": "3.3.2.0.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0 (Test #2)" name="1" time="1828.6624627113342">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "advancedOpt|binSize": "10",  "advancedOpt|showAdvancedOpt": "yes",  "mode|afterRegionStartLength": "10",  "mode|beforeRegionStartLength": "10",  "mode|mode_select": "reference-point",  "multibigwig_conditional|bigwigfiles": {   "id": "9ef77a9d1c253212",   "src": "hda"  },  "regionsFiles_0|regionsFile": {   "id": "fc727596c8a3589b",   "src": "hda"  } }, "job": {  "command_line": "ln -f -s \u0027/galaxy/server/database/objects/2/7/b/dataset_27b60643-c822-4266-8b21-9185ba14b9f1.dat\u0027 \u0027computeMatrix2.bw_0.bw\u0027 \u0026\u0026    ln -f -s \u0027/galaxy/server/database/objects/1/4/d/dataset_14d50c6e-2359-4fcd-90cb-73445a7c784b.dat\u0027 \u0027computeMatrix2_bed_0.bed\u0027 \u0026\u0026  computeMatrix  reference-point --regionsFileName \u0027computeMatrix2_bed_0.bed\u0027  --scoreFileName \u0027computeMatrix2.bw_0.bw\u0027  --outFileName \u0027/galaxy/server/database/objects/a/f/f/dataset_aff4d697-afc1-428d-8aad-9cc2135dc987.dat\u0027 --samplesLabel \u0027computeMatrix2.bw\u0027  --numberOfProcessors \"${GALAXY_SLOTS:-4}\"   --referencePoint TSS  --beforeRegionStartLength 10 --afterRegionStartLength 10  --sortRegions \u0027keep\u0027 --sortUsing \u0027mean\u0027 --averageTypeBins \u0027mean\u0027   --binSize 10     --transcriptID transcript --exonID exon --transcript_id_designator transcript_id",  "command_version": null,  "create_time": "2021-04-23T18:26:23.857403",  "exit_code": null,  "external_id": "gxy-hthld",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "65875c48f363ac42",  "inputs": {   "bigwigfiles": {    "id": "9ef77a9d1c253212",    "src": "hda",    "uuid": "27b60643-c822-4266-8b21-9185ba14b9f1"   },   "regionsFiles_0|regionsFile": {    "id": "fc727596c8a3589b",    "src": "hda",    "uuid": "14d50c6e-2359-4fcd-90cb-73445a7c784b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outFileName": {    "id": "65875c48f363ac42",    "src": "hda",    "uuid": "aff4d697-afc1-428d-8aad-9cc2135dc987"   }  },  "params": {   "__input_ext": "\"bed\"",   "advancedOpt": "{\"__current_case__\": 1, \"averageTypeBins\": \"mean\", \"binSize\": \"10\", \"blackListFileName\": null, \"exonID\": \"exon\", \"maxThreshold\": \"\", \"metagene\": \"false\", \"minThreshold\": \"\", \"missingDataAsZero\": \"false\", \"scale\": \"\", \"showAdvancedOpt\": \"yes\", \"skipZeros\": \"false\", \"sortRegions\": \"keep\", \"sortUsing\": \"mean\", \"transcriptID\": \"transcript\", \"transcript_id_designator\": \"transcript_id\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "custom_sample_labels_conditional": "{\"__current_case__\": 0, \"custom_labels_select\": \"No\"}",   "dbkey": "\"?\"",   "mode": "{\"__current_case__\": 1, \"afterRegionStartLength\": \"10\", \"beforeRegionStartLength\": \"10\", \"mode_select\": \"reference-point\", \"nanAfterEnd\": \"false\", \"referencePoint\": \"TSS\"}",   "multibigwig_conditional": "{\"__current_case__\": 0, \"bigwigfiles\": {\"values\": [{\"id\": 87, \"src\": \"hda\"}]}, \"orderMatters\": \"No\"}",   "output": "{\"__current_case__\": 0, \"showOutputSettings\": \"no\"}",   "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"id\": 85, \"src\": \"hda\"}]}}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:56:29.186250",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1828.6624627113342, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0", "tool_version": "3.3.2.0.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0 (Test #3)" name="2" time="1828.6658174991608">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "advancedOpt|showAdvancedOpt": "yes",  "mode|mode_select": "scale-regions",  "multibigwig_conditional|bigwigfiles": {   "id": "9ef77a9d1c253212",   "src": "hda"  },  "regionsFiles_0|regionsFile": {   "id": "fc727596c8a3589b",   "src": "hda"  } }, "job": {  "command_line": "ln -f -s \u0027/galaxy/server/database/objects/2/7/b/dataset_27b60643-c822-4266-8b21-9185ba14b9f1.dat\u0027 \u0027computeMatrix2.bw_0.bw\u0027 \u0026\u0026    ln -f -s \u0027/galaxy/server/database/objects/1/4/d/dataset_14d50c6e-2359-4fcd-90cb-73445a7c784b.dat\u0027 \u0027computeMatrix2_bed_0.bed\u0027 \u0026\u0026  computeMatrix  scale-regions --regionsFileName \u0027computeMatrix2_bed_0.bed\u0027  --scoreFileName \u0027computeMatrix2.bw_0.bw\u0027  --outFileName \u0027/galaxy/server/database/objects/d/0/c/dataset_d0cf9272-5f04-4626-be4f-55fb9dc4d556.dat\u0027 --samplesLabel \u0027computeMatrix2.bw\u0027  --numberOfProcessors \"${GALAXY_SLOTS:-4}\"   --regionBodyLength 500   --sortRegions \u0027keep\u0027 --sortUsing \u0027mean\u0027 --averageTypeBins \u0027mean\u0027   --binSize 50     --transcriptID transcript --exonID exon --transcript_id_designator transcript_id",  "command_version": null,  "create_time": "2021-04-23T18:26:24.527126",  "exit_code": null,  "external_id": "gxy-c6jm4",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "a187b88f1651b8d3",  "inputs": {   "bigwigfiles": {    "id": "9ef77a9d1c253212",    "src": "hda",    "uuid": "27b60643-c822-4266-8b21-9185ba14b9f1"   },   "regionsFiles_0|regionsFile": {    "id": "fc727596c8a3589b",    "src": "hda",    "uuid": "14d50c6e-2359-4fcd-90cb-73445a7c784b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outFileName": {    "id": "a187b88f1651b8d3",    "src": "hda",    "uuid": "d0cf9272-5f04-4626-be4f-55fb9dc4d556"   }  },  "params": {   "__input_ext": "\"bed\"",   "advancedOpt": "{\"__current_case__\": 1, \"averageTypeBins\": \"mean\", \"binSize\": \"50\", \"blackListFileName\": null, \"exonID\": \"exon\", \"maxThreshold\": \"\", \"metagene\": \"false\", \"minThreshold\": \"\", \"missingDataAsZero\": \"false\", \"scale\": \"\", \"showAdvancedOpt\": \"yes\", \"skipZeros\": \"false\", \"sortRegions\": \"keep\", \"sortUsing\": \"mean\", \"transcriptID\": \"transcript\", \"transcript_id_designator\": \"transcript_id\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "custom_sample_labels_conditional": "{\"__current_case__\": 0, \"custom_labels_select\": \"No\"}",   "dbkey": "\"?\"",   "mode": "{\"__current_case__\": 0, \"mode_select\": \"scale-regions\", \"regionBodyLength\": \"500\", \"regionStartLength\": {\"__current_case__\": 0, \"regionStartLength_select\": \"no\"}}",   "multibigwig_conditional": "{\"__current_case__\": 0, \"bigwigfiles\": {\"values\": [{\"id\": 87, \"src\": \"hda\"}]}, \"orderMatters\": \"No\"}",   "output": "{\"__current_case__\": 0, \"showOutputSettings\": \"no\"}",   "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"id\": 85, \"src\": \"hda\"}]}}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:56:29.283808",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1828.6658174991608, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.3.2.0.0", "tool_version": "3.3.2.0.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3 (Test #1)" name="0" time="1817.9826679229736">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "format": "fasta",  "input_file": {   "id": "92eef1727ffbc363",   "src": "hda"  } }, "job": {  "command_line": "porechop -i \u0027/galaxy/server/database/objects/4/6/e/dataset_46e77462-b7e5-420f-8e5e-b2038a2679cf.dat\u0027 --format \u0027fasta\u0027 --barcode_threshold \u002775.0\u0027 --barcode_diff \u00275.0\u0027   --adapter_threshold \u002790.0\u0027 --check_reads \u002710000\u0027 --scoring_scheme \u00273,-6,-5,-2\u0027 --end_size \u0027150\u0027 --min_trim_size \u00274\u0027 --extra_end_trim \u00272\u0027 --end_threshold \u002775.0\u0027   --middle_threshold \u002785.0\u0027 --extra_middle_trim_good_side \u002710\u0027 --extra_middle_trim_bad_side \u0027100\u0027 --min_split_read_size \u00271000\u0027 -o \u0027out.fasta\u0027",  "command_version": null,  "create_time": "2021-04-23T14:23:26.864390",  "exit_code": null,  "external_id": "gxy-sf45t",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "510c297c12c12028",  "inputs": {   "input_file": {    "id": "92eef1727ffbc363",    "src": "hda",    "uuid": "46e77462-b7e5-420f-8e5e-b2038a2679cf"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "510c297c12c12028",    "src": "hda",    "uuid": "7708c175-2be2-4d76-ba68-3c9ac1eb13d2"   }  },  "params": {   "__input_ext": "\"fasta\"",   "adapter_search_settings": "{\"adapter_threshold\": \"90.0\", \"check_reads\": \"10000\", \"scoring_scheme\": \"3,-6,-5,-2\"}",   "barcode_binning_settings": "{\"barcode_diff\": \"5.0\", \"barcode_threshold\": \"75.0\", \"discard_unassigned\": \"false\", \"require_two_barcodes\": \"false\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end_adapter_settings": "{\"end_size\": \"150\", \"end_threshold\": \"75.0\", \"extra_end_trim\": \"2\", \"min_trim_size\": \"4\"}",   "format": "\"fasta\"",   "middle_adapter_settings": "{\"discard_middle\": \"false\", \"extra_middle_trim_bad_side\": \"100\", \"extra_middle_trim_good_side\": \"10\", \"middle_threshold\": \"85.0\", \"min_split_read_size\": \"1000\", \"no_split\": \"false\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:53:31.975241",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1817.9826679229736, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3", "tool_version": "0.2.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3 (Test #2)" name="1" time="1819.0600123405457">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "format": "fastq",  "input_file": {   "id": "986f5427536d52a4",   "src": "hda"  } }, "job": {  "command_line": "porechop -i \u0027/galaxy/server/database/objects/0/d/a/dataset_0daca943-cab4-4260-bfad-9ffe3b4d5802.dat\u0027 --format \u0027fastq\u0027 --barcode_threshold \u002775.0\u0027 --barcode_diff \u00275.0\u0027   --adapter_threshold \u002790.0\u0027 --check_reads \u002710000\u0027 --scoring_scheme \u00273,-6,-5,-2\u0027 --end_size \u0027150\u0027 --min_trim_size \u00274\u0027 --extra_end_trim \u00272\u0027 --end_threshold \u002775.0\u0027   --middle_threshold \u002785.0\u0027 --extra_middle_trim_good_side \u002710\u0027 --extra_middle_trim_bad_side \u0027100\u0027 --min_split_read_size \u00271000\u0027 -o \u0027out.fastq\u0027",  "command_version": null,  "create_time": "2021-04-23T14:53:44.585154",  "exit_code": null,  "external_id": "gxy-wqlk5",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "2023c1a6c7b852eb",  "inputs": {   "input_file": {    "id": "986f5427536d52a4",    "src": "hda",    "uuid": "0daca943-cab4-4260-bfad-9ffe3b4d5802"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "2023c1a6c7b852eb",    "src": "hda",    "uuid": "42cc331c-b3b1-4e14-bd86-a8d3a55f2b6a"   }  },  "params": {   "__input_ext": "\"fasta\"",   "adapter_search_settings": "{\"adapter_threshold\": \"90.0\", \"check_reads\": \"10000\", \"scoring_scheme\": \"3,-6,-5,-2\"}",   "barcode_binning_settings": "{\"barcode_diff\": \"5.0\", \"barcode_threshold\": \"75.0\", \"discard_unassigned\": \"false\", \"require_two_barcodes\": \"false\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end_adapter_settings": "{\"end_size\": \"150\", \"end_threshold\": \"75.0\", \"extra_end_trim\": \"2\", \"min_trim_size\": \"4\"}",   "format": "\"fastq\"",   "middle_adapter_settings": "{\"discard_middle\": \"false\", \"extra_middle_trim_bad_side\": \"100\", \"extra_middle_trim_good_side\": \"10\", \"middle_threshold\": \"85.0\", \"min_split_read_size\": \"1000\", \"no_split\": \"false\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:23:51.378510",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1819.0600123405457, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3", "tool_version": "0.2.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3 (Test #3)" name="2" time="1818.0334844589233">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "format": "fasta.gz",  "input_file": {   "id": "986f5427536d52a4",   "src": "hda"  } }, "job": {  "command_line": "porechop -i \u0027/galaxy/server/database/objects/0/d/a/dataset_0daca943-cab4-4260-bfad-9ffe3b4d5802.dat\u0027 --format \u0027fasta.gz\u0027 --barcode_threshold \u002775.0\u0027 --barcode_diff \u00275.0\u0027   --adapter_threshold \u002790.0\u0027 --check_reads \u002710000\u0027 --scoring_scheme \u00273,-6,-5,-2\u0027 --end_size \u0027150\u0027 --min_trim_size \u00274\u0027 --extra_end_trim \u00272\u0027 --end_threshold \u002775.0\u0027   --middle_threshold \u002785.0\u0027 --extra_middle_trim_good_side \u002710\u0027 --extra_middle_trim_bad_side \u0027100\u0027 --min_split_read_size \u00271000\u0027 -o \u0027out.fasta.gz\u0027",  "command_version": null,  "create_time": "2021-04-23T14:53:47.906680",  "exit_code": null,  "external_id": "gxy-vw54p",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "998e1581b2c0748b",  "inputs": {   "input_file": {    "id": "986f5427536d52a4",    "src": "hda",    "uuid": "0daca943-cab4-4260-bfad-9ffe3b4d5802"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "998e1581b2c0748b",    "src": "hda",    "uuid": "1a0565f4-ead0-4eb1-8087-f1edf0b74ae5"   }  },  "params": {   "__input_ext": "\"fasta\"",   "adapter_search_settings": "{\"adapter_threshold\": \"90.0\", \"check_reads\": \"10000\", \"scoring_scheme\": \"3,-6,-5,-2\"}",   "barcode_binning_settings": "{\"barcode_diff\": \"5.0\", \"barcode_threshold\": \"75.0\", \"discard_unassigned\": \"false\", \"require_two_barcodes\": \"false\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end_adapter_settings": "{\"end_size\": \"150\", \"end_threshold\": \"75.0\", \"extra_end_trim\": \"2\", \"min_trim_size\": \"4\"}",   "format": "\"fasta.gz\"",   "middle_adapter_settings": "{\"discard_middle\": \"false\", \"extra_middle_trim_bad_side\": \"100\", \"extra_middle_trim_good_side\": \"10\", \"middle_threshold\": \"85.0\", \"min_split_read_size\": \"1000\", \"no_split\": \"false\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:23:52.508711",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1818.0334844589233, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3", "tool_version": "0.2.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3 (Test #4)" name="3" time="1818.0312242507935">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "format": "fastq.gz",  "input_file": {   "id": "986f5427536d52a4",   "src": "hda"  } }, "job": {  "command_line": "porechop -i \u0027/galaxy/server/database/objects/0/d/a/dataset_0daca943-cab4-4260-bfad-9ffe3b4d5802.dat\u0027 --format \u0027fastq.gz\u0027 --barcode_threshold \u002775.0\u0027 --barcode_diff \u00275.0\u0027   --adapter_threshold \u002790.0\u0027 --check_reads \u002710000\u0027 --scoring_scheme \u00273,-6,-5,-2\u0027 --end_size \u0027150\u0027 --min_trim_size \u00274\u0027 --extra_end_trim \u00272\u0027 --end_threshold \u002775.0\u0027   --middle_threshold \u002785.0\u0027 --extra_middle_trim_good_side \u002710\u0027 --extra_middle_trim_bad_side \u0027100\u0027 --min_split_read_size \u00271000\u0027 -o \u0027out.fastq.gz\u0027",  "command_version": null,  "create_time": "2021-04-23T14:53:47.950875",  "exit_code": null,  "external_id": "gxy-dw6jl",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "43b0bab14f2fd571",  "inputs": {   "input_file": {    "id": "986f5427536d52a4",    "src": "hda",    "uuid": "0daca943-cab4-4260-bfad-9ffe3b4d5802"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "43b0bab14f2fd571",    "src": "hda",    "uuid": "b751183a-212a-410d-85bb-89fb1291363b"   }  },  "params": {   "__input_ext": "\"fasta\"",   "adapter_search_settings": "{\"adapter_threshold\": \"90.0\", \"check_reads\": \"10000\", \"scoring_scheme\": \"3,-6,-5,-2\"}",   "barcode_binning_settings": "{\"barcode_diff\": \"5.0\", \"barcode_threshold\": \"75.0\", \"discard_unassigned\": \"false\", \"require_two_barcodes\": \"false\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end_adapter_settings": "{\"end_size\": \"150\", \"end_threshold\": \"75.0\", \"extra_end_trim\": \"2\", \"min_trim_size\": \"4\"}",   "format": "\"fastq.gz\"",   "middle_adapter_settings": "{\"discard_middle\": \"false\", \"extra_middle_trim_bad_side\": \"100\", \"extra_middle_trim_good_side\": \"10\", \"middle_threshold\": \"85.0\", \"min_split_read_size\": \"1000\", \"no_split\": \"false\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:23:52.660835",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 1818.0312242507935, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3", "tool_version": "0.2.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3 (Test #5)" name="4" time="1818.0342700481415">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "barcode_binning_settings|barcode_diff": "4",  "barcode_binning_settings|barcode_threshold": "70",  "barcode_binning_settings|discard_unassigned": true,  "barcode_binning_settings|require_two_barcodes": true,  "end_adapter_settings|end_size": "100",  "end_adapter_settings|end_threshold": "80",  "end_adapter_settings|extra_end_trim": "1",  "end_adapter_settings|min_trim_size": "2",  "format": "fasta",  "input_file": {   "id": "986f5427536d52a4",   "src": "hda"  },  "middle_adapter_settings|discard_middle": true,  "middle_adapter_settings|middle_threshold": "90",  "middle_adapter_settings|min_split_read_size": "1500" }, "job": {  "command_line": "porechop -i \u0027/galaxy/server/database/objects/0/d/a/dataset_0daca943-cab4-4260-bfad-9ffe3b4d5802.dat\u0027 --format \u0027fasta\u0027 --barcode_threshold \u002770.0\u0027 --barcode_diff \u00274.0\u0027 --require_two_barcodes --discard_unassigned --adapter_threshold \u002790.0\u0027 --check_reads \u002710000\u0027 --scoring_scheme \u00273,-6,-5,-2\u0027 --end_size \u0027100\u0027 --min_trim_size \u00272\u0027 --extra_end_trim \u00271\u0027 --end_threshold \u002780.0\u0027  --discard_middle --middle_threshold \u002790.0\u0027 --extra_middle_trim_good_side \u002710\u0027 --extra_middle_trim_bad_side \u0027100\u0027 --min_split_read_size \u00271500\u0027 -o \u0027out.fasta\u0027",  "command_version": null,  "create_time": "2021-04-23T14:53:47.945275",  "exit_code": null,  "external_id": "gxy-vnmnw",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "baab1aeeb4afa1af",  "inputs": {   "input_file": {    "id": "986f5427536d52a4",    "src": "hda",    "uuid": "0daca943-cab4-4260-bfad-9ffe3b4d5802"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "baab1aeeb4afa1af",    "src": "hda",    "uuid": "80ba0f2c-c477-4767-b208-251b25e999d9"   }  },  "params": {   "__input_ext": "\"fasta\"",   "adapter_search_settings": "{\"adapter_threshold\": \"90.0\", \"check_reads\": \"10000\", \"scoring_scheme\": \"3,-6,-5,-2\"}",   "barcode_binning_settings": "{\"barcode_diff\": \"4.0\", \"barcode_threshold\": \"70.0\", \"discard_unassigned\": \"true\", \"require_two_barcodes\": \"true\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end_adapter_settings": "{\"end_size\": \"100\", \"end_threshold\": \"80.0\", \"extra_end_trim\": \"1\", \"min_trim_size\": \"2\"}",   "format": "\"fasta\"",   "middle_adapter_settings": "{\"discard_middle\": \"true\", \"extra_middle_trim_bad_side\": \"100\", \"extra_middle_trim_good_side\": \"10\", \"middle_threshold\": \"90.0\", \"min_split_read_size\": \"1500\", \"no_split\": \"false\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:23:52.589712",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 4, "time_seconds": 1818.0342700481415, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3", "tool_version": "0.2.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_extract/poretools_extract/0.6.1a1.0 (Test #1)" name="0" time="1821.9686968326569">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "319fb80157464882",   "src": "hda"  },  "output_format": "fastq" }, "job": {  "command_line": "poretools fastq --type all --min-length 0 --max-length 1000000000  \u0027/galaxy/server/database/objects/2/a/5/dataset_2a523cd1-b27f-4815-af8d-c594fd24a966.dat\u0027 \u003e \u0027/galaxy/server/database/objects/6/b/3/dataset_6b302129-221e-4d46-9d2d-69364996d07a.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:55:54.480956",  "exit_code": null,  "external_id": "gxy-zk7ld",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "4850cd656259b8c4",  "inputs": {   "input": {    "id": "319fb80157464882",    "src": "hda",    "uuid": "2a523cd1-b27f-4815-af8d-c594fd24a966"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "4850cd656259b8c4",    "src": "hda",    "uuid": "6b302129-221e-4d46-9d2d-69364996d07a"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end": "\"\"",   "group": "\"\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "output_format": "\"fastq\"",   "quality": "\"\"",   "start": "\"\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_extract/poretools_extract/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:26:00.428766",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.9686968326569, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_extract/poretools_extract/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_extract/poretools_extract/0.6.1a1.0 (Test #2)" name="1" time="1821.4794433116913">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "1a184c019160b889",   "src": "hda"  },  "output_format": "fasta" }, "job": {  "command_line": "poretools fasta --type all --min-length 0 --max-length 1000000000  \u0027/galaxy/server/database/objects/e/5/b/dataset_e5b71535-56db-40d7-8c32-2d6a4d9d893f.dat\u0027 \u003e \u0027/galaxy/server/database/objects/0/a/0/dataset_0a0a1ecf-0452-4fc2-b953-d5356758427e.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T18:26:15.570301",  "exit_code": null,  "external_id": "gxy-2k547",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "07dab965157b2c53",  "inputs": {   "input": {    "id": "1a184c019160b889",    "src": "hda",    "uuid": "e5b71535-56db-40d7-8c32-2d6a4d9d893f"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "07dab965157b2c53",    "src": "hda",    "uuid": "0a0a1ecf-0452-4fc2-b953-d5356758427e"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "end": "\"\"",   "group": "\"\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "output_format": "\"fasta\"",   "quality": "\"\"",   "start": "\"\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_extract/poretools_extract/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:56:20.555357",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1821.4794433116913, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_extract/poretools_extract/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1 (Test #1)" name="0" time="1821.0859370231628">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "png",  "input": {   "id": "d756a4dfb2d4a622",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools hist \u0027/galaxy/server/database/objects/f/1/f/dataset_f1fdab46-f6da-4ef0-81a4-fb041ec7265a.dat\u0027 --saveas histogram.png --min-length 0 --max-length 1000000000 --num-bins 50  \u0026\u0026 mv histogram.png \u0027/galaxy/server/database/objects/3/c/6/dataset_3c6c36fa-0fee-4848-9adb-0da857b1403d.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:22:47.228415",  "exit_code": null,  "external_id": "gxy-7gngg",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "c58a9aa411ba78c3",  "inputs": {   "input": {    "id": "d756a4dfb2d4a622",    "src": "hda",    "uuid": "f1fdab46-f6da-4ef0-81a4-fb041ec7265a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "c58a9aa411ba78c3",    "src": "hda",    "uuid": "3c6c36fa-0fee-4848-9adb-0da857b1403d"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"png\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "num_bins": "\"50\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T13:52:51.922029",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.0859370231628, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1 (Test #2)" name="1" time="1821.390928030014">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "pdf",  "input": {   "id": "d756a4dfb2d4a622",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools hist \u0027/galaxy/server/database/objects/f/1/f/dataset_f1fdab46-f6da-4ef0-81a4-fb041ec7265a.dat\u0027 --saveas histogram.pdf --min-length 0 --max-length 1000000000 --num-bins 50  \u0026\u0026 mv histogram.pdf \u0027/galaxy/server/database/objects/0/7/8/dataset_0784ebfe-029a-4157-b2f4-48643683e782.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:22:47.380105",  "exit_code": null,  "external_id": "gxy-s26lx",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "57a5a14d6fa0e191",  "inputs": {   "input": {    "id": "d756a4dfb2d4a622",    "src": "hda",    "uuid": "f1fdab46-f6da-4ef0-81a4-fb041ec7265a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "57a5a14d6fa0e191",    "src": "hda",    "uuid": "0784ebfe-029a-4157-b2f4-48643683e782"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"pdf\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "num_bins": "\"50\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T13:52:52.437425",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1821.390928030014, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1 (Test #3)" name="2" time="1821.0713422298431">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "svg",  "input": {   "id": "d756a4dfb2d4a622",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools hist \u0027/galaxy/server/database/objects/f/1/f/dataset_f1fdab46-f6da-4ef0-81a4-fb041ec7265a.dat\u0027 --saveas histogram.svg --min-length 0 --max-length 1000000000 --num-bins 50  \u0026\u0026 mv histogram.svg \u0027/galaxy/server/database/objects/2/9/8/dataset_29808cd3-fc5b-4058-a13d-3e58d61dd2fb.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:22:47.246200",  "exit_code": null,  "external_id": "gxy-7thgp",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "0b028a2976f2110b",  "inputs": {   "input": {    "id": "d756a4dfb2d4a622",    "src": "hda",    "uuid": "f1fdab46-f6da-4ef0-81a4-fb041ec7265a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "1be736d91751b2a8",    "src": "hda",    "uuid": "29808cd3-fc5b-4058-a13d-3e58d61dd2fb"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"svg\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "num_bins": "\"50\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T13:52:52.157023",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1821.0713422298431, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_hist/poretools_hist/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0 (Test #1)" name="0" time="1821.2144396305084">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "319fb80157464882",   "src": "hda"  } }, "job": {  "command_line": "poretools nucdist \u0027/galaxy/server/database/objects/2/a/5/dataset_2a523cd1-b27f-4815-af8d-c594fd24a966.dat\u0027 \u003e \u0027/galaxy/server/database/objects/b/4/d/dataset_b4d5f01b-f98c-43d3-b1d1-8bd2562ab56d.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:55:54.227955",  "exit_code": null,  "external_id": "gxy-k4gzq",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "5694f65d252e814e",  "inputs": {   "input": {    "id": "319fb80157464882",    "src": "hda",    "uuid": "2a523cd1-b27f-4815-af8d-c594fd24a966"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "5694f65d252e814e",    "src": "hda",    "uuid": "b4d5f01b-f98c-43d3-b1d1-8bd2562ab56d"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:25:59.160847",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.2144396305084, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0 (Test #2)" name="1" time="1820.9481508731842">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "319fb80157464882",   "src": "hda"  } }, "job": {  "command_line": "poretools nucdist \u0027/galaxy/server/database/objects/2/a/5/dataset_2a523cd1-b27f-4815-af8d-c594fd24a966.dat\u0027 \u003e \u0027/galaxy/server/database/objects/7/8/3/dataset_7833275a-b89d-49f9-8ba7-770543f1d30a.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:55:54.205385",  "exit_code": null,  "external_id": "gxy-vxq4c",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "3e4ce5a6e5743494",  "inputs": {   "input": {    "id": "319fb80157464882",    "src": "hda",    "uuid": "2a523cd1-b27f-4815-af8d-c594fd24a966"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "3e4ce5a6e5743494",    "src": "hda",    "uuid": "7833275a-b89d-49f9-8ba7-770543f1d30a"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:25:58.999449",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1820.9481508731842, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1.1 (Test #1)" name="0" time="1821.3210406303406">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "png",  "input": {   "id": "d756a4dfb2d4a622",   "src": "hda"  },  "plot_type": "read_count" }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools occupancy \u0027/galaxy/server/database/objects/f/1/f/dataset_f1fdab46-f6da-4ef0-81a4-fb041ec7265a.dat\u0027 --saveas occupancy.png --plot-type read_count \u0026\u0026 mv occupancy.png \u0027/galaxy/server/database/objects/3/4/f/dataset_34f4ea2f-63ba-4808-8ed9-6d6764529977.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:22:47.231497",  "exit_code": null,  "external_id": "gxy-p65ss",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "1be736d91751b2a8",  "inputs": {   "input": {    "id": "d756a4dfb2d4a622",    "src": "hda",    "uuid": "f1fdab46-f6da-4ef0-81a4-fb041ec7265a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "0b028a2976f2110b",    "src": "hda",    "uuid": "34f4ea2f-63ba-4808-8ed9-6d6764529977"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"png\"",   "plot_type": "\"read_count\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T13:52:52.326492",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.3210406303406, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1.1 (Test #2)" name="1" time="1821.5994369983673">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "pdf",  "input": {   "id": "6fef563534c0dbb0",   "src": "hda"  },  "plot_type": "total_bp" }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools occupancy \u0027/galaxy/server/database/objects/e/5/b/dataset_e5ba9003-b4c1-4192-bea6-a6e7baa910d8.dat\u0027 --saveas occupancy.pdf --plot-type total_bp \u0026\u0026 mv occupancy.pdf \u0027/galaxy/server/database/objects/d/4/f/dataset_d4f255d4-af0a-4436-8fc5-b6073eda5e48.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:53:09.199106",  "exit_code": null,  "external_id": "gxy-nvrq8",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "72980b1d83c0f1f2",  "inputs": {   "input": {    "id": "6fef563534c0dbb0",    "src": "hda",    "uuid": "e5ba9003-b4c1-4192-bea6-a6e7baa910d8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "72980b1d83c0f1f2",    "src": "hda",    "uuid": "d4f255d4-af0a-4436-8fc5-b6073eda5e48"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"pdf\"",   "plot_type": "\"total_bp\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:23:13.860491",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1821.5994369983673, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualdist/poretools_qualdist/0.6.1a1.0 (Test #1)" name="0" time="1821.1931393146515">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "1a299651d96b39cf",   "src": "hda"  } }, "job": {  "command_line": "poretools qualdist \u0027/galaxy/server/database/objects/a/7/a/dataset_a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96.dat\u0027 \u003e \u0027/galaxy/server/database/objects/9/e/e/dataset_9ee2cf0b-2b6e-4b1c-96a6-38cf95be0bac.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:25:33.589030",  "exit_code": null,  "external_id": "gxy-5mgg5",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "ddcc0830149bfef8",  "inputs": {   "input": {    "id": "1a299651d96b39cf",    "src": "hda",    "uuid": "a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "ddcc0830149bfef8",    "src": "hda",    "uuid": "9ee2cf0b-2b6e-4b1c-96a6-38cf95be0bac"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualdist/poretools_qualdist/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:55:38.108971",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.1931393146515, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualdist/poretools_qualdist/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualdist/poretools_qualdist/0.6.1a1.0 (Test #2)" name="1" time="1822.6828308105469">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "319fb80157464882",   "src": "hda"  } }, "job": {  "command_line": "poretools qualdist \u0027/galaxy/server/database/objects/2/a/5/dataset_2a523cd1-b27f-4815-af8d-c594fd24a966.dat\u0027 \u003e \u0027/galaxy/server/database/objects/e/a/0/dataset_ea0e48bc-c31c-40d0-bee2-a8c12dddfd3e.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:55:54.226904",  "exit_code": null,  "external_id": "gxy-g56sf",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "6a18480e5db8b50a",  "inputs": {   "input": {    "id": "319fb80157464882",    "src": "hda",    "uuid": "2a523cd1-b27f-4815-af8d-c594fd24a966"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "6a18480e5db8b50a",    "src": "hda",    "uuid": "ea0e48bc-c31c-40d0-bee2-a8c12dddfd3e"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualdist/poretools_qualdist/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T18:26:00.310560",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1822.6828308105469, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualdist/poretools_qualdist/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1 (Test #1)" name="0" time="1821.6513957977295">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "png",  "input": {   "id": "6fef563534c0dbb0",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools qualpos \u0027/galaxy/server/database/objects/e/5/b/dataset_e5ba9003-b4c1-4192-bea6-a6e7baa910d8.dat\u0027 --saveas qualpos.png --min-length 0 --max-length 1000000000 --bin-width 1000  \u0026\u0026 mv qualpos.png \u0027/galaxy/server/database/objects/b/4/a/dataset_b4a2c9a3-6071-4bbd-9d23-a0889343c74d.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:53:09.236546",  "exit_code": null,  "external_id": "gxy-zx924",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "d8cbfb8cd1184488",  "inputs": {   "input": {    "id": "6fef563534c0dbb0",    "src": "hda",    "uuid": "e5ba9003-b4c1-4192-bea6-a6e7baa910d8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "d7666defe734c5e6",    "src": "hda",    "uuid": "b4a2c9a3-6071-4bbd-9d23-a0889343c74d"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "bin_width": "\"1000\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"png\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:23:13.949590",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.6513957977295, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1 (Test #2)" name="1" time="1821.3424787521362">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "pdf",  "input": {   "id": "6fef563534c0dbb0",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools qualpos \u0027/galaxy/server/database/objects/e/5/b/dataset_e5ba9003-b4c1-4192-bea6-a6e7baa910d8.dat\u0027 --saveas qualpos.pdf --min-length 0 --max-length 1000000000 --bin-width 1000  \u0026\u0026 mv qualpos.pdf \u0027/galaxy/server/database/objects/7/2/a/dataset_72a63a4e-a43b-4594-8bd8-20b7bb03e744.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T13:53:09.240561",  "exit_code": null,  "external_id": "gxy-sxvxd",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "d7666defe734c5e6",  "inputs": {   "input": {    "id": "6fef563534c0dbb0",    "src": "hda",    "uuid": "e5ba9003-b4c1-4192-bea6-a6e7baa910d8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "d8cbfb8cd1184488",    "src": "hda",    "uuid": "72a63a4e-a43b-4594-8bd8-20b7bb03e744"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "bin_width": "\"1000\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"pdf\"",   "max_length": "\"1000000000\"",   "min_length": "\"0\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:23:13.773428",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1821.3424787521362, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_squiggle/poretools_squiggle/0.6.1a1.1 (Test #1)" name="0" time="1821.5917978286743">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "png",  "input": {   "id": "6fef563534c0dbb0",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools squiggle \u0027/galaxy/server/database/objects/e/5/b/dataset_e5ba9003-b4c1-4192-bea6-a6e7baa910d8.dat\u0027 --saveas png --num-facets 6",  "command_version": null,  "create_time": "2021-04-23T13:53:09.226965",  "exit_code": null,  "external_id": "gxy-dmsbf",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "fbbcfc4b7c0b13b9",  "inputs": {   "input": {    "id": "6fef563534c0dbb0",    "src": "hda",    "uuid": "e5ba9003-b4c1-4192-bea6-a6e7baa910d8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "fbbcfc4b7c0b13b9",    "src": "hda",    "uuid": "32a21843-fbc7-4784-b804-d880427b93b7"   }  },  "params": {   "__input_ext": "\"input\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"png\"",   "num_facets": "\"6\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_squiggle/poretools_squiggle/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:23:14.025548",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.5917978286743, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_squiggle/poretools_squiggle/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_squiggle/poretools_squiggle/0.6.1a1.1 (Test #2)" name="1" time="1820.8373339176178">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "pdf",  "input": {   "id": "9a7ab822cce4fdcf",   "src": "hda"  } }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools squiggle \u0027/galaxy/server/database/objects/3/8/8/dataset_388ccb7f-93dc-4f3a-98c1-f29f7d8eb7b2.dat\u0027 --saveas pdf --num-facets 6",  "command_version": null,  "create_time": "2021-04-23T14:23:29.895705",  "exit_code": null,  "external_id": "gxy-qbsqn",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "50c333abf1f5a5c9",  "inputs": {   "input": {    "id": "9a7ab822cce4fdcf",    "src": "hda",    "uuid": "388ccb7f-93dc-4f3a-98c1-f29f7d8eb7b2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "dcfbaf3a507fb40b",    "src": "hda",    "uuid": "6d91a3a9-c7c4-4c90-899c-aadcecf9634c"   }  },  "params": {   "__input_ext": "\"input\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"pdf\"",   "num_facets": "\"6\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_squiggle/poretools_squiggle/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:53:34.424368",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1820.8373339176178, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_squiggle/poretools_squiggle/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0 (Test #1)" name="0" time="1821.8908860683441">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "detailed": true,  "input": {   "id": "88d34c44167a6d03",   "src": "hda"  },  "type": "fwd" }, "job": {  "command_line": "poretools stats --type fwd --full-tsv \u0027/galaxy/server/database/objects/2/5/2/dataset_252f0266-0493-493b-b40c-8ae3b200d7d2.dat\u0027 \u003e \u0027/galaxy/server/database/objects/e/b/e/dataset_ebee6f79-697b-4663-a543-d79407214ebe.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:55:11.241513",  "exit_code": null,  "external_id": "gxy-hkddh",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "019357f84d62ef40",  "inputs": {   "input": {    "id": "88d34c44167a6d03",    "src": "hda",    "uuid": "252f0266-0493-493b-b40c-8ae3b200d7d2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "02c7968fe8a31f1a",    "src": "hda",    "uuid": "ebee6f79-697b-4663-a543-d79407214ebe"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "detailed": "\"true\"",   "type": "\"fwd\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:25:16.799502",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.8908860683441, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0 (Test #2)" name="1" time="1820.48690867424">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "detailed": false,  "input": {   "id": "88d34c44167a6d03",   "src": "hda"  },  "type": "rev" }, "job": {  "command_line": "poretools stats --type rev  \u0027/galaxy/server/database/objects/2/5/2/dataset_252f0266-0493-493b-b40c-8ae3b200d7d2.dat\u0027 \u003e \u0027/galaxy/server/database/objects/2/7/b/dataset_27b91a49-0a58-4310-90ae-0352e377896f.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:55:11.251861",  "exit_code": null,  "external_id": "gxy-h226n",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "02c7968fe8a31f1a",  "inputs": {   "input": {    "id": "88d34c44167a6d03",    "src": "hda",    "uuid": "252f0266-0493-493b-b40c-8ae3b200d7d2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "019357f84d62ef40",    "src": "hda",    "uuid": "27b91a49-0a58-4310-90ae-0352e377896f"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "detailed": "\"false\"",   "type": "\"rev\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:25:16.675121",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1820.48690867424, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0 (Test #3)" name="2" time="1822.149567604065">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "detailed": true,  "input": {   "id": "1a299651d96b39cf",   "src": "hda"  },  "type": "2D" }, "job": {  "command_line": "poretools stats --type 2D --full-tsv \u0027/galaxy/server/database/objects/a/7/a/dataset_a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96.dat\u0027 \u003e \u0027/galaxy/server/database/objects/8/2/b/dataset_82ba21fc-e7e6-492a-a4e1-5f607213e6c3.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:25:33.075028",  "exit_code": null,  "external_id": "gxy-z945v",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "4c03cf6c5585b7fd",  "inputs": {   "input": {    "id": "1a299651d96b39cf",    "src": "hda",    "uuid": "a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "c48ae1ac0dd1cb2d",    "src": "hda",    "uuid": "82ba21fc-e7e6-492a-a4e1-5f607213e6c3"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "detailed": "\"true\"",   "type": "\"2D\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:55:37.898625",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1822.149567604065, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0 (Test #4)" name="3" time="1822.0785813331604">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "detailed": false,  "input": {   "id": "1a299651d96b39cf",   "src": "hda"  },  "type": "best" }, "job": {  "command_line": "poretools stats --type best  \u0027/galaxy/server/database/objects/a/7/a/dataset_a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96.dat\u0027 \u003e \u0027/galaxy/server/database/objects/8/c/3/dataset_8c3cea5c-50e3-4104-8f99-d1df58ec58c1.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:25:33.115510",  "exit_code": null,  "external_id": "gxy-tlkht",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "c48ae1ac0dd1cb2d",  "inputs": {   "input": {    "id": "1a299651d96b39cf",    "src": "hda",    "uuid": "a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "4c03cf6c5585b7fd",    "src": "hda",    "uuid": "8c3cea5c-50e3-4104-8f99-d1df58ec58c1"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "detailed": "\"false\"",   "type": "\"best\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:55:37.904189",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 1822.0785813331604, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0 (Test #5)" name="4" time="1821.5750975608826">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "detailed": true,  "input": {   "id": "1a299651d96b39cf",   "src": "hda"  },  "type": "all" }, "job": {  "command_line": "poretools stats --type all --full-tsv \u0027/galaxy/server/database/objects/a/7/a/dataset_a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96.dat\u0027 \u003e \u0027/galaxy/server/database/objects/5/b/4/dataset_5b442591-21e2-4aa2-b97d-d98c12042a1e.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T17:25:33.257972",  "exit_code": null,  "external_id": "gxy-qqll7",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "19b1c81390bfee41",  "inputs": {   "input": {    "id": "1a299651d96b39cf",    "src": "hda",    "uuid": "a7a04cf6-f78d-4ec8-9cb5-f36f70c3ee96"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "19b1c81390bfee41",    "src": "hda",    "uuid": "5b442591-21e2-4aa2-b97d-d98c12042a1e"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "detailed": "\"true\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:55:38.406370",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 4, "time_seconds": 1821.5750975608826, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_stats/poretools_stats/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0 (Test #1)" name="0" time="1820.696503162384">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "e3a41e852e2f25ec",   "src": "hda"  } }, "job": {  "command_line": "poretools tabular --type all \u0027/galaxy/server/database/objects/6/8/2/dataset_682e40d5-91e1-4fad-8495-2c1f8eecdfc0.dat\u0027 \u003e \u0027/galaxy/server/database/objects/c/3/6/dataset_c363052d-61ae-4972-b21c-04cda15ae227.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:24:49.297143",  "exit_code": null,  "external_id": "gxy-gfpbk",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "89e47c408ffc0ad1",  "inputs": {   "input": {    "id": "e3a41e852e2f25ec",    "src": "hda",    "uuid": "682e40d5-91e1-4fad-8495-2c1f8eecdfc0"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "89e47c408ffc0ad1",    "src": "hda",    "uuid": "c363052d-61ae-4972-b21c-04cda15ae227"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:54:54.612391",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1820.696503162384, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0 (Test #2)" name="1" time="1821.0898151397705">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "e3a41e852e2f25ec",   "src": "hda"  } }, "job": {  "command_line": "poretools tabular --type all \u0027/galaxy/server/database/objects/6/8/2/dataset_682e40d5-91e1-4fad-8495-2c1f8eecdfc0.dat\u0027 \u003e \u0027/galaxy/server/database/objects/3/1/e/dataset_31eed931-086b-4b2d-aeb8-0e8af20da0c0.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:24:49.289959",  "exit_code": null,  "external_id": "gxy-dd6sj",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "4bba59d4ac0720e4",  "inputs": {   "input": {    "id": "e3a41e852e2f25ec",    "src": "hda",    "uuid": "682e40d5-91e1-4fad-8495-2c1f8eecdfc0"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "4bba59d4ac0720e4",    "src": "hda",    "uuid": "31eed931-086b-4b2d-aeb8-0e8af20da0c0"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:54:54.734842",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1821.0898151397705, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0 (Test #3)" name="2" time="1821.1677470207214">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "e3a41e852e2f25ec",   "src": "hda"  } }, "job": {  "command_line": "poretools tabular --type all \u0027/galaxy/server/database/objects/6/8/2/dataset_682e40d5-91e1-4fad-8495-2c1f8eecdfc0.dat\u0027 \u003e \u0027/galaxy/server/database/objects/4/f/3/dataset_4f3785df-573f-4d45-b999-fde6419d1799.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:24:49.977444",  "exit_code": null,  "external_id": "gxy-kp8l4",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "c63053dd2d85afed",  "inputs": {   "input": {    "id": "e3a41e852e2f25ec",    "src": "hda",    "uuid": "682e40d5-91e1-4fad-8495-2c1f8eecdfc0"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "c63053dd2d85afed",    "src": "hda",    "uuid": "4f3785df-573f-4d45-b999-fde6419d1799"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:54:56.135984",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1821.1677470207214, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0 (Test #4)" name="3" time="1821.07333278656">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "88d34c44167a6d03",   "src": "hda"  } }, "job": {  "command_line": "poretools tabular --type all \u0027/galaxy/server/database/objects/2/5/2/dataset_252f0266-0493-493b-b40c-8ae3b200d7d2.dat\u0027 \u003e \u0027/galaxy/server/database/objects/d/a/5/dataset_da5000e7-8164-4bc1-90c3-f0f32fd16aa0.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:55:10.098741",  "exit_code": null,  "external_id": "gxy-tsqtr",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "41af3164c65669f1",  "inputs": {   "input": {    "id": "88d34c44167a6d03",    "src": "hda",    "uuid": "252f0266-0493-493b-b40c-8ae3b200d7d2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "41af3164c65669f1",    "src": "hda",    "uuid": "da5000e7-8164-4bc1-90c3-f0f32fd16aa0"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:25:15.516377",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 1821.07333278656, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0 (Test #5)" name="4" time="1820.6815235614777">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "88d34c44167a6d03",   "src": "hda"  } }, "job": {  "command_line": "poretools tabular --type all \u0027/galaxy/server/database/objects/2/5/2/dataset_252f0266-0493-493b-b40c-8ae3b200d7d2.dat\u0027 \u003e \u0027/galaxy/server/database/objects/7/5/d/dataset_75d8d8f3-a6aa-4a09-9fb0-01a3a86658a8.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:55:11.222473",  "exit_code": null,  "external_id": "gxy-dtzsn",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "30f8101882f40fc3",  "inputs": {   "input": {    "id": "88d34c44167a6d03",    "src": "hda",    "uuid": "252f0266-0493-493b-b40c-8ae3b200d7d2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "30f8101882f40fc3",    "src": "hda",    "uuid": "75d8d8f3-a6aa-4a09-9fb0-01a3a86658a8"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T17:25:15.423732",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 4, "time_seconds": 1820.6815235614777, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_tabular/poretools_tabular/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0 (Test #1)" name="0" time="1821.22602891922">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "d5d27e49ca70842c",   "src": "hda"  } }, "job": {  "command_line": "poretools times --utc \u0027/galaxy/server/database/objects/c/b/b/dataset_cbbc7885-5368-408b-8878-54a52056204d.dat\u0027 \u003e \u0027/galaxy/server/database/objects/9/f/d/dataset_9fd1b9cf-3004-425b-a7fd-89ae6fceefd3.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:54:29.141521",  "exit_code": null,  "external_id": "gxy-brglp",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "36be03414ae78c4a",  "inputs": {   "input": {    "id": "d5d27e49ca70842c",    "src": "hda",    "uuid": "cbbc7885-5368-408b-8878-54a52056204d"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "36be03414ae78c4a",    "src": "hda",    "uuid": "9fd1b9cf-3004-425b-a7fd-89ae6fceefd3"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:24:33.783251",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1821.22602891922, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0 (Test #2)" name="1" time="1820.9168202877045">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "d5d27e49ca70842c",   "src": "hda"  } }, "job": {  "command_line": "poretools times --utc \u0027/galaxy/server/database/objects/c/b/b/dataset_cbbc7885-5368-408b-8878-54a52056204d.dat\u0027 \u003e \u0027/galaxy/server/database/objects/a/6/7/dataset_a6721315-8999-4161-b115-66f346646e9c.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:54:29.000927",  "exit_code": null,  "external_id": "gxy-2ptm8",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "03c7558c439cf529",  "inputs": {   "input": {    "id": "d5d27e49ca70842c",    "src": "hda",    "uuid": "cbbc7885-5368-408b-8878-54a52056204d"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "03c7558c439cf529",    "src": "hda",    "uuid": "a6721315-8999-4161-b115-66f346646e9c"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:24:33.606859",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1820.9168202877045, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0 (Test #3)" name="2" time="1821.2267055511475">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "d5d27e49ca70842c",   "src": "hda"  } }, "job": {  "command_line": "poretools times --utc \u0027/galaxy/server/database/objects/c/b/b/dataset_cbbc7885-5368-408b-8878-54a52056204d.dat\u0027 \u003e \u0027/galaxy/server/database/objects/7/7/a/dataset_77ab7e36-926a-4a3a-9591-7cce77b9634e.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:54:29.023288",  "exit_code": null,  "external_id": "gxy-g4fxv",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "0e589bbe8cf4652d",  "inputs": {   "input": {    "id": "d5d27e49ca70842c",    "src": "hda",    "uuid": "cbbc7885-5368-408b-8878-54a52056204d"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "0e589bbe8cf4652d",    "src": "hda",    "uuid": "77ab7e36-926a-4a3a-9591-7cce77b9634e"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:24:33.898212",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1821.2267055511475, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0 (Test #4)" name="3" time="1821.5079407691956">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "d5d27e49ca70842c",   "src": "hda"  } }, "job": {  "command_line": "poretools times --utc \u0027/galaxy/server/database/objects/c/b/b/dataset_cbbc7885-5368-408b-8878-54a52056204d.dat\u0027 \u003e \u0027/galaxy/server/database/objects/c/2/c/dataset_c2c2f625-57a6-476f-90d7-5885f3036577.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:54:29.692541",  "exit_code": null,  "external_id": "gxy-5vncd",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "3134ae4fd2a016e1",  "inputs": {   "input": {    "id": "d5d27e49ca70842c",    "src": "hda",    "uuid": "cbbc7885-5368-408b-8878-54a52056204d"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "3134ae4fd2a016e1",    "src": "hda",    "uuid": "c2c2f625-57a6-476f-90d7-5885f3036577"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:24:35.042463",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 1821.5079407691956, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0 (Test #5)" name="4" time="1821.4037373065948">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "e3a41e852e2f25ec",   "src": "hda"  } }, "job": {  "command_line": "poretools times --utc \u0027/galaxy/server/database/objects/6/8/2/dataset_682e40d5-91e1-4fad-8495-2c1f8eecdfc0.dat\u0027 \u003e \u0027/galaxy/server/database/objects/0/8/8/dataset_08844f0c-401c-47ec-8bcb-074435050e41.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T16:24:49.265061",  "exit_code": null,  "external_id": "gxy-mzmxg",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "e3291d5c455eec8b",  "inputs": {   "input": {    "id": "e3a41e852e2f25ec",    "src": "hda",    "uuid": "682e40d5-91e1-4fad-8495-2c1f8eecdfc0"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "e3291d5c455eec8b",    "src": "hda",    "uuid": "08844f0c-401c-47ec-8bcb-074435050e41"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T16:54:55.046509",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 4, "time_seconds": 1821.4037373065948, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_times/poretools_times/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0 (Test #1)" name="0" time="1822.2978880405426">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "da938c08efe8f8b2",   "src": "hda"  } }, "job": {  "command_line": "poretools winner --type all \u0027/galaxy/server/database/objects/6/2/0/dataset_62052667-3159-40c5-b805-c022c084f95b.dat\u0027 \u003e \u0027/galaxy/server/database/objects/9/8/3/dataset_983b6705-2728-4690-aa96-4dceaead79d3.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:24:05.693459",  "exit_code": null,  "external_id": "gxy-zwzhc",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "c38b5abc6d98d2cb",  "inputs": {   "input": {    "id": "da938c08efe8f8b2",    "src": "hda",    "uuid": "62052667-3159-40c5-b805-c022c084f95b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "c38b5abc6d98d2cb",    "src": "hda",    "uuid": "983b6705-2728-4690-aa96-4dceaead79d3"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:54:13.638683",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1822.2978880405426, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0 (Test #2)" name="1" time="1819.7093968391418">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "da938c08efe8f8b2",   "src": "hda"  } }, "job": {  "command_line": "poretools winner --type all \u0027/galaxy/server/database/objects/6/2/0/dataset_62052667-3159-40c5-b805-c022c084f95b.dat\u0027 \u003e \u0027/galaxy/server/database/objects/9/1/8/dataset_9188a15d-c586-4ca6-b86b-e8536e5c4b65.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:24:07.903789",  "exit_code": null,  "external_id": "gxy-tg4xv",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "e406ca574b0d2793",  "inputs": {   "input": {    "id": "da938c08efe8f8b2",    "src": "hda",    "uuid": "62052667-3159-40c5-b805-c022c084f95b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "e406ca574b0d2793",    "src": "hda",    "uuid": "9188a15d-c586-4ca6-b86b-e8536e5c4b65"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:54:12.211491",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1819.7093968391418, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0 (Test #3)" name="2" time="1819.7160267829895">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "da938c08efe8f8b2",   "src": "hda"  } }, "job": {  "command_line": "poretools winner --type all \u0027/galaxy/server/database/objects/6/2/0/dataset_62052667-3159-40c5-b805-c022c084f95b.dat\u0027 \u003e \u0027/galaxy/server/database/objects/b/1/9/dataset_b198cd64-1f2f-49c1-929d-57395a13ec1d.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:24:07.921999",  "exit_code": null,  "external_id": "gxy-9mkdc",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "04db3a12aeb82b68",  "inputs": {   "input": {    "id": "da938c08efe8f8b2",    "src": "hda",    "uuid": "62052667-3159-40c5-b805-c022c084f95b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "04db3a12aeb82b68",    "src": "hda",    "uuid": "b198cd64-1f2f-49c1-929d-57395a13ec1d"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:54:12.412014",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 1819.7160267829895, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0 (Test #4)" name="3" time="1819.7044577598572">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "da938c08efe8f8b2",   "src": "hda"  } }, "job": {  "command_line": "poretools winner --type all \u0027/galaxy/server/database/objects/6/2/0/dataset_62052667-3159-40c5-b805-c022c084f95b.dat\u0027 \u003e \u0027/galaxy/server/database/objects/6/4/c/dataset_64cf07c6-4c4c-407e-a9b9-cd7e578993f5.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T15:24:07.920762",  "exit_code": null,  "external_id": "gxy-pqwb9",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "2002551e96d3c97c",  "inputs": {   "input": {    "id": "da938c08efe8f8b2",    "src": "hda",    "uuid": "62052667-3159-40c5-b805-c022c084f95b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "2002551e96d3c97c",    "src": "hda",    "uuid": "64cf07c6-4c4c-407e-a9b9-cd7e578993f5"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "type": "\"all\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T15:54:12.546016",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 1819.7044577598572, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_winner/poretools_winner/0.6.1a1.0", "tool_version": "0.6.1a1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_yield_plot/poretools_yield_plot/0.6.1a1.1 (Test #1)" name="0" time="1820.8075461387634">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "png",  "input": {   "id": "9a7ab822cce4fdcf",   "src": "hda"  },  "plot_type": "reads" }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools yield_plot \u0027/galaxy/server/database/objects/3/8/8/dataset_388ccb7f-93dc-4f3a-98c1-f29f7d8eb7b2.dat\u0027 --saveas plot.png --plot-type reads  --skip 1 \u0026\u0026 mv plot.png \u0027/galaxy/server/database/objects/f/b/e/dataset_fbeeaaf8-dde3-431d-bba0-8f23c6a00cbc.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T14:23:29.898120",  "exit_code": null,  "external_id": "gxy-6v22q",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "dcfbaf3a507fb40b",  "inputs": {   "input": {    "id": "9a7ab822cce4fdcf",    "src": "hda",    "uuid": "388ccb7f-93dc-4f3a-98c1-f29f7d8eb7b2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "50c333abf1f5a5c9",    "src": "hda",    "uuid": "fbeeaaf8-dde3-431d-bba0-8f23c6a00cbc"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"png\"",   "plot_type": "\"reads\"",   "skip": "\"1\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_yield_plot/poretools_yield_plot/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:53:34.543464",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1820.8075461387634, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_yield_plot/poretools_yield_plot/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/poretools_yield_plot/poretools_yield_plot/0.6.1a1.1 (Test #2)" name="1" time="1820.7875940799713">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "extension": "svg",  "input": {   "id": "9a7ab822cce4fdcf",   "src": "hda"  },  "plot_type": "basepairs" }, "job": {  "command_line": "export MPLBACKEND=\"agg\" \u0026\u0026 poretools yield_plot \u0027/galaxy/server/database/objects/3/8/8/dataset_388ccb7f-93dc-4f3a-98c1-f29f7d8eb7b2.dat\u0027 --saveas plot.svg --plot-type basepairs  --skip 1 \u0026\u0026 mv plot.svg \u0027/galaxy/server/database/objects/0/f/c/dataset_0fc36c8b-51f0-4ca6-8d78-e392c830c119.dat\u0027",  "command_version": null,  "create_time": "2021-04-23T14:23:30.137604",  "exit_code": null,  "external_id": "gxy-m95zm",  "galaxy_version": "21.01",  "history_id": "69d5e5867d9bfa14",  "id": "95901553dc3fa4a8",  "inputs": {   "input": {    "id": "9a7ab822cce4fdcf",    "src": "hda",    "uuid": "388ccb7f-93dc-4f3a-98c1-f29f7d8eb7b2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "95901553dc3fa4a8",    "src": "hda",    "uuid": "0fc36c8b-51f0-4ca6-8d78-e392c830c119"   }  },  "params": {   "__input_ext": "\"fast5.tar\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "extension": "\"svg\"",   "plot_type": "\"basepairs\"",   "skip": "\"1\"",   "theme_bw": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_yield_plot/poretools_yield_plot/0.6.1a1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-23T14:53:34.644599",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1820.7875940799713, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/poretools_yield_plot/poretools_yield_plot/0.6.1a1.1", "tool_version": "0.6.1a1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+</testsuite>
