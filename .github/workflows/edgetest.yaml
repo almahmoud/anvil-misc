@@ -120,6 +120,8 @@ jobs:
         run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api1.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/results.html
+      - name: Update Readme
+        run: python .github/scripts/update_readme.py reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1/chunk.json reports/anvil-edge-2101/tool-tests/chunks.json reports/anvil-edge-2101/README.md
       - name: Add tool-test report from this run
         run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-1" reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-1
 
@@ -214,6 +216,8 @@ jobs:
         run: sleep 30 && shed-tools test -g ${{steps.gxyservice2.outputs.address}} -u "alex@fake.org" -a "${{steps.api2.outputs.key}}" --parallel_tests 4 -t reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/tools.yaml --test_json reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json
       - name: Create HTML report
         run: planemo test_reports reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.json --test_output_xunit reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.xunit --test_output reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/results.html
+      - name: Update Readme
+        run: python .github/scripts/update_readme.py reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2/chunk.json reports/anvil-edge-2101/tool-tests/chunks.json reports/anvil-edge-2101/README.md
       - name: Add tool-test report from this run
         run: bash ./.github/scripts/report_tests.sh ${{ secrets.GIT_TOKEN }} "Adding anvil-edge-2101 tool test report for ${{needs.deploygke.outputs.prefix}}-2" reports/anvil-edge-2101/tool-tests/${{needs.deploygke.outputs.prefix}}-2
 
