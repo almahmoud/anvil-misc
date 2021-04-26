@@ -7,6 +7,7 @@ from jinja2 import Template
 args = sys.argv
 inchunk = args[1]
 allchunks = args[2]
+readme_path = args[3]
 
 with open(inchunk, 'r') as f:
     new_chunk = json.load(f)
@@ -26,7 +27,7 @@ with open(allchunks, 'r+') as f:
 with open(".github/templates/README.md.j2", "r") as f:
     template = Template(f.read())
 
-with open("README.md", "w") as f:
+with open(readme_path, "w") as f:
     htmlout = "<thead><tr><th>Chunk ID</th><th>Tool List</th><th>Latest report</th><th>Previous report</th></tr></thead><tbody>"
     ids = list(chunks.keys())
     ids = [int(x) for x in ids]
