@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Results (powered by Planemo)"
+           tests="50"
+           errors="0"
+           failures="49"
+           skip="0">
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #1)" name="0" time="28.574685096740723">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "column_replace": "1",  "delimiter": "tab",  "original_file": {   "id": "07abc8ad62fa9e4d",   "src": "hda"  },  "pass_comments": "#",  "replace_information": {   "id": "f38aa2db88a6e20e",   "src": "hda"  },  "skip_lines": "1",  "unknowns_strategy": "skip" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:15.838422",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "a3869b143fa645e0",  "inputs": {   "original_file": {    "id": "07abc8ad62fa9e4d",    "src": "hda",    "uuid": "b2e931d1-a3a1-49ba-b142-bf19251c07a9"   },   "replace_information": {    "id": "f38aa2db88a6e20e",    "src": "hda",    "uuid": "848b4790-df0a-4bce-ab85-aee65a104afa"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile_replace": {    "id": "a3869b143fa645e0",    "src": "hda",    "uuid": "9e23c8c0-bb0c-4bac-a2df-5dc07131534c"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "column_replace": "\"1\"",   "dbkey": "\"?\"",   "delimiter": "\"tab\"",   "pass_comments": "\"#\"",   "skip_lines": "\"1\"",   "unknowns_strategy": "\"skip\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:34.222185",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 28.574685096740723, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2", "tool_version": "0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #2)" name="1" time="22.47004771232605">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "column_replace": "1",  "delimiter": "tab",  "original_file": {   "id": "72964c5fbf552f70",   "src": "hda"  },  "pass_comments": "#",  "replace_information": {   "id": "f38aa2db88a6e20e",   "src": "hda"  },  "skip_lines": "1",  "unknowns_strategy": "skip" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:33.663088",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "0c558be3c3341dea",  "inputs": {   "original_file": {    "id": "72964c5fbf552f70",    "src": "hda",    "uuid": "afd8426d-dc5e-4398-8f46-9fd36e6db3fd"   },   "replace_information": {    "id": "f38aa2db88a6e20e",    "src": "hda",    "uuid": "848b4790-df0a-4bce-ab85-aee65a104afa"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile_replace": {    "id": "0c558be3c3341dea",    "src": "hda",    "uuid": "2233ee8a-93ae-4270-a3fa-fbb6ead53a09"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "column_replace": "\"1\"",   "dbkey": "\"?\"",   "delimiter": "\"tab\"",   "pass_comments": "\"#\"",   "skip_lines": "\"1\"",   "unknowns_strategy": "\"skip\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:34.326304",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 22.47004771232605, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2", "tool_version": "0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #3)" name="2" time="20.884384155273438">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #4)" name="3" time="22.210678339004517">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "column_replace": "1",  "delimiter": "tab",  "original_file": {   "id": "9ebdb711e63a7465",   "src": "hda"  },  "pass_comments": "#",  "replace_information": {   "id": "2295b7ab77671de7",   "src": "hda"  },  "skip_lines": "0",  "unknowns_strategy": "print" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:33.537636",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "6feb8ceca0b3498f",  "inputs": {   "original_file": {    "id": "9ebdb711e63a7465",    "src": "hda",    "uuid": "18230269-4eee-4bb8-a00c-d6ef923e246b"   },   "replace_information": {    "id": "2295b7ab77671de7",    "src": "hda",    "uuid": "0970545c-2702-4b2f-b37e-425f19b52be9"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile_replace": {    "id": "6feb8ceca0b3498f",    "src": "hda",    "uuid": "40ee805a-9890-45bc-894d-4a541bbadc27"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "column_replace": "\"1\"",   "dbkey": "\"?\"",   "delimiter": "\"tab\"",   "pass_comments": "\"#\"",   "skip_lines": "\"0\"",   "unknowns_strategy": "\"print\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:34.272353",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 22.210678339004517, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2", "tool_version": "0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2 (Test #1)" name="0" time="16.30787754058838">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "code": "$2\u003e0.5 { print $2*9\"\\t\"$1 }",  "infile": {   "id": "9fa23a5dc1c67817",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:38.614007",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "7ef45f514a4f7df7",  "inputs": {   "infile": {    "id": "9fa23a5dc1c67817",    "src": "hda",    "uuid": "9f2a50e8-5647-4223-96a7-f4f651ae6f2b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "7ef45f514a4f7df7",    "src": "hda",    "uuid": "e48a6edc-608a-45d3-8c1e-c8575717f7a4"   }  },  "params": {   "__input_ext": "\"gg\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "code": "\"$2\u003e0.5 { print $2*9\\\"\\\\t\\\"$1 }\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:39.426251",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 16.30787754058838, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2", "tool_version": "1.1.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0 (Test #1)" name="0" time="38.294456481933594">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "inputs": [   {    "id": "bb4be3786eb67cd0",    "src": "hda"   },   {    "id": "d6fe7c53a48b3801",    "src": "hda"   },   {    "id": "a1aa8c5ed26ba0d1",    "src": "hda"   }  ] }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:03.683928",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "010384f6fb05e28d",  "inputs": {   "inputs": {    "id": "bb4be3786eb67cd0",    "src": "hda",    "uuid": "a11a9e0f-6065-4d17-a1dd-a48269ab946d"   },   "inputs1": {    "id": "bb4be3786eb67cd0",    "src": "hda",    "uuid": "a11a9e0f-6065-4d17-a1dd-a48269ab946d"   },   "inputs2": {    "id": "d6fe7c53a48b3801",    "src": "hda",    "uuid": "737ebefc-8f2d-4787-b694-fb4def350b51"   },   "inputs3": {    "id": "a1aa8c5ed26ba0d1",    "src": "hda",    "uuid": "32e52730-9a8d-4c73-bc31-bfc6f5a16945"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "out_file1": {    "id": "010384f6fb05e28d",    "src": "hda",    "uuid": "aa434d11-0d74-43a0-99e5-1945d1e30d0b"   }  },  "params": {   "__input_ext": "\"auto\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "queries": "[]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:17.920991",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 38.294456481933594, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0", "tool_version": "0.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0 (Test #2)" name="1" time="37.04446268081665">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "inputs": [   {    "id": "bb4be3786eb67cd0",    "src": "hda"   },   {    "id": "a1aa8c5ed26ba0d1",    "src": "hda"   }  ],  "queries_0|inputs2": [   {    "id": "a1aa8c5ed26ba0d1",    "src": "hda"   },   {    "id": "a1aa8c5ed26ba0d1",    "src": "hda"   }  ],  "queries_1|inputs2": {   "id": "a1aa8c5ed26ba0d1",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:17.385567",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "09e98f4993f6191c",  "inputs": {   "inputs": {    "id": "bb4be3786eb67cd0",    "src": "hda",    "uuid": "a11a9e0f-6065-4d17-a1dd-a48269ab946d"   },   "inputs1": {    "id": "bb4be3786eb67cd0",    "src": "hda",    "uuid": "a11a9e0f-6065-4d17-a1dd-a48269ab946d"   },   "inputs2": {    "id": "a1aa8c5ed26ba0d1",    "src": "hda",    "uuid": "32e52730-9a8d-4c73-bc31-bfc6f5a16945"   },   "queries_0|inputs2": {    "id": "a1aa8c5ed26ba0d1",    "src": "hda",    "uuid": "32e52730-9a8d-4c73-bc31-bfc6f5a16945"   },   "queries_0|inputs21": {    "id": "a1aa8c5ed26ba0d1",    "src": "hda",    "uuid": "32e52730-9a8d-4c73-bc31-bfc6f5a16945"   },   "queries_0|inputs22": {    "id": "a1aa8c5ed26ba0d1",    "src": "hda",    "uuid": "32e52730-9a8d-4c73-bc31-bfc6f5a16945"   },   "queries_1|inputs2": {    "id": "a1aa8c5ed26ba0d1",    "src": "hda",    "uuid": "32e52730-9a8d-4c73-bc31-bfc6f5a16945"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "out_file1": {    "id": "09e98f4993f6191c",    "src": "hda",    "uuid": "7a8e7684-d89e-4795-8496-b5bb3dab513d"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "queries": "[{\"__index__\": 0, \"inputs2\": {\"values\": [{\"id\": 36, \"src\": \"hda\"}, {\"id\": 36, \"src\": \"hda\"}]}}, {\"__index__\": 1, \"inputs2\": {\"values\": [{\"id\": 36, \"src\": \"hda\"}]}}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:17.973007",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 37.04446268081665, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0", "tool_version": "0.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0 (Test #1)" name="0" time="15.167756795883179">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "cut_type_options|list": [   "1",   "3",   "4"  ],  "delimiter": "",  "input": {   "id": "c02c8b36137dabe7",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:18.901235",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "d9d3ccb2b2d0ca08",  "inputs": {   "input": {    "id": "c02c8b36137dabe7",    "src": "hda",    "uuid": "d00ff022-fcde-4ad0-906b-b509f64e342a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "d9d3ccb2b2d0ca08",    "src": "hda",    "uuid": "3cbaf753-b49c-4b14-bc0b-b9d9ed4fbeba"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "complement": "\"\"",   "cut_type_options": "{\"__current_case__\": 0, \"cut_element\": \"-f\", \"list\": [\"1\", \"3\", \"4\"]}",   "dbkey": "\"?\"",   "delimiter": "\"\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:19.839872",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.167756795883179, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0 (Test #2)" name="1" time="15.159487962722778">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "complement": "--complement",  "cut_type_options|list": "2",  "delimiter": "",  "input": {   "id": "c02c8b36137dabe7",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:18.884519",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "fabb807c24e7e475",  "inputs": {   "input": {    "id": "c02c8b36137dabe7",    "src": "hda",    "uuid": "d00ff022-fcde-4ad0-906b-b509f64e342a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "fabb807c24e7e475",    "src": "hda",    "uuid": "d258e4d3-2b57-4b48-b3c5-f394b9f82790"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "complement": "\"--complement\"",   "cut_type_options": "{\"__current_case__\": 0, \"cut_element\": \"-f\", \"list\": [\"2\"]}",   "dbkey": "\"?\"",   "delimiter": "\"\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:19.790627",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.159487962722778, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0 (Test #3)" name="2" time="14.35876727104187">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "cut_type_options|cut_element": "-c",  "cut_type_options|list": "-3",  "delimiter": "",  "input": {   "id": "c02c8b36137dabe7",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:19.277657",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "3c9a786d963b28f1",  "inputs": {   "input": {    "id": "c02c8b36137dabe7",    "src": "hda",    "uuid": "d00ff022-fcde-4ad0-906b-b509f64e342a"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "3c9a786d963b28f1",    "src": "hda",    "uuid": "7a0d03fd-3c1f-469f-8c32-5514aea88a52"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "complement": "\"\"",   "cut_type_options": "{\"__current_case__\": 1, \"cut_element\": \"-c\", \"list\": \"-3\"}",   "dbkey": "\"?\"",   "delimiter": "\"\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:19.966077",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 14.35876727104187, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.2 (Test #1)" name="0" time="17.53501272201538">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "column1": "1",  "column2": "1",  "header": true,  "infile1": {   "id": "647be6de382dd8f2",   "src": "hda"  },  "infile2": {   "id": "e75d7bc0c1c17128",   "src": "hda"  },  "jointype": "-a 1 -a 2" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:40.284435",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "1da03a4ce527f682",  "inputs": {   "infile1": {    "id": "647be6de382dd8f2",    "src": "hda",    "uuid": "6ae25502-1641-4b29-9d82-481127085b31"   },   "infile2": {    "id": "e75d7bc0c1c17128",    "src": "hda",    "uuid": "6248b000-656b-47d6-ab39-f5f53e6ebd80"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "1da03a4ce527f682",    "src": "hda",    "uuid": "962c4ed7-5158-4a94-b6b6-bfb452cd011a"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "column1": "\"1\"",   "column2": "\"1\"",   "dbkey": "\"?\"",   "empty_string_filler": "\"0\"",   "header": "\"true\"",   "ignore_case": "\"false\"",   "jointype": "\"-a 1 -a 2\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:40.794078",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 17.53501272201538, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.2", "tool_version": "1.1.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3 (Test #1)" name="0" time="15.177043199539185">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "caseinsensitive": false,  "find_pattern": "day",  "global": true,  "infile": {   "id": "460b6beb07b89e0d",   "src": "hda"  },  "is_regex": false,  "replace_pattern": "great day",  "wholewords": true }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:02.164449",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "7f1f55feaa0ff4e8",  "inputs": {   "infile": {    "id": "460b6beb07b89e0d",    "src": "hda",    "uuid": "aee95eaf-790b-416d-9af9-d1b23a4e022f"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "7f1f55feaa0ff4e8",    "src": "hda",    "uuid": "26eb886c-1ecd-418d-898e-e13998072ee2"   }  },  "params": {   "__input_ext": "\"tabular\"",   "caseinsensitive": "\"false\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "find_pattern": "\"day\"",   "global": "\"true\"",   "is_regex": "\"false\"",   "replace_pattern": "\"great day\"",   "searchwhere": "{\"__current_case__\": 0, \"searchwhere_select\": \"line\"}",   "skip_first_line": "\"false\"",   "wholewords": "\"true\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:03.199719",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.177043199539185, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3", "tool_version": "1.1.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3 (Test #2)" name="1" time="15.535863876342773">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "caseinsensitive": false,  "find_pattern": "day",  "global": true,  "infile": {   "id": "460b6beb07b89e0d",   "src": "hda"  },  "is_regex": false,  "replace_pattern": "great day",  "searchwhere|column": "1",  "searchwhere|searchwhere_select": "column",  "wholewords": true }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:03.595365",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "3634f6e666f6ea3e",  "inputs": {   "infile": {    "id": "460b6beb07b89e0d",    "src": "hda",    "uuid": "aee95eaf-790b-416d-9af9-d1b23a4e022f"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "3634f6e666f6ea3e",    "src": "hda",    "uuid": "87116ea9-dfe0-46f0-8b88-c1bdf2d15a3d"   }  },  "params": {   "__input_ext": "\"tabular\"",   "caseinsensitive": "\"false\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "find_pattern": "\"day\"",   "global": "\"true\"",   "is_regex": "\"false\"",   "replace_pattern": "\"great day\"",   "searchwhere": "{\"__current_case__\": 1, \"column\": \"1\", \"searchwhere_select\": \"column\"}",   "skip_first_line": "\"false\"",   "wholewords": "\"true\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:04.336861",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.535863876342773, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3", "tool_version": "1.1.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3 (Test #3)" name="2" time="15.3531334400177">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "caseinsensitive": false,  "find_pattern": "^chr",  "infile": {   "id": "d070f800805d07cd",   "src": "hda"  },  "is_regex": true,  "replace_pattern": "",  "searchwhere|column": "3",  "searchwhere|searchwhere_select": "column",  "wholewords": false }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:03.555759",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "b3b7ba80df5961e0",  "inputs": {   "infile": {    "id": "d070f800805d07cd",    "src": "hda",    "uuid": "87b55dc1-1074-42c7-a46c-95ae0681c19f"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "b3b7ba80df5961e0",    "src": "hda",    "uuid": "afa24b9f-8687-43ff-8d7b-24d0f76507ff"   }  },  "params": {   "__input_ext": "\"tabular\"",   "caseinsensitive": "\"false\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "find_pattern": "\"^chr\"",   "global": "\"false\"",   "is_regex": "\"true\"",   "replace_pattern": "\"\"",   "searchwhere": "{\"__current_case__\": 1, \"column\": \"3\", \"searchwhere_select\": \"column\"}",   "skip_first_line": "\"false\"",   "wholewords": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:04.280873",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 15.3531334400177, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3", "tool_version": "1.1.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #1)" name="0" time="15.265530109405518">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "case_sensitive": "",  "color": "NOCOLOR",  "infile": {   "id": "169d1fd1852f47b9",   "src": "hda"  },  "invert": "",  "lines_after": "0",  "lines_before": "1",  "regex_type": "-P",  "url_paste": "AA.{2}GT" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:22.074208",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "6eccc661f1bbda14",  "inputs": {   "infile": {    "id": "169d1fd1852f47b9",    "src": "hda",    "uuid": "b5824dc7-fbd5-4665-8ef3-9f021ddbe0bc"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "6eccc661f1bbda14",    "src": "hda",    "uuid": "177531dd-0fc0-4fcb-85c2-71511822a529"   }  },  "params": {   "__input_ext": "\"fasta\"",   "case_sensitive": "\"\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "color": "\"NOCOLOR\"",   "dbkey": "\"?\"",   "invert": "\"\"",   "lines_after": "\"0\"",   "lines_before": "\"1\"",   "regex_type": "\"-P\"",   "url_paste": "\"AA.{2}GT\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:23.085495",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.265530109405518, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #2)" name="1" time="15.255223989486694">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "case_sensitive": "",  "color": "COLOR",  "infile": {   "id": "169d1fd1852f47b9",   "src": "hda"  },  "invert": "",  "lines_after": "0",  "lines_before": "0",  "regex_type": "-P",  "url_paste": "AA.{2}GT" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:22.432999",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "f36eafc9edd915a1",  "inputs": {   "infile": {    "id": "169d1fd1852f47b9",    "src": "hda",    "uuid": "b5824dc7-fbd5-4665-8ef3-9f021ddbe0bc"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "f36eafc9edd915a1",    "src": "hda",    "uuid": "1f66c2e7-794a-46f2-977e-d8fd360819fb"   }  },  "params": {   "__input_ext": "\"fasta\"",   "case_sensitive": "\"\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "color": "\"COLOR\"",   "dbkey": "\"?\"",   "invert": "\"\"",   "lines_after": "\"0\"",   "lines_before": "\"0\"",   "regex_type": "\"-P\"",   "url_paste": "\"AA.{2}GT\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:23.136877",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.255223989486694, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #3)" name="2" time="15.295967817306519">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "case_sensitive": "",  "color": "NOCOLOR",  "infile": {   "id": "fb9d04f8a0110a35",   "src": "hda"  },  "invert": "",  "lines_after": "0",  "lines_before": "0",  "regex_type": "-E",  "url_paste": "[^ ]+" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:23.429413",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "9064d387c78c2b3a",  "inputs": {   "infile": {    "id": "fb9d04f8a0110a35",    "src": "hda",    "uuid": "780895d1-b246-45c3-a09c-3d7b0ad24896"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "9064d387c78c2b3a",    "src": "hda",    "uuid": "edb6be5d-fb8c-4035-9aab-83ab03a65568"   }  },  "params": {   "__input_ext": "\"txt\"",   "case_sensitive": "\"\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "color": "\"NOCOLOR\"",   "dbkey": "\"?\"",   "invert": "\"\"",   "lines_after": "\"0\"",   "lines_before": "\"0\"",   "regex_type": "\"-E\"",   "url_paste": "\"[^ ]+\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:24.225808",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 15.295967817306519, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #4)" name="3" time="15.308879375457764">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "case_sensitive": "",  "color": "NOCOLOR",  "infile": {   "id": "fb9d04f8a0110a35",   "src": "hda"  },  "invert": "",  "lines_after": "0",  "lines_before": "0",  "regex_type": "-G",  "url_paste": "[^ ]+" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:23.464042",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "73cb1fffde4e822d",  "inputs": {   "infile": {    "id": "fb9d04f8a0110a35",    "src": "hda",    "uuid": "780895d1-b246-45c3-a09c-3d7b0ad24896"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "73cb1fffde4e822d",    "src": "hda",    "uuid": "edd37289-f151-4101-acec-574506c47446"   }  },  "params": {   "__input_ext": "\"txt\"",   "case_sensitive": "\"\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "color": "\"NOCOLOR\"",   "dbkey": "\"?\"",   "invert": "\"\"",   "lines_after": "\"0\"",   "lines_before": "\"0\"",   "regex_type": "\"-G\"",   "url_paste": "\"[^ ]+\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:24.283071",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 3, "time_seconds": 15.308879375457764, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool/1.1.0 (Test #1)" name="0" time="15.196407794952393">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "count": "10",  "infile": {   "id": "24e936df226dfc28",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:46.841542",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "9c2c59122e6c8295",  "inputs": {   "infile": {    "id": "24e936df226dfc28",    "src": "hda",    "uuid": "5142c719-1e9d-4d76-b828-85c3fc273b35"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "9c2c59122e6c8295",    "src": "hda",    "uuid": "a4c8b703-b2b1-4af8-a037-610fc479e130"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "complement": "\"\"",   "count": "\"10\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:47.812603",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.196407794952393, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_multijoin_tool/1.1.1 (Test #1)" name="0" time="28.480347633361816">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "files": [   {    "id": "466ad214e291e8db",    "src": "hda"   },   {    "id": "5d6a127e948607cd",    "src": "hda"   }  ],  "first_file": {   "id": "6b82442a53e5c44f",   "src": "hda"  },  "key_column": "4",  "output_header": true,  "value_columns": [   "c7",   "c8",   "c9"  ] }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:52.627533",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "8cf7aecd3884cee0",  "inputs": {   "files": {    "id": "466ad214e291e8db",    "src": "hda",    "uuid": "dfc862f3-3597-437c-a39b-a51be33fe4d2"   },   "files1": {    "id": "466ad214e291e8db",    "src": "hda",    "uuid": "dfc862f3-3597-437c-a39b-a51be33fe4d2"   },   "files2": {    "id": "5d6a127e948607cd",    "src": "hda",    "uuid": "43c60e09-4b52-45c7-bbad-0312b36792fd"   },   "first_file": {    "id": "6b82442a53e5c44f",    "src": "hda",    "uuid": "9b2b084e-3874-475b-8c24-1895050e50c4"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "8cf7aecd3884cee0",    "src": "hda",    "uuid": "9ef61f08-dc06-43a0-a21e-68abfe3a2b8f"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "filler": "\"0\"",   "ignore_dups": "\"false\"",   "input_header": "\"false\"",   "key_column": "\"4\"",   "output_header": "\"true\"",   "value_columns": "[\"7\", \"8\", \"9\"]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_multijoin_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:53.009825",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 28.480347633361816, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_multijoin_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3 (Test #1)" name="0" time="16.351184368133545">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "3a95b81bfc2094ae",   "src": "hda"  },  "replacements_0|column": "4",  "replacements_0|find_pattern": ".+_(R.)",  "replacements_0|replace_pattern": "\\\\1" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:30.558947",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "5f61ce321e9c482d",  "inputs": {   "infile": {    "id": "3a95b81bfc2094ae",    "src": "hda",    "uuid": "33fc98c9-14e8-490b-bc2a-5eb8661413f6"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "5f61ce321e9c482d",    "src": "hda",    "uuid": "18c14b74-685a-484f-a850-0fcdd54a4da5"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "replacements": "[{\"__index__\": 0, \"column\": \"4\", \"find_pattern\": \".+_(R.)\", \"replace_pattern\": \"\\\\\\\\1\"}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:34.088817",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 16.351184368133545, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3", "tool_version": "1.1.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3 (Test #2)" name="1" time="14.45341944694519">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "3a95b81bfc2094ae",   "src": "hda"  },  "replacements_0|column": "1",  "replacements_0|find_pattern": "[a-z]{2}([a-z])",  "replacements_0|replace_pattern": "\\\\1",  "replacements_1|column": "4",  "replacements_1|find_pattern": ".+_(R.)",  "replacements_1|replace_pattern": "\\\\1" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:33.884054",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "cd0ae5bea9bbda04",  "inputs": {   "infile": {    "id": "3a95b81bfc2094ae",    "src": "hda",    "uuid": "33fc98c9-14e8-490b-bc2a-5eb8661413f6"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "cd0ae5bea9bbda04",    "src": "hda",    "uuid": "40f5c0c1-19c9-4e0a-b35e-3d50714b0b1b"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "replacements": "[{\"__index__\": 0, \"column\": \"1\", \"find_pattern\": \"[a-z]{2}([a-z])\", \"replace_pattern\": \"\\\\\\\\1\"}, {\"__index__\": 1, \"column\": \"4\", \"find_pattern\": \".+_(R.)\", \"replace_pattern\": \"\\\\\\\\1\"}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:34.144699",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 14.45341944694519, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3", "tool_version": "1.1.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2 (Test #1)" name="0" time="15.145886659622192">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "7006ef41f939bc3b",   "src": "hda"  },  "replacements_0|find_pattern": "CTC.",  "replacements_0|replace_pattern": "FOOBAR" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:34.687788",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "9a9cbdaaac074fde",  "inputs": {   "infile": {    "id": "7006ef41f939bc3b",    "src": "hda",    "uuid": "ee1e5131-0604-44b8-b73c-50c233968389"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "9a9cbdaaac074fde",    "src": "hda",    "uuid": "ed54a823-f671-4b63-9206-93085116cd85"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "replacements": "[{\"__index__\": 0, \"find_pattern\": \"CTC.\", \"replace_pattern\": \"FOOBAR\"}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:35.282394",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.145886659622192, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2", "tool_version": "1.1.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2 (Test #2)" name="1" time="15.07359528541565">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "7006ef41f939bc3b",   "src": "hda"  },  "replacements_0|find_pattern": "CTC.",  "replacements_0|replace_pattern": "FOOBAR",  "replacements_1|find_pattern": "chr",  "replacements_1|replace_pattern": "domain" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:34.204082",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "7dacdb043363cb7c",  "inputs": {   "infile": {    "id": "7006ef41f939bc3b",    "src": "hda",    "uuid": "ee1e5131-0604-44b8-b73c-50c233968389"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "7dacdb043363cb7c",    "src": "hda",    "uuid": "543e396f-718c-4aa6-9ebc-09e4be78540a"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "replacements": "[{\"__index__\": 0, \"find_pattern\": \"CTC.\", \"replace_pattern\": \"FOOBAR\"}, {\"__index__\": 1, \"find_pattern\": \"chr\", \"replace_pattern\": \"domain\"}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:35.231068",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.07359528541565, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2", "tool_version": "1.1.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1 (Test #1)" name="0" time="38.00761556625366">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "code": "1d ; s/foo/bar/",  "infile": {   "id": "da38492b75699cc6",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:08.821029",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "5fc27fe6aefbdf46",  "inputs": {   "infile": {    "id": "da38492b75699cc6",    "src": "hda",    "uuid": "aaa2de77-e796-4b2f-9d0e-3d2fff7cb204"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "5fc27fe6aefbdf46",    "src": "hda",    "uuid": "b43161f4-5b46-4db1-8347-20393d1a869a"   }  },  "params": {   "__input_ext": "\"auto\"",   "adv_opts": "{\"__current_case__\": 0, \"adv_opts_selector\": \"basic\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "code": "\"1d ; s/foo/bar/\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:19.052930",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 38.00761556625366, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1 (Test #2)" name="1" time="26.94474458694458">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "adv_opts|adv_opts_selector": "advanced",  "adv_opts|silent": "-n",  "code": "/foo/ { s/foo/baz/g ; p }",  "infile": {   "id": "da38492b75699cc6",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:19.364663",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "35205f02757b7db1",  "inputs": {   "infile": {    "id": "da38492b75699cc6",    "src": "hda",    "uuid": "aaa2de77-e796-4b2f-9d0e-3d2fff7cb204"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "35205f02757b7db1",    "src": "hda",    "uuid": "a8886563-f23a-48ef-aa43-fc2798639c98"   }  },  "params": {   "__input_ext": "\"txt\"",   "adv_opts": "{\"__current_case__\": 1, \"adv_opts_selector\": \"advanced\", \"silent\": \"-n\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "code": "\"/foo/ { s/foo/baz/g ; p }\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:20.278642",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 26.94474458694458, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1 (Test #1)" name="0" time="15.525083780288696">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "header": "3",  "infile": {   "id": "361282343635728d",   "src": "hda"  },  "sortkeys_0|column": "1",  "sortkeys_0|order": "",  "sortkeys_0|style": "",  "sortkeys_1|column": "3",  "sortkeys_1|order": "r",  "sortkeys_1|style": "n" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:48.537644",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "8d474d5dd73f4611",  "inputs": {   "infile": {    "id": "361282343635728d",    "src": "hda",    "uuid": "382df930-c8e1-4e15-8151-7941a6822b45"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "8d474d5dd73f4611",    "src": "hda",    "uuid": "50ce9a26-e3af-439f-b877-d24ac074a98f"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "header": "\"3\"",   "ignore_case": "\"false\"",   "sortkeys": "[{\"__index__\": 0, \"column\": \"1\", \"order\": \"\", \"style\": \"\"}, {\"__index__\": 1, \"column\": \"3\", \"order\": \"r\", \"style\": \"n\"}]",   "unique": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:48.893645",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.525083780288696, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1 (Test #2)" name="1" time="15.115649938583374">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "header": "3",  "infile": {   "id": "361282343635728d",   "src": "hda"  },  "sortkeys_0|column": "1",  "sortkeys_0|order": "",  "sortkeys_0|style": "",  "sortkeys_1|column": "3",  "sortkeys_1|order": "",  "sortkeys_1|style": "n" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:48.749370",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "17f2cf89fcf1173e",  "inputs": {   "infile": {    "id": "361282343635728d",    "src": "hda",    "uuid": "382df930-c8e1-4e15-8151-7941a6822b45"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "17f2cf89fcf1173e",    "src": "hda",    "uuid": "d46e2f6e-2b1d-4961-bb38-f2d2c6fe0988"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "header": "\"3\"",   "ignore_case": "\"false\"",   "sortkeys": "[{\"__index__\": 0, \"column\": \"1\", \"order\": \"\", \"style\": \"\"}, {\"__index__\": 1, \"column\": \"3\", \"order\": \"\", \"style\": \"n\"}]",   "unique": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:48.943619",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.115649938583374, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1 (Test #3)" name="2" time="15.326428651809692">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "52af3b98cadf1a78",   "src": "hda"  },  "sortkeys_0|column": "5",  "sortkeys_0|order": "",  "sortkeys_0|style": "g" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:49.235456",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "88b667297b417a72",  "inputs": {   "infile": {    "id": "52af3b98cadf1a78",    "src": "hda",    "uuid": "64c945e5-6b1f-4508-8166-70cddc123ddc"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "88b667297b417a72",    "src": "hda",    "uuid": "9360c1ff-3353-40ad-9b6d-b093f0f11cc8"   }  },  "params": {   "__input_ext": "\"interval\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "header": "\"0\"",   "ignore_case": "\"false\"",   "sortkeys": "[{\"__index__\": 0, \"column\": \"5\", \"order\": \"\", \"style\": \"g\"}]",   "unique": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:50.091316",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 2, "time_seconds": 15.326428651809692, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0 (Test #1)" name="0" time="15.986328840255737">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "4c28a5dafd643ea3",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:40.177230",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "fa7e990710826ac2",  "inputs": {   "infile": {    "id": "4c28a5dafd643ea3",    "src": "hda",    "uuid": "3107e68f-4b12-4ef8-a355-bf55e7337936"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "fa7e990710826ac2",    "src": "hda",    "uuid": "b57f2563-08d1-4405-ae75-7fdda1da1903"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:40.619915",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.986328840255737, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0 (Test #1)" name="0" time="14.255191802978516">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "adv_opts|adv_opts_selector": "advanced",  "adv_opts|column_end": "3",  "adv_opts|column_start": "2",  "ignore_case": true,  "infile": {   "id": "09e0fb61f4bcd956",   "src": "hda"  },  "is_numeric": true }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:33.740093",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "9106e969d474f57d",  "inputs": {   "infile": {    "id": "09e0fb61f4bcd956",    "src": "hda",    "uuid": "b0b7695b-af55-4695-af7a-ed4c0a18d82c"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "9106e969d474f57d",    "src": "hda",    "uuid": "739dc9e2-a9be-4d8a-a1b2-dd41c1fcbe0a"   }  },  "params": {   "__input_ext": "\"bed\"",   "adv_opts": "{\"__current_case__\": 1, \"adv_opts_selector\": \"advanced\", \"column_end\": \"3\", \"column_start\": \"2\"}",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "ignore_case": "\"true\"",   "is_numeric": "\"true\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:34.567308",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 14.255191802978516, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0 (Test #1)" name="0" time="15.123212575912476">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "176a09d61e2c5d02",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:08.040894",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "72bdf57d2d2ba5cf",  "inputs": {   "infile": {    "id": "176a09d61e2c5d02",    "src": "hda",    "uuid": "91b82277-5b1c-4a84-8788-272350965a0f"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "72bdf57d2d2ba5cf",    "src": "hda",    "uuid": "c0168e19-ae6e-4ef5-b994-092ce588451b"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "separator": "{\"__current_case__\": 0, \"separator_select\": \"no\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:08.839455",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.123212575912476, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0 (Test #2)" name="1" time="15.129927635192871">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "176a09d61e2c5d02",   "src": "hda"  },  "separator|before": true,  "separator|separator_select": "yes" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:08.049069",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "3bc90c5471d0c85e",  "inputs": {   "infile": {    "id": "176a09d61e2c5d02",    "src": "hda",    "uuid": "91b82277-5b1c-4a84-8788-272350965a0f"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "3bc90c5471d0c85e",    "src": "hda",    "uuid": "82e818e6-79dc-4003-ba61-46ff1b5e3e83"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "separator": "{\"__current_case__\": 1, \"before\": \"true\", \"regex\": \"true\", \"separator_select\": \"yes\", \"separator_string\": \"\"}"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:08.889321",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.129927635192871, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0 (Test #1)" name="0" time="15.329571008682251">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "93504fd8cf7e85c5",   "src": "hda"  },  "num_lines": "10" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:04.210937",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "b47f5129d0e60087",  "inputs": {   "infile": {    "id": "93504fd8cf7e85c5",    "src": "hda",    "uuid": "02dd65d2-5fc3-4723-a943-cecf54ef62c2"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "b47f5129d0e60087",    "src": "hda",    "uuid": "15995442-bb51-41ce-86d9-d34cdede4353"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "complement": "\"\"",   "dbkey": "\"?\"",   "num_lines": "\"10\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:05.415327",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.329571008682251, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0 (Test #2)" name="1" time="14.644920110702515">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "complement": "+",  "infile": {   "id": "57f1fb77e5244c87",   "src": "hda"  },  "num_lines": "10" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:16.961420",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "d0a78866ee34ef55",  "inputs": {   "infile": {    "id": "57f1fb77e5244c87",    "src": "hda",    "uuid": "039cb6fc-0cdc-4fa3-9f77-058ac803b746"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "d0a78866ee34ef55",    "src": "hda",    "uuid": "c7aadc23-3692-48ae-98d6-7c1d61a4424d"   }  },  "params": {   "__input_ext": "\"bed\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "complement": "\"+\"",   "dbkey": "\"?\"",   "num_lines": "\"10\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:17.685262",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 14.644920110702515, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0 (Test #1)" name="0" time="1.451693058013916">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "token_set_0|line": "freedom" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:21:53.099367",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "5a8f8714f4abe5cb",  "inputs": {},  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "5a8f8714f4abe5cb",    "src": "hda",    "uuid": "96442c71-01f7-40d4-979c-f46c9546f525"   }  },  "params": {   "__input_ext": "\"data\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "token_set": "[{\"__index__\": 0, \"line\": \"freedom\", \"repeat_select\": {\"__current_case__\": 0, \"repeat_select_opts\": \"user\", \"times\": \"10\"}}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:21:53.500393",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 1.451693058013916, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0 (Test #2)" name="1" time="1.4460687637329102">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "token_set_0|line": "freedom",  "token_set_1|line": "war is over" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:21:53.112410",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "ece388b72b52565c",  "inputs": {},  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "ece388b72b52565c",    "src": "hda",    "uuid": "f3d3d3c2-9fbb-4c87-a817-4c72e8d9193e"   }  },  "params": {   "__input_ext": "\"data\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "token_set": "[{\"__index__\": 0, \"line\": \"freedom\", \"repeat_select\": {\"__current_case__\": 0, \"repeat_select_opts\": \"user\", \"times\": \"10\"}}, {\"__index__\": 1, \"line\": \"war is over\", \"repeat_select\": {\"__current_case__\": 0, \"repeat_select_opts\": \"user\", \"times\": \"10\"}}]"  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:21:53.561092",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 1.4460687637329102, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_unfold_column_tool/1.1.1 (Test #1)" name="0" time="14.463569402694702">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "column": "3",  "delimiter": " ",  "infile": {   "id": "3a7fe8e9ac3544de",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:31.767867",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "ee729e859ee54817",  "inputs": {   "infile": {    "id": "3a7fe8e9ac3544de",    "src": "hda",    "uuid": "9b5e193a-fbfd-429e-9053-67c00705608b"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "ee729e859ee54817",    "src": "hda",    "uuid": "5e3f8da8-4ed8-4869-9806-6f2773086785"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "column": "\"3\"",   "dbkey": "\"?\"",   "delimiter": "\" \""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_unfold_column_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:32.305070",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 14.463569402694702, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_unfold_column_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1 (Test #1)" name="0" time="15.40929913520813">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "grouping|count": true,  "grouping|grouping_select": "no",  "grouping|uniqueonly": true,  "ignorecase": true,  "infile": {   "id": "5cadc8f253b9ae66",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:32.603895",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "a629f10ef0beb40c",  "inputs": {   "infile": {    "id": "5cadc8f253b9ae66",    "src": "hda",    "uuid": "8185c42c-c7ff-4be3-aa83-4bf2ff9155cd"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "a629f10ef0beb40c",    "src": "hda",    "uuid": "54d9fccb-2da1-4d3c-8ccb-5a6ea7817b80"   }  },  "params": {   "__input_ext": "\"txt\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "grouping": "{\"__current_case__\": 0, \"count\": \"true\", \"grouping_select\": \"no\", \"repeated\": \"false\", \"uniqueonly\": \"true\"}",   "ignorecase": "\"true\"",   "skipfields": "\"0\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:33.377119",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.40929913520813, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1 (Test #2)" name="1" time="14.249758005142212">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "grouping|group": "separate",  "grouping|grouping_select": "yes",  "ignorecase": true,  "infile": {   "id": "5cadc8f253b9ae66",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:23:32.881490",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "cfc3736f3a76235a",  "inputs": {   "infile": {    "id": "5cadc8f253b9ae66",    "src": "hda",    "uuid": "8185c42c-c7ff-4be3-aa83-4bf2ff9155cd"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "outfile": {    "id": "cfc3736f3a76235a",    "src": "hda",    "uuid": "200d51f9-670a-4e95-8afc-5dded2bc1fcc"   }  },  "params": {   "__input_ext": "\"txt\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "grouping": "{\"__current_case__\": 1, \"group\": \"separate\", \"grouping_select\": \"yes\"}",   "ignorecase": "\"true\"",   "skipfields": "\"0\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:23:33.424143",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 14.249758005142212, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1", "tool_version": "1.1.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/column_order_header_sort/0.0.1 (Test #1)" name="0" time="20.71896767616272">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input_tabular": {   "id": "8961055a5bb52824",   "src": "hda"  },  "key_column": "1" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:05.231976",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "291649a546c4e32c",  "inputs": {   "input_tabular": {    "id": "8961055a5bb52824",    "src": "hda",    "uuid": "c9e67bc9-1d90-41f0-bcbc-9514d008c9a8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output_tabular": {    "id": "291649a546c4e32c",    "src": "hda",    "uuid": "a412b5f1-0a66-4614-87c8-f292df38ce80"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "key_column": "\"1\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/column_order_header_sort/0.0.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:12.047281",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 20.71896767616272, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/column_order_header_sort/0.0.1", "tool_version": "0.0.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1 (Test #1)" name="0" time="22.045580625534058">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "headers_0|name": "a",  "input_tabular": {   "id": "8961055a5bb52824",   "src": "hda"  },  "keep_columns": false,  "strip_characters": "#" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:04.633249",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "a113609ff1e39b47",  "inputs": {   "input_tabular": {    "id": "8961055a5bb52824",    "src": "hda",    "uuid": "c9e67bc9-1d90-41f0-bcbc-9514d008c9a8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output_tabular": {    "id": "a113609ff1e39b47",    "src": "hda",    "uuid": "e4fb0ac2-9759-4702-a9f5-1b728cbd1421"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "headers": "[{\"__index__\": 0, \"name\": \"a\"}]",   "keep_columns": "\"false\"",   "strip_characters": "\"#\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:11.984148",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 22.045580625534058, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1", "tool_version": "0.0.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1 (Test #2)" name="1" time="20.810680627822876">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "headers_0|name": "KEY",  "headers_1|name": "a",  "input_tabular": {   "id": "8961055a5bb52824",   "src": "hda"  },  "keep_columns": true,  "strip_characters": "#" }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:11.550819",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "a6ce339c57013c4f",  "inputs": {   "input_tabular": {    "id": "8961055a5bb52824",    "src": "hda",    "uuid": "c9e67bc9-1d90-41f0-bcbc-9514d008c9a8"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output_tabular": {    "id": "a6ce339c57013c4f",    "src": "hda",    "uuid": "0510186c-3e13-406e-ac24-c998fece5071"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "headers": "[{\"__index__\": 0, \"name\": \"KEY\"}, {\"__index__\": 1, \"name\": \"a\"}]",   "keep_columns": "\"true\"",   "strip_characters": "\"#\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:12.137328",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 20.810680627822876, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1", "tool_version": "0.0.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/gff3_rebase/gff3.rebase/1.2 (Test #1)" name="0" time="15.54319453239441">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "child": {   "id": "bbe5ed03d2b726cb",   "src": "hda"  },  "parent": {   "id": "e006b20e8b815a36",   "src": "hda"  },  "protein2dna": true }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:25:04.921606",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "b785ef847d491d81",  "inputs": {   "child": {    "id": "bbe5ed03d2b726cb",    "src": "hda",    "uuid": "26135562-09b3-45f9-b257-caba866d4f94"   },   "parent": {    "id": "e006b20e8b815a36",    "src": "hda",    "uuid": "35362abd-df88-4b43-ad4a-1a56af360c35"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "b785ef847d491d81",    "src": "hda",    "uuid": "3702c473-b653-4125-9648-c13f664e4db4"   }  },  "params": {   "__input_ext": "\"scidx\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "interpro": "\"false\"",   "protein2dna": "\"true\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gff3_rebase/gff3.rebase/1.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:25:05.520250",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.54319453239441, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gff3_rebase/gff3.rebase/1.2", "tool_version": "1.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0 (Test #1)" name="0" time="15.741528272628784">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "filter": ".[] | [.foo, .bar]",  "input": {   "id": "6922896a0009d705",   "src": "hda"  },  "tsv": true }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:50.058076",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "8825e33ca7fcae44",  "inputs": {   "input": {    "id": "6922896a0009d705",    "src": "hda",    "uuid": "6e7cf1cd-8f54-41f5-b5e3-aec209a143c9"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "8825e33ca7fcae44",    "src": "hda",    "uuid": "277a4d66-df25-4a96-9ce6-08d33aa378f4"   }  },  "params": {   "__input_ext": "\"json\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "filter": "\".[] | [.foo, .bar]\"",   "tsv": "\"true\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:50.814629",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.741528272628784, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0", "tool_version": "1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0 (Test #2)" name="1" time="15.55541205406189">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "filter": "{\"a\": env}",  "input": {   "id": "6922896a0009d705",   "src": "hda"  },  "tsv": false }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:50.073136",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "0775480a62967720",  "inputs": {   "input": {    "id": "6922896a0009d705",    "src": "hda",    "uuid": "6e7cf1cd-8f54-41f5-b5e3-aec209a143c9"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "0775480a62967720",    "src": "hda",    "uuid": "2db6e5a1-3b05-491a-9790-21c186afa3bc"   }  },  "params": {   "__input_ext": "\"json\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "filter": "\"{\\\"a\\\": env}\"",   "tsv": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:50.875932",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.55541205406189, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0", "tool_version": "1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/reshape2_cast/cast/1.4.2 (Test #1)" name="0" time="15.038171529769897">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "952642dbd117d008",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:49.127462",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "d7f89a5d0e9ba4cb",  "inputs": {   "input": {    "id": "952642dbd117d008",    "src": "hda",    "uuid": "980fd0a0-6893-420b-aeb3-75eec242b020"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "d7f89a5d0e9ba4cb",    "src": "hda",    "uuid": "d7929c4f-3bb0-4e3b-b68b-6f4427722886"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/reshape2_cast/cast/1.4.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:49.665487",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.038171529769897, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/reshape2_cast/cast/1.4.2", "tool_version": "1.4.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/reshape2_melt/melt/1.4.2 (Test #1)" name="0" time="15.044039726257324">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "input": {   "id": "f2032220614b772c",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:24:49.128101",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "a0566bcf8d429c9f",  "inputs": {   "input": {    "id": "f2032220614b772c",    "src": "hda",    "uuid": "9a5afff2-c3e7-4f13-8fbc-78cfce691323"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "a0566bcf8d429c9f",    "src": "hda",    "uuid": "92179c06-b409-4fbb-80e6-9b9fd01a72a2"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/reshape2_melt/melt/1.4.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:24:49.727126",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.044039726257324, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/reshape2_melt/melt/1.4.2", "tool_version": "1.4.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0 (Test #1)" name="0" time="15.531888723373413">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "header|colname": "sample",  "header|contains_header": "yes",  "input": {   "id": "d7b7feb07c9c804b",   "src": "hda"  } }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:07.054983",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "8c731518fd8ee192",  "inputs": {   "input": {    "id": "d7b7feb07c9c804b",    "src": "hda",    "uuid": "c8d88820-b568-417c-bd6c-94528e94a320"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "8c731518fd8ee192",    "src": "hda",    "uuid": "3db38846-b818-4ef4-a364-f1ef474f9cf9"   }  },  "params": {   "__input_ext": "\"input\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "header": "{\"__current_case__\": 0, \"colname\": \"sample\", \"contains_header\": \"yes\"}",   "prepend": "\"false\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:07.763265",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 15.531888723373413, "tool_id": "toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0", "tool_version": "0.2.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0 (Test #2)" name="1" time="15.537267446517944">
+        
+            
+                <error type="error" message="Tool exit code: None"><![CDATA[
+                    { "inputs": {  "header|contains_header": "no",  "input": {   "id": "d7b7feb07c9c804b",   "src": "hda"  },  "prepend": true }, "job": {  "command_line": null,  "command_version": null,  "create_time": "2021-04-26T19:22:07.040417",  "exit_code": null,  "external_id": null,  "galaxy_version": "21.01",  "history_id": "5a8f8714f4abe5cb",  "id": "802b278ee2d48a42",  "inputs": {   "input": {    "id": "d7b7feb07c9c804b",    "src": "hda",    "uuid": "c8d88820-b568-417c-bd6c-94528e94a320"   }  },  "job_messages": null,  "job_metrics": [],  "job_stderr": null,  "job_stdout": null,  "model_class": "Job",  "outputs": {   "output": {    "id": "802b278ee2d48a42",    "src": "hda",    "uuid": "eda0f6ae-e4c7-481a-86e0-c78905ae296e"   }  },  "params": {   "__input_ext": "\"input\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "header": "{\"__current_case__\": 1, \"contains_header\": \"no\"}",   "prepend": "\"true\""  },  "state": "error",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-26T19:22:07.707454",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 15.537267446517944, "tool_id": "toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0", "tool_version": "0.2.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+</testsuite>
