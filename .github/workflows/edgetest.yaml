@@ -53,7 +53,7 @@ jobs:
       - name: Install Helm
         run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
       - name: Add Anvil-edge-2101 repository
-        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
+        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101-2
       - name: Deploy GalaxyKubeMan 1
         run: >
           (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-1; helm install -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1 edge/galaxykubeman\
@@ -62,11 +62,9 @@ jobs:
               --set galaxy.image.tag=21.01-auto\
               --set nfs.storageClass.name=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
               --set cvmfs.repositories.cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1=\"data.galaxyproject.org\"\
-              --set cvmfs.repositories.cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-1=\"cloud.galaxyproject.org\"\
               --set cvmfs.cache.alienCache.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
               --set galaxy.persistence.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-1\"\
-              --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1\
-              --set galaxy.cvmfs.cloud.pvc.storageClassName=cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-1\
+              --set galaxy.cvmfs.galaxyPersistentVolumeClaims.data.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-1\
               --set galaxy.service.type=LoadBalancer\
               --set galaxy.service.port=8000\
               --set rbac.enabled=false\
@@ -149,7 +147,7 @@ jobs:
       - name: Install Helm
         run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
       - name: Add Anvil-edge-2101 repository
-        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
+        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101-2
       - name: Deploy GalaxyKubeMan 2
         run: >
           (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-2; helm install -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2 edge/galaxykubeman\
@@ -158,11 +156,9 @@ jobs:
               --set galaxy.image.tag=21.01-auto\
               --set nfs.storageClass.name=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
               --set cvmfs.repositories.cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2=\"data.galaxyproject.org\"\
-              --set cvmfs.repositories.cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-2=\"cloud.galaxyproject.org\"\
               --set cvmfs.cache.alienCache.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
               --set galaxy.persistence.storageClass=\"nfs-${{needs.deploygke.outputs.prefix}}-2\"\
-              --set galaxy.cvmfs.data.pvc.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2\
-              --set galaxy.cvmfs.cloud.pvc.storageClassName=cvmfs-gxy-cloud-${{needs.deploygke.outputs.prefix}}-2\
+              --set galaxy.cvmfs.galaxyPersistentVolumeClaims.data.storageClassName=cvmfs-gxy-data-${{needs.deploygke.outputs.prefix}}-2\
               --set galaxy.service.type=LoadBalancer\
               --set galaxy.service.port=8000\
               --set rbac.enabled=false\
