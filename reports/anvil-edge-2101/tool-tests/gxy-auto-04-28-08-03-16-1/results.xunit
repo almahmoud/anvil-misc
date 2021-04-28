@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Results (powered by Planemo)"
+           tests="145"
+           errors="2"
+           failures="4"
+           skip="0">
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2 (Test #1)" name="0" time="35.84045219421387">
+        
+            
+                <error type="error" message="Tool exit code: 0"><![CDATA[
+                    { "inputs": {  "in_sam": {   "id": "62dfe2a58091df9b",   "src": "hda"  },  "m": "5",  "n": "5" }, "job": {  "command_line": "python /cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/ac70bfaf1224/filter_on_md/MDtag_filter.py /galaxy/server/database/objects/b/d/9/dataset_bd93ff7f-6c4e-4b8c-bc44-735017aa7058.dat 5 5 /galaxy/server/database/objects/b/3/5/dataset_b35af29b-2979-4d12-9579-e649d16f2633.dat no XXXX",  "command_version": "",  "create_time": "2021-04-28T08:20:23.605676",  "exit_code": 0,  "external_id": "gxy-5rkxp",  "galaxy_version": "21.01",  "history_id": "c41495abb090815d",  "id": "8cbe47eceaf3c317",  "inputs": {   "in_sam": {    "id": "62dfe2a58091df9b",    "src": "hda",    "uuid": "bd93ff7f-6c4e-4b8c-bc44-735017aa7058"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Job Runtime (Wall Clock)",    "value": "1 second"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619598045.0000000",    "title": "Job End Time",    "value": "2021-04-28 08:20:45"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619598044.0000000",    "title": "Job Start Time",    "value": "2021-04-28 08:20:44"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   }  ],  "job_stderr": "",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "out_sam": {    "id": "8b4873d5e10f9ff7",    "src": "hda",    "uuid": "b35af29b-2979-4d12-9579-e649d16f2633"   }  },  "params": {   "__input_ext": "\"auto\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "m": "\"5\"",   "n": "\"5\"",   "saveDiscarded": "\"false\""  },  "state": "ok",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T08:20:46.407483",  "user_email": "alex@fake.org" }, "output_problems": [  "Output out_sam: Test output file (test_md_filtered.sam) is missing. If you are using planemo, try adding --update_test_data to generate it." ], "status": "failure", "test_index": 0, "time_seconds": 35.84045219421387, "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2", "tool_version": "1.0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2 (Test #2)" name="1" time="17.83469581604004">
+        
+            
+                <error type="error" message="Tool exit code: 0"><![CDATA[
+                    { "inputs": {  "in_sam": {   "id": "62dfe2a58091df9b",   "src": "hda"  },  "m": "5",  "n": "5",  "saveDiscarded": true }, "job": {  "command_line": "python /cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/ac70bfaf1224/filter_on_md/MDtag_filter.py /galaxy/server/database/objects/b/d/9/dataset_bd93ff7f-6c4e-4b8c-bc44-735017aa7058.dat 5 5 /galaxy/server/database/objects/3/8/2/dataset_38241e96-cecb-406d-810c-50f1cff7701d.dat yes /galaxy/server/database/objects/7/5/4/dataset_754e8489-2225-4048-99d8-2d8c4039788b.dat",  "command_version": "",  "create_time": "2021-04-28T08:20:28.981905",  "exit_code": 0,  "external_id": "gxy-d7zt9",  "galaxy_version": "21.01",  "history_id": "c41495abb090815d",  "id": "8b4873d5e10f9ff7",  "inputs": {   "in_sam": {    "id": "62dfe2a58091df9b",    "src": "hda",    "uuid": "bd93ff7f-6c4e-4b8c-bc44-735017aa7058"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619598030.0000000",    "title": "Job End Time",    "value": "2021-04-28 08:20:30"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619598030.0000000",    "title": "Job Start Time",    "value": "2021-04-28 08:20:30"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   }  ],  "job_stderr": "",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "discarded_sam": {    "id": "c18bd7f34d388138",    "src": "hda",    "uuid": "754e8489-2225-4048-99d8-2d8c4039788b"   },   "out_sam": {    "id": "1cefe65958465401",    "src": "hda",    "uuid": "38241e96-cecb-406d-810c-50f1cff7701d"   }  },  "params": {   "__input_ext": "\"sam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "m": "\"5\"",   "n": "\"5\"",   "saveDiscarded": "\"true\""  },  "state": "ok",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T08:20:32.035323",  "user_email": "alex@fake.org" }, "output_problems": [  "Output out_sam: Test output file (test_md_selected.sam) is missing. If you are using planemo, try adding --update_test_data to generate it.",  "Output discarded_sam: Test output file (test_md_discarded.sam) is missing. If you are using planemo, try adding --update_test_data to generate it." ], "status": "failure", "test_index": 1, "time_seconds": 17.83469581604004, "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2", "tool_version": "1.0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0.1 (Test #1)" name="0" time="20.35727834701538">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0.1 (Test #2)" name="1" time="28.76354670524597">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0.1 (Test #3)" name="2" time="18.331764698028564">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.4.1 (Test #1)" name="0" time="33.97738814353943">
+        
+            
+            <system-out><![CDATA[
+                    {    "filters": [        {            "id": "1",            "mapQuality": ">20"        }    ]}        
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0 (Test #1)" name="0" time="43.311399936676025">
+        
+            
+                <error type="error" message="Tool exit code: 1"><![CDATA[
+                    { "inputs": {  "inputs": [   {    "id": "df7553bc38b50bb5",    "src": "hda"   },   {    "id": "e194526c9d9d740c",    "src": "hda"   }  ],  "mergeSD": true }, "job": {  "command_line": "java -Xmx2G -jar $JAVA_JAR_PATH/MergeSamFiles.jar MSD=true VALIDATION_STRINGENCY=LENIENT O=\"/galaxy/server/database/objects/d/c/1/dataset_dc1080b2-bf9b-4a84-b226-060e28db0769.dat\" TMP_DIR=/galaxy/server/database/tmp I=\"/galaxy/server/database/objects/3/b/5/dataset_3b56b777-3efc-443e-8d98-cbf7c456fc2b.dat\" I=\"/galaxy/server/database/objects/a/c/9/dataset_ac920c04-3ca6-409b-b251-62bc7ff6e0d7.dat\"",  "command_version": "",  "create_time": "2021-04-28T08:20:30.950133",  "exit_code": 1,  "external_id": "gxy-7zdpj",  "galaxy_version": "21.01",  "history_id": "c41495abb090815d",  "id": "1cefe65958465401",  "inputs": {   "inputs": {    "id": "df7553bc38b50bb5",    "src": "hda",    "uuid": "3b56b777-3efc-443e-8d98-cbf7c456fc2b"   },   "inputs1": {    "id": "df7553bc38b50bb5",    "src": "hda",    "uuid": "3b56b777-3efc-443e-8d98-cbf7c456fc2b"   },   "inputs2": {    "id": "e194526c9d9d740c",    "src": "hda",    "uuid": "ac920c04-3ca6-409b-b251-62bc7ff6e0d7"   }  },  "job_messages": [   {    "code_desc": "",    "desc": "Fatal error: Exit code 1 ()",    "error_level": 3,    "exit_code": 1,    "type": "exit_code"   }  ],  "job_metrics": [   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619598058.0000000",    "title": "Job End Time",    "value": "2021-04-28 08:20:58"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619598058.0000000",    "title": "Job Start Time",    "value": "2021-04-28 08:20:58"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   }  ],  "job_stderr": "Error: Unable to access jarfile /MergeSamFiles.jar\n",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "output1": {    "id": "fbfb1c386446f837",    "src": "hda",    "uuid": "dc1080b2-bf9b-4a84-b226-060e28db0769"   }  },  "params": {   "__input_ext": "\"bam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "mergeSD": "\"true\""  },  "state": "error",  "stderr": "\nError: Unable to access jarfile /MergeSamFiles.jar\n",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T08:20:58.933093",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 43.311399936676025, "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0", "tool_version": "1.2.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Error: Unable to access jarfile /MergeSamFiles.jar
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0 (Test #2)" name="1" time="26.385751008987427">
+        
+            
+                <error type="error" message="Tool exit code: 1"><![CDATA[
+                    { "inputs": {  "inputs": [   {    "id": "681e80e35a48b12f",    "src": "hda"   },   {    "id": "f318842bb0695144",    "src": "hda"   },   {    "id": "258b3649a8b5deae",    "src": "hda"   }  ],  "mergeSD": true }, "job": {  "command_line": "java -Xmx2G -jar $JAVA_JAR_PATH/MergeSamFiles.jar MSD=true VALIDATION_STRINGENCY=LENIENT O=\"/galaxy/server/database/objects/c/9/c/dataset_c9c244ee-939c-40b9-a72b-ef5a92617b8c.dat\" TMP_DIR=/galaxy/server/database/tmp I=\"/galaxy/server/database/objects/5/1/1/dataset_5111941e-4728-427e-a784-7aa6a9f66da8.dat\" I=\"/galaxy/server/database/objects/b/e/f/dataset_bef63fda-01bc-472b-bd2c-c46eff196fda.dat\" I=\"/galaxy/server/database/objects/5/f/6/dataset_5f65b603-5743-4c4f-8743-1bbfa88b1395.dat\"",  "command_version": "",  "create_time": "2021-04-28T08:20:47.131185",  "exit_code": 1,  "external_id": "gxy-7895r",  "galaxy_version": "21.01",  "history_id": "c41495abb090815d",  "id": "f318842bb0695144",  "inputs": {   "inputs": {    "id": "681e80e35a48b12f",    "src": "hda",    "uuid": "5111941e-4728-427e-a784-7aa6a9f66da8"   },   "inputs1": {    "id": "681e80e35a48b12f",    "src": "hda",    "uuid": "5111941e-4728-427e-a784-7aa6a9f66da8"   },   "inputs2": {    "id": "f318842bb0695144",    "src": "hda",    "uuid": "bef63fda-01bc-472b-bd2c-c46eff196fda"   },   "inputs3": {    "id": "258b3649a8b5deae",    "src": "hda",    "uuid": "5f65b603-5743-4c4f-8743-1bbfa88b1395"   }  },  "job_messages": [   {    "code_desc": "",    "desc": "Fatal error: Exit code 1 ()",    "error_level": 3,    "exit_code": 1,    "type": "exit_code"   }  ],  "job_metrics": [   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619598058.0000000",    "title": "Job End Time",    "value": "2021-04-28 08:20:58"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619598058.0000000",    "title": "Job Start Time",    "value": "2021-04-28 08:20:58"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   }  ],  "job_stderr": "Error: Unable to access jarfile /MergeSamFiles.jar\n",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "output1": {    "id": "af3286935c7a1d4d",    "src": "hda",    "uuid": "c9c244ee-939c-40b9-a72b-ef5a92617b8c"   }  },  "params": {   "__input_ext": "\"bam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "mergeSD": "\"true\""  },  "state": "error",  "stderr": "\nError: Unable to access jarfile /MergeSamFiles.jar\n",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T08:20:59.935101",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 26.385751008987427, "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0", "tool_version": "1.2.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Error: Unable to access jarfile /MergeSamFiles.jar
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1 (Test #1)" name="0" time="23.71550679206848">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1 (Test #2)" name="1" time="7.497178792953491">
+        
+            <error type="error" message="parameter 'index': an invalid option ('equCab2chrM') was selected (valid options: equCab2)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027index\u0027: an invalid option (\u0027equCab2chrM\u0027) was selected (valid options: equCab2)", "inputs": {  "source|index": "equCab2chrM",  "source|index_source": "cached",  "source|input1": {   "id": "dc5af8a0d058657e",   "src": "hda"  } }, "status": "error", "test_index": 1, "time_seconds": 7.497178792953491, "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1", "tool_version": "2.1.1"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1 (Test #3)" name="2" time="39.16659712791443">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtool_filter2/samtool_filter2/1.8+galaxy1 (Test #1)" name="0" time="41.54217195510864">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtool_filter2/samtool_filter2/1.8+galaxy1 (Test #2)" name="1" time="41.539613008499146">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtool_filter2/samtool_filter2/1.8+galaxy1 (Test #3)" name="2" time="41.54861354827881">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_flagstat/samtools_flagstat/2.0.3 (Test #1)" name="0" time="26.281363487243652">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #1)" name="0" time="39.066969871520996">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 3 samples in 3 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #2)" name="1" time="43.481794595718384">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #3)" name="2" time="39.34661793708801">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #4)" name="3" time="40.43306565284729">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #5)" name="4" time="32.98271560668945">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_rmdup/samtools_rmdup/2.0.1 (Test #1)" name="0" time="42.029170513153076">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [bam_rmdup_core] processing reference chrM...
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_slice_bam/samtools_slice_bam/2.0.1 (Test #1)" name="0" time="42.98852205276489">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_slice_bam/samtools_slice_bam/2.0.1 (Test #2)" name="1" time="39.02483248710632">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_slice_bam/samtools_slice_bam/2.0.1 (Test #3)" name="2" time="28.506380796432495">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #1)" name="0" time="20.364487171173096">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #2)" name="1" time="39.084375858306885">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #3)" name="2" time="28.195579051971436">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #4)" name="3" time="40.10170006752014">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #5)" name="4" time="34.68795037269592">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #6)" name="5" time="29.331162929534912">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #7)" name="6" time="37.19357705116272">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #8)" name="7" time="35.81836438179016">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #1)" name="0" time="38.23438262939453">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Note: the --sample option not given, applying all records regardless of the genotypeThe site 1:5 overlaps with another variant, skipping...Applied 12 variants
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #2)" name="1" time="24.295175552368164">
+        
+            <error type="error" message="parameter 'fasta_ref': an invalid option ('consensus') was selected (valid options: priPac1,caeRem3,bosTau5,danRer7,calJac1,myoLuc2,phiX,susScr2,aplCal1,sorAra1,IscaW1,aptMan1,eschColi_APEC_O1,eschColi_K12_W3110,ornAna1,dm6,bosTau3,sacCer2,ponAbe2,caeJap2,droYak2,oryCun1,Bombyx_mori_p50T_2.0,rn6,apiMel1,micMur1,mm8,ce2,ailMel1,eschColi_O157H7,susScr3,ce10,pseuAeru_UCBPP_PA14,braFlo1,burkPseu_1710B,bordBron,borEut13,vicPac2,Zea_mays_B73_RefGen_v2,susScr1,ce4,panPan1,vicPac1,xenTro3,bosTau2,strPur3,droWil1,ce5,pseuAeru_PAO1,caeJap1,eschColi_K12_DH10B,eschColi_O157H7_TW14359,27835,equCab2,rn5,ci2,papHam1,venter1,caeRem2,rheMac3,panTro1,droGri2,hg38,hetGla1,oviAri1,dm3,taeGut1,cb3,petMar1,echTel1,nomLeu1,melGal1,caeJap4,choHof1,caePb1,eschColi_O157H7_EDL933,bosTau7,otoGar3,geoFor1,droMoj3,Arabidopsis_thaliana_TAIR10,strePneu_R6,musFur1,Xanthomonas_oryzae_MAFF_311018,canFam2,eschColi_O157H7_EC4115,hg_g1k_v37,felCat5,Xanthomonas_oryzae_KACC10331,gadMor1,cerSim1,pseuAeru_PA7,sarHar1,nomLeu3,caeRem4,droSim1,Hydra_JCVI,papAnu2,Spur_v2.6,tupBel1,ce8,felCat4,strPur2,tarSyr1,panTro2,bosTauMd3,droSec1,Homo_sapiens_AK1,AaegL1,Sscrofa9.58,melUnd1,gasAcu1,monDom4,hg19,mm9,felCat3,ce9,rheMac2,AgamP3,canFam3,caeRem1,Homo_sapiens_nuHg19_mtrCRS,saiBol1,oryLat2,monDom1,oryCun2,turTru2,ce3,eschColi_CFT073,danRer10,Tcas_3.0,apiMel2,Xanthomonas_oryzae_PXO99A,dasNov3,anoCar2,caeJap3,canFam1,anoCar1,panTro4,hg18,droAna3,burkPseu_1106A,ente638,galGal3,loxAfr1,droVir2,danRer5,galGal4,hg19_rCRS_pUC18_phiX174,loxAfr3,caePb3,burkPseu_K96243,droEre2,Ptrichocarpa_156,Tcacao_1.0,bosTau6,xenTro1,Amel_4.5,bosTau8,baciSubt,xenTro2,caePb2,droVir3,dasNov1,speTri2,apiMel4,Schizosaccharomyces_pombe_1.1,rn3,bosTau4,gorGor3,sacCer3,otoGar1,dp4,PhumU1,cavPor3,monDom5,dipOrd1,rn4,allMis1,danRer6,felCat8,triCas2,ce7,CpipJ1,droPer1,calJac3,Araly1,panTro3,nomLeu2,oryza_sativa_japonica_nipponbare_IRGSP4.0,burkPseu_668,chrPic1,apiMel3,ce6,eschColi_K12,mm10,Arabidopsis_thaliana_TAIR9)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027fasta_ref\u0027: an invalid option (\u0027consensus\u0027) was selected (valid options: priPac1,caeRem3,bosTau5,danRer7,calJac1,myoLuc2,phiX,susScr2,aplCal1,sorAra1,IscaW1,aptMan1,eschColi_APEC_O1,eschColi_K12_W3110,ornAna1,dm6,bosTau3,sacCer2,ponAbe2,caeJap2,droYak2,oryCun1,Bombyx_mori_p50T_2.0,rn6,apiMel1,micMur1,mm8,ce2,ailMel1,eschColi_O157H7,susScr3,ce10,pseuAeru_UCBPP_PA14,braFlo1,burkPseu_1710B,bordBron,borEut13,vicPac2,Zea_mays_B73_RefGen_v2,susScr1,ce4,panPan1,vicPac1,xenTro3,bosTau2,strPur3,droWil1,ce5,pseuAeru_PAO1,caeJap1,eschColi_K12_DH10B,eschColi_O157H7_TW14359,27835,equCab2,rn5,ci2,papHam1,venter1,caeRem2,rheMac3,panTro1,droGri2,hg38,hetGla1,oviAri1,dm3,taeGut1,cb3,petMar1,echTel1,nomLeu1,melGal1,caeJap4,choHof1,caePb1,eschColi_O157H7_EDL933,bosTau7,otoGar3,geoFor1,droMoj3,Arabidopsis_thaliana_TAIR10,strePneu_R6,musFur1,Xanthomonas_oryzae_MAFF_311018,canFam2,eschColi_O157H7_EC4115,hg_g1k_v37,felCat5,Xanthomonas_oryzae_KACC10331,gadMor1,cerSim1,pseuAeru_PA7,sarHar1,nomLeu3,caeRem4,droSim1,Hydra_JCVI,papAnu2,Spur_v2.6,tupBel1,ce8,felCat4,strPur2,tarSyr1,panTro2,bosTauMd3,droSec1,Homo_sapiens_AK1,AaegL1,Sscrofa9.58,melUnd1,gasAcu1,monDom4,hg19,mm9,felCat3,ce9,rheMac2,AgamP3,canFam3,caeRem1,Homo_sapiens_nuHg19_mtrCRS,saiBol1,oryLat2,monDom1,oryCun2,turTru2,ce3,eschColi_CFT073,danRer10,Tcas_3.0,apiMel2,Xanthomonas_oryzae_PXO99A,dasNov3,anoCar2,caeJap3,canFam1,anoCar1,panTro4,hg18,droAna3,burkPseu_1106A,ente638,galGal3,loxAfr1,droVir2,danRer5,galGal4,hg19_rCRS_pUC18_phiX174,loxAfr3,caePb3,burkPseu_K96243,droEre2,Ptrichocarpa_156,Tcacao_1.0,bosTau6,xenTro1,Amel_4.5,bosTau8,baciSubt,xenTro2,caePb2,droVir3,dasNov1,speTri2,apiMel4,Schizosaccharomyces_pombe_1.1,rn3,bosTau4,gorGor3,sacCer3,otoGar1,dp4,PhumU1,cavPor3,monDom5,dipOrd1,rn4,allMis1,danRer6,felCat8,triCas2,ce7,CpipJ1,droPer1,calJac3,Araly1,panTro3,nomLeu2,oryza_sativa_japonica_nipponbare_IRGSP4.0,burkPseu_668,chrPic1,apiMel3,ce6,eschColi_K12,mm10,Arabidopsis_thaliana_TAIR9)", "inputs": {  "chain": true,  "input_file": {   "id": "79c9d514577e205b",   "src": "hda"  },  "reference_source|fasta_ref": "consensus",  "reference_source|reference_source_selector": "cached",  "sec_default|mask": {   "id": "539aacebe1df8ab2",   "src": "hda"  } }, "status": "error", "test_index": 1, "time_seconds": 24.295175552368164, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1", "tool_version": "1.10+galaxy1"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #3)" name="2" time="46.73592710494995">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Note: the --sample option not given, applying all records regardless of the genotypeThe site 1:5 overlaps with another variant, skipping...Applied 12 variants
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #4)" name="3" time="45.02873730659485">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Note: the --sample option not given, applying all records regardless of the genotypeThe site 1:5 overlaps with another variant, skipping...Applied 6 variants
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_gtcheck/bcftools_gtcheck/1.10 (Test #1)" name="0" time="30.158127307891846">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_fixploidy/bcftools_plugin_fixploidy/1.10 (Test #1)" name="0" time="20.699218034744263">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_annotatebed/2.30.0 (Test #1)" name="0" time="42.21506094932556">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.30.0 (Test #1)" name="0" time="32.624855279922485">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.30.0 (Test #2)" name="1" time="28.40213704109192">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bed12tobed6/2.30.0 (Test #1)" name="0" time="21.710567712783813">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bedpetobam/2.30.0 (Test #1)" name="0" time="42.17063355445862">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bedtobam/2.30.0 (Test #1)" name="0" time="42.139979124069214">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bedtoigv/2.30.0 (Test #1)" name="0" time="33.963749408721924">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_closestbed/2.30.0 (Test #1)" name="0" time="24.640047788619995">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_closestbed/2.30.0 (Test #2)" name="1" time="62.21763730049133">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_closestbed/2.30.0 (Test #3)" name="2" time="54.15834450721741">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_closestbed/2.30.0 (Test #4)" name="3" time="39.54014015197754">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_closestbed/2.30.0 (Test #5)" name="4" time="53.11764740943909">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_closestbed/2.30.0 (Test #6)" name="5" time="28.210643529891968">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_clusterbed/2.30.0 (Test #1)" name="0" time="47.71549320220947">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_complementbed/2.30.0 (Test #1)" name="0" time="35.4546844959259">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #1)" name="0" time="45.13486623764038">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #2)" name="1" time="55.07104754447937">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #3)" name="2" time="52.35211515426636">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #4)" name="3" time="49.5123336315155">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #5)" name="4" time="23.351701259613037">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #6)" name="5" time="42.714975118637085">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.30.0 (Test #7)" name="6" time="46.74475359916687">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_expandbed/2.30.0 (Test #1)" name="0" time="42.178624868392944">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_expandbed/2.30.0 (Test #2)" name="1" time="29.135029554367065">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_fisher/2.30.0 (Test #1)" name="0" time="38.41602563858032">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_flankbed/2.30.0 (Test #1)" name="0" time="40.12039637565613">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_flankbed/2.30.0 (Test #2)" name="1" time="46.051108598709106">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.30.0 (Test #1)" name="0" time="40.40384340286255">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed/2.30.0 (Test #1)" name="0" time="58.71337413787842">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            index file /galaxy/server/database/objects/3/2/3/dataset_323e9c4b-91cc-4f1b-831c-4fe46b8b2db1.dat.fai not found, generating...
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed/2.30.0 (Test #2)" name="1" time="57.220319747924805">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_groupbybed/2.30.0 (Test #1)" name="0" time="21.555166482925415">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_groupbybed/2.30.0 (Test #2)" name="1" time="36.529359579086304">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_groupbybed/2.30.0 (Test #3)" name="2" time="23.59084963798523">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #1)" name="0" time="38.141974210739136">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #2)" name="1" time="76.77178716659546">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #11)" name="10" time="43.81182098388672">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #12)" name="11" time="35.0759162902832">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #13)" name="12" time="39.278324842453">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #14)" name="13" time="40.5754017829895">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #15)" name="14" time="41.458136558532715">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #16)" name="15" time="35.744595766067505">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #17)" name="16" time="38.07672429084778">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #18)" name="17" time="38.511046171188354">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #19)" name="18" time="32.488932371139526">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #20)" name="19" time="43.56837177276611">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #3)" name="2" time="75.00139021873474">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #21)" name="20" time="39.40422248840332">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #22)" name="21" time="40.103140354156494">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #4)" name="3" time="62.361618757247925">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #5)" name="4" time="41.90244913101196">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #6)" name="5" time="31.402729749679565">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #7)" name="6" time="57.430421352386475">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #8)" name="7" time="51.42161726951599">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #9)" name="8" time="55.93282079696655">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0 (Test #10)" name="9" time="27.526840448379517">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_jaccard/2.30.0 (Test #1)" name="0" time="39.810006856918335">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_jaccard/2.30.0 (Test #2)" name="1" time="39.33144235610962">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_links/2.30.0 (Test #1)" name="0" time="33.45685839653015">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_links/2.30.0 (Test #2)" name="1" time="29.74384570121765">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_makewindowsbed/2.30.0 (Test #1)" name="0" time="32.38578772544861">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_makewindowsbed/2.30.0 (Test #2)" name="1" time="36.417306661605835">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_makewindowsbed/2.30.0 (Test #3)" name="2" time="29.755098819732666">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            WARNING: Interval :0-0 is smaller than the number of windows requested. Skipping.
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_makewindowsbed/2.30.0 (Test #4)" name="3" time="42.29974889755249">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_map/2.30.0.2 (Test #1)" name="0" time="50.352415323257446">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_map/2.30.0.2 (Test #2)" name="1" time="34.262574911117554">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_map/2.30.0.2 (Test #3)" name="2" time="52.27801489830017">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_map/2.30.0.2 (Test #4)" name="3" time="30.375597953796387">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_map/2.30.0.2 (Test #5)" name="4" time="33.75775337219238">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_maskfastabed/2.30.0 (Test #1)" name="0" time="32.4785795211792">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_maskfastabed/2.30.0 (Test #2)" name="1" time="31.093037128448486">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_maskfastabed/2.30.0 (Test #3)" name="2" time="46.265650510787964">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.30.0 (Test #1)" name="0" time="25.63857674598694">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.30.0 (Test #2)" name="1" time="22.21353554725647">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.30.0 (Test #3)" name="2" time="30.03756356239319">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.30.0 (Test #4)" name="3" time="21.26274013519287">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.30.0 (Test #5)" name="4" time="26.637781858444214">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multicovtbed/2.30.0 (Test #1)" name="0" time="38.861950159072876">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.30.0 (Test #1)" name="0" time="67.5512764453888">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.30.0 (Test #2)" name="1" time="58.52374196052551">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.30.0 (Test #3)" name="2" time="41.742931842803955">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_nucbed/2.30.0 (Test #1)" name="0" time="38.59613013267517">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            index file /galaxy/server/database/objects/8/5/6/dataset_856db0a0-dfd9-4223-9ba5-c479a640f80d.dat.fai not found, generating...
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_nucbed/2.30.0 (Test #2)" name="1" time="30.891539812088013">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_nucbed/2.30.0 (Test #3)" name="2" time="29.397643566131592">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            index file /galaxy/server/database/objects/9/9/f/dataset_99f6db61-eb96-4ca6-88dc-c8c6d1f9b263.dat.fai not found, generating...
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_overlapbed/2.30.0 (Test #1)" name="0" time="44.662689208984375">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_randombed/2.30.0 (Test #1)" name="0" time="17.459920644760132">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_reldistbed/2.30.0 (Test #1)" name="0" time="29.266846418380737">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_shufflebed/2.30.0 (Test #1)" name="0" time="54.89108943939209">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_shufflebed/2.30.0 (Test #2)" name="1" time="38.8062105178833">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_shufflebed/2.30.0 (Test #3)" name="2" time="48.520222187042236">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_shufflebed/2.30.0 (Test #4)" name="3" time="34.377047061920166">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_slopbed/2.30.0 (Test #1)" name="0" time="49.78308629989624">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_slopbed/2.30.0 (Test #2)" name="1" time="48.88503623008728">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.30.0 (Test #1)" name="0" time="22.060242652893066">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.30.0 (Test #2)" name="1" time="26.590962886810303">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.30.0 (Test #3)" name="2" time="42.10391139984131">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_spacingbed/2.30.0 (Test #1)" name="0" time="41.25488638877869">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_subtractbed/2.30.0 (Test #1)" name="0" time="35.659074783325195">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_subtractbed/2.30.0 (Test #2)" name="1" time="39.587597608566284">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_subtractbed/2.30.0 (Test #3)" name="2" time="30.60173749923706">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_tagbed/2.30.0 (Test #1)" name="0" time="45.44534921646118">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_unionbedgraph/2.30.0 (Test #1)" name="0" time="47.354363679885864">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_unionbedgraph/2.30.0 (Test #2)" name="1" time="59.05851864814758">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_unionbedgraph/2.30.0 (Test #3)" name="2" time="52.13101267814636">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_unionbedgraph/2.30.0 (Test #4)" name="3" time="49.81055307388306">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.30.0 (Test #1)" name="0" time="38.22863054275513">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.30.0 (Test #2)" name="1" time="41.196646213531494">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.30.0 (Test #3)" name="2" time="36.72739887237549">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+</testsuite>
