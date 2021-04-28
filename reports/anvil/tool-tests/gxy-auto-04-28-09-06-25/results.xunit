@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Results (powered by Planemo)"
+           tests="25"
+           errors="1"
+           failures="4"
+           skip="0">
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2 (Test #1)" name="0" time="29.677785634994507">
+        
+            
+                <error type="error" message="Tool exit code: 0"><![CDATA[
+                    { "inputs": {  "in_sam": {   "id": "63bd5a11685d165d",   "src": "hda"  },  "m": "5",  "n": "5" }, "job": {  "command_line": "python /cvmfs/main.galaxyproject.org/shed_tools/toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/ac70bfaf1224/filter_on_md/MDtag_filter.py /galaxy/server/database/objects/d/f/5/dataset_df593cc7-3893-4173-9eaf-0f31b5805a1b.dat 5 5 /galaxy/server/database/objects/4/2/8/dataset_4284cafd-06ff-42da-99f6-de9baa16b580.dat no XXXX",  "command_version": "",  "create_time": "2021-04-28T09:20:50.499652",  "exit_code": 0,  "external_id": "gxy-6x7js",  "galaxy_version": "20.09",  "history_id": "3b0a7e28d349cf42",  "id": "60d4dd6718c9e975",  "inputs": {   "in_sam": {    "id": "63bd5a11685d165d",    "src": "hda",    "uuid": "df593cc7-3893-4173-9eaf-0f31b5805a1b"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2147.0000000",    "title": "Memory Allocated (MB)",    "value": "2147"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619601654.0000000",    "title": "Job Start Time",    "value": "2021-04-28 09:20:54"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619601654.0000000",    "title": "Job End Time",    "value": "2021-04-28 09:20:54"   },   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   }  ],  "job_stderr": "",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "out_sam": {    "id": "60d4dd6718c9e975",    "src": "hda",    "uuid": "4284cafd-06ff-42da-99f6-de9baa16b580"   }  },  "params": {   "__input_ext": "\"sam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "m": "\"5\"",   "n": "\"5\"",   "saveDiscarded": "\"false\""  },  "state": "ok",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T09:20:55.069406",  "user_email": "alex@fake.org" }, "output_problems": [  "Output out_sam: Test output file (test_md_filtered.sam) is missing. If you are using planemo, try adding --update_test_data to generate it." ], "status": "failure", "test_index": 0, "time_seconds": 29.677785634994507, "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2", "tool_version": "1.0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2 (Test #2)" name="1" time="31.899768114089966">
+        
+            
+                <error type="error" message="Tool exit code: 0"><![CDATA[
+                    { "inputs": {  "in_sam": {   "id": "128823d868fa4f61",   "src": "hda"  },  "m": "5",  "n": "5",  "saveDiscarded": true }, "job": {  "command_line": "python /cvmfs/main.galaxyproject.org/shed_tools/toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/ac70bfaf1224/filter_on_md/MDtag_filter.py /galaxy/server/database/objects/7/2/4/dataset_7244518f-8c45-47ce-8f0b-faaf21dccd62.dat 5 5 /galaxy/server/database/objects/0/3/5/dataset_03564134-fffb-4339-b901-9b55165d9df7.dat yes /galaxy/server/database/objects/9/5/6/dataset_95675dad-3f8a-44ca-a3f4-5f03f1586176.dat",  "command_version": "",  "create_time": "2021-04-28T09:21:21.016859",  "exit_code": 0,  "external_id": "gxy-74h7m",  "galaxy_version": "20.09",  "history_id": "3b0a7e28d349cf42",  "id": "e507acbbc0bb0a97",  "inputs": {   "in_sam": {    "id": "128823d868fa4f61",    "src": "hda",    "uuid": "7244518f-8c45-47ce-8f0b-faaf21dccd62"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2147.0000000",    "title": "Memory Allocated (MB)",    "value": "2147"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619601685.0000000",    "title": "Job Start Time",    "value": "2021-04-28 09:21:25"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619601685.0000000",    "title": "Job End Time",    "value": "2021-04-28 09:21:25"   },   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   }  ],  "job_stderr": "",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "discarded_sam": {    "id": "d7e1909f1745ac3e",    "src": "hda",    "uuid": "95675dad-3f8a-44ca-a3f4-5f03f1586176"   },   "out_sam": {    "id": "e507acbbc0bb0a97",    "src": "hda",    "uuid": "03564134-fffb-4339-b901-9b55165d9df7"   }  },  "params": {   "__input_ext": "\"sam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "m": "\"5\"",   "n": "\"5\"",   "saveDiscarded": "\"true\""  },  "state": "ok",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T09:21:26.295821",  "user_email": "alex@fake.org" }, "output_problems": [  "Output out_sam: Test output file (test_md_selected.sam) is missing. If you are using planemo, try adding --update_test_data to generate it.",  "Output discarded_sam: Test output file (test_md_discarded.sam) is missing. If you are using planemo, try adding --update_test_data to generate it." ], "status": "failure", "test_index": 1, "time_seconds": 31.899768114089966, "tool_id": "toolshed.g2.bx.psu.edu/repos/boris/filter_on_md/MDtag_filter/1.0.2", "tool_version": "1.0.2"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0 (Test #1)" name="0" time="55.384419441223145">
+        
+            
+                <error type="error" message="Tool exit code: 1"><![CDATA[
+                    { "inputs": {  "inputs": [   {    "id": "fb75ecaecc2368d4",    "src": "hda"   },   {    "id": "1ce2540400b756cc",    "src": "hda"   }  ],  "mergeSD": true }, "job": {  "command_line": "java -Xmx2G -jar $JAVA_JAR_PATH/MergeSamFiles.jar MSD=true VALIDATION_STRINGENCY=LENIENT O=\"/galaxy/server/database/objects/0/7/f/dataset_07fba603-9038-43f9-921e-88097991891a.dat\" TMP_DIR=/galaxy/server/database/tmp I=\"/galaxy/server/database/objects/4/e/c/dataset_4eca4802-3424-4cae-a557-4289bb89b64a.dat\" I=\"/galaxy/server/database/objects/1/5/7/dataset_1578f34e-8db0-47fc-909a-3b3a93a06a6f.dat\"",  "command_version": "",  "create_time": "2021-04-28T09:21:21.158871",  "exit_code": 1,  "external_id": "gxy-mmhvl",  "galaxy_version": "20.09",  "history_id": "3b0a7e28d349cf42",  "id": "d7e1909f1745ac3e",  "inputs": {   "inputs": {    "id": "fb75ecaecc2368d4",    "src": "hda",    "uuid": "4eca4802-3424-4cae-a557-4289bb89b64a"   },   "inputs1": {    "id": "fb75ecaecc2368d4",    "src": "hda",    "uuid": "4eca4802-3424-4cae-a557-4289bb89b64a"   },   "inputs2": {    "id": "1ce2540400b756cc",    "src": "hda",    "uuid": "1578f34e-8db0-47fc-909a-3b3a93a06a6f"   }  },  "job_messages": [   {    "code_desc": "",    "desc": "Fatal error: Exit code 1 ()",    "error_level": 3,    "exit_code": 1,    "type": "exit_code"   }  ],  "job_metrics": [   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2147.0000000",    "title": "Memory Allocated (MB)",    "value": "2147"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619601700.0000000",    "title": "Job Start Time",    "value": "2021-04-28 09:21:40"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619601700.0000000",    "title": "Job End Time",    "value": "2021-04-28 09:21:40"   },   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   }  ],  "job_stderr": "Error: Unable to access jarfile /MergeSamFiles.jar\n",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "output1": {    "id": "4b6bc405828d5715",    "src": "hda",    "uuid": "07fba603-9038-43f9-921e-88097991891a"   }  },  "params": {   "__input_ext": "\"bam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "mergeSD": "\"true\""  },  "state": "error",  "stderr": "\nError: Unable to access jarfile /MergeSamFiles.jar\n",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T09:21:41.789486",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 0, "time_seconds": 55.384419441223145, "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0", "tool_version": "1.2.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Error: Unable to access jarfile /MergeSamFiles.jar
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0 (Test #2)" name="1" time="55.40091609954834">
+        
+            
+                <error type="error" message="Tool exit code: 1"><![CDATA[
+                    { "inputs": {  "inputs": [   {    "id": "fb75ecaecc2368d4",    "src": "hda"   },   {    "id": "1ce2540400b756cc",    "src": "hda"   },   {    "id": "9275b48fc11ed828",    "src": "hda"   }  ],  "mergeSD": true }, "job": {  "command_line": "java -Xmx2G -jar $JAVA_JAR_PATH/MergeSamFiles.jar MSD=true VALIDATION_STRINGENCY=LENIENT O=\"/galaxy/server/database/objects/3/5/3/dataset_353e0227-e7ed-400f-ae08-13117f7f7533.dat\" TMP_DIR=/galaxy/server/database/tmp I=\"/galaxy/server/database/objects/4/e/c/dataset_4eca4802-3424-4cae-a557-4289bb89b64a.dat\" I=\"/galaxy/server/database/objects/1/5/7/dataset_1578f34e-8db0-47fc-909a-3b3a93a06a6f.dat\" I=\"/galaxy/server/database/objects/d/8/a/dataset_d8a0eed0-cd26-46f3-9fc4-7f2f6d282b45.dat\"",  "command_version": "",  "create_time": "2021-04-28T09:21:23.369397",  "exit_code": 1,  "external_id": "gxy-njf7l",  "galaxy_version": "20.09",  "history_id": "3b0a7e28d349cf42",  "id": "4b6bc405828d5715",  "inputs": {   "inputs": {    "id": "fb75ecaecc2368d4",    "src": "hda",    "uuid": "4eca4802-3424-4cae-a557-4289bb89b64a"   },   "inputs1": {    "id": "fb75ecaecc2368d4",    "src": "hda",    "uuid": "4eca4802-3424-4cae-a557-4289bb89b64a"   },   "inputs2": {    "id": "1ce2540400b756cc",    "src": "hda",    "uuid": "1578f34e-8db0-47fc-909a-3b3a93a06a6f"   },   "inputs3": {    "id": "9275b48fc11ed828",    "src": "hda",    "uuid": "d8a0eed0-cd26-46f3-9fc4-7f2f6d282b45"   }  },  "job_messages": [   {    "code_desc": "",    "desc": "Fatal error: Exit code 1 ()",    "error_level": 3,    "exit_code": 1,    "type": "exit_code"   }  ],  "job_metrics": [   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2147.0000000",    "title": "Memory Allocated (MB)",    "value": "2147"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1619601701.0000000",    "title": "Job Start Time",    "value": "2021-04-28 09:21:41"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1619601701.0000000",    "title": "Job End Time",    "value": "2021-04-28 09:21:41"   },   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   }  ],  "job_stderr": "Error: Unable to access jarfile /MergeSamFiles.jar\n",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "output1": {    "id": "cb2b143cbe6fcc35",    "src": "hda",    "uuid": "353e0227-e7ed-400f-ae08-13117f7f7533"   }  },  "params": {   "__input_ext": "\"bam\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "mergeSD": "\"true\""  },  "state": "error",  "stderr": "\nError: Unable to access jarfile /MergeSamFiles.jar\n",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-04-28T09:21:42.827749",  "user_email": "alex@fake.org" }, "output_problems": [  "Job in error state.",  "Job in error state." ], "status": "failure", "test_index": 1, "time_seconds": 55.40091609954834, "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.2.0", "tool_version": "1.2.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Error: Unable to access jarfile /MergeSamFiles.jar
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_flagstat/samtools_flagstat/2.0.3 (Test #1)" name="0" time="32.27260422706604">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #1)" name="0" time="45.84908580780029">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 3 samples in 3 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #2)" name="1" time="48.13455557823181">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #3)" name="2" time="47.78775954246521">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #4)" name="3" time="40.69749331474304">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4 (Test #5)" name="4" time="36.39224886894226">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_slice_bam/samtools_slice_bam/2.0.1 (Test #1)" name="0" time="61.109050035476685">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_slice_bam/samtools_slice_bam/2.0.1 (Test #2)" name="1" time="59.4426167011261">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_slice_bam/samtools_slice_bam/2.0.1 (Test #3)" name="2" time="56.03542375564575">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #1)" name="0" time="42.38486313819885">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #2)" name="1" time="39.42629957199097">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #3)" name="2" time="35.403711795806885">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #4)" name="3" time="24.26079750061035">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #5)" name="4" time="31.45096468925476">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #6)" name="5" time="24.050719738006592">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #7)" name="6" time="26.392179250717163">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0.3 (Test #8)" name="7" time="22.772669792175293">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #1)" name="0" time="55.58320617675781">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Note: the --sample option not given, applying all records regardless of the genotypeThe site 1:5 overlaps with another variant, skipping...Applied 12 variants
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #2)" name="1" time="23.941115617752075">
+        
+            <error type="error" message="parameter 'fasta_ref': an invalid option ('consensus') was selected (valid options: micMur1,droGri2,xenTro1,Spur_v2.6,Bombyx_mori_p50T_2.0,ce7,dm3,calJac3,bosTau2,speTri2,caePb1,caeRem1,eschColi_K12,burkPseu_668,otoGar1,panTro3,turTru2,mm9,canFam1,nomLeu2,apiMel2,hetGla1,monDom5,petMar1,pseuAeru_PA7,oviAri1,Tcacao_1.0,bosTau3,dipOrd1,caeRem3,anoCar1,rheMac3,strPur2,Tcas_3.0,equCab2,gadMor1,apiMel4,sacCer2,nomLeu3,tupBel1,Arabidopsis_thaliana_TAIR10,bosTau4,mm10,panTro1,Sscrofa9.58,oryCun2,eschColi_K12_W3110,papHam1,loxAfr3,eschColi_K12_DH10B,danRer10,AaegL1,caePb2,ente638,caePb3,bordBron,bosTau5,susScr2,CpipJ1,droMoj3,musFur1,danRer7,mm8,Zea_mays_B73_RefGen_v2,eschColi_O157H7_EDL933,caeJap3,cavPor3,sorAra1,Xanthomonas_oryzae_KACC10331,susScr3,sacCer3,caeJap2,apiMel3,felCat8,Xanthomonas_oryzae_MAFF_311018,bosTau7,phiX,papAnu2,rn6,echTel1,droAna3,chrPic1,ce3,ce2,galGal3,hg_g1k_v37,danRer6,cerSim1,otoGar3,burkPseu_1710B,Xanthomonas_oryzae_PXO99A,taeGut1,Amel_4.5,dasNov3,Schizosaccharomyces_pombe_1.1,strPur3,droVir2,ci2,susScr1,aplCal1,rn3,aptMan1,caeRem4,ce5,Araly1,eschColi_O157H7,xenTro2,gasAcu1,caeJap4,IscaW1,oryLat2,tarSyr1,dasNov1,ponAbe2,rheMac2,calJac1,droSim1,monDom4,felCat4,monDom1,cb3,pseuAeru_UCBPP_PA14,vicPac1,canFam3,dm6,ce10,eschColi_O157H7_TW14359,Ptrichocarpa_156,burkPseu_1106A,borEut13,bosTauMd3,xenTro3,panTro4,geoFor1,panTro2,droYak2,braFlo1,AgamP3,PhumU1,apiMel1,ornAna1,myoLuc2,rn5,sarHar1,gorGor3,melUnd1,ce4,droVir3,hg38,priPac1,saiBol1,ce6,anoCar2,eschColi_CFT073,pseuAeru_PAO1,danRer5,melGal1,ce9,bosTau8,Arabidopsis_thaliana_TAIR9,oryCun1,allMis1,hg19_rCRS_pUC18_phiX174,panPan1,galGal4,felCat5,venter1,strePneu_R6,loxAfr1,felCat3,burkPseu_K96243,oryza_sativa_japonica_nipponbare_IRGSP4.0,droEre2,caeRem2,dp4,Homo_sapiens_AK1,choHof1,Homo_sapiens_nuHg19_mtrCRS,Hydra_JCVI,bosTau6,canFam2,ce8,droPer1,ailMel1,rn4,vicPac2,triCas2,caeJap1,hg19,27835,eschColi_O157H7_EC4115,hg18,nomLeu1,droSec1,droWil1,baciSubt,eschColi_APEC_O1)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027fasta_ref\u0027: an invalid option (\u0027consensus\u0027) was selected (valid options: micMur1,droGri2,xenTro1,Spur_v2.6,Bombyx_mori_p50T_2.0,ce7,dm3,calJac3,bosTau2,speTri2,caePb1,caeRem1,eschColi_K12,burkPseu_668,otoGar1,panTro3,turTru2,mm9,canFam1,nomLeu2,apiMel2,hetGla1,monDom5,petMar1,pseuAeru_PA7,oviAri1,Tcacao_1.0,bosTau3,dipOrd1,caeRem3,anoCar1,rheMac3,strPur2,Tcas_3.0,equCab2,gadMor1,apiMel4,sacCer2,nomLeu3,tupBel1,Arabidopsis_thaliana_TAIR10,bosTau4,mm10,panTro1,Sscrofa9.58,oryCun2,eschColi_K12_W3110,papHam1,loxAfr3,eschColi_K12_DH10B,danRer10,AaegL1,caePb2,ente638,caePb3,bordBron,bosTau5,susScr2,CpipJ1,droMoj3,musFur1,danRer7,mm8,Zea_mays_B73_RefGen_v2,eschColi_O157H7_EDL933,caeJap3,cavPor3,sorAra1,Xanthomonas_oryzae_KACC10331,susScr3,sacCer3,caeJap2,apiMel3,felCat8,Xanthomonas_oryzae_MAFF_311018,bosTau7,phiX,papAnu2,rn6,echTel1,droAna3,chrPic1,ce3,ce2,galGal3,hg_g1k_v37,danRer6,cerSim1,otoGar3,burkPseu_1710B,Xanthomonas_oryzae_PXO99A,taeGut1,Amel_4.5,dasNov3,Schizosaccharomyces_pombe_1.1,strPur3,droVir2,ci2,susScr1,aplCal1,rn3,aptMan1,caeRem4,ce5,Araly1,eschColi_O157H7,xenTro2,gasAcu1,caeJap4,IscaW1,oryLat2,tarSyr1,dasNov1,ponAbe2,rheMac2,calJac1,droSim1,monDom4,felCat4,monDom1,cb3,pseuAeru_UCBPP_PA14,vicPac1,canFam3,dm6,ce10,eschColi_O157H7_TW14359,Ptrichocarpa_156,burkPseu_1106A,borEut13,bosTauMd3,xenTro3,panTro4,geoFor1,panTro2,droYak2,braFlo1,AgamP3,PhumU1,apiMel1,ornAna1,myoLuc2,rn5,sarHar1,gorGor3,melUnd1,ce4,droVir3,hg38,priPac1,saiBol1,ce6,anoCar2,eschColi_CFT073,pseuAeru_PAO1,danRer5,melGal1,ce9,bosTau8,Arabidopsis_thaliana_TAIR9,oryCun1,allMis1,hg19_rCRS_pUC18_phiX174,panPan1,galGal4,felCat5,venter1,strePneu_R6,loxAfr1,felCat3,burkPseu_K96243,oryza_sativa_japonica_nipponbare_IRGSP4.0,droEre2,caeRem2,dp4,Homo_sapiens_AK1,choHof1,Homo_sapiens_nuHg19_mtrCRS,Hydra_JCVI,bosTau6,canFam2,ce8,droPer1,ailMel1,rn4,vicPac2,triCas2,caeJap1,hg19,27835,eschColi_O157H7_EC4115,hg18,nomLeu1,droSec1,droWil1,baciSubt,eschColi_APEC_O1)", "inputs": {  "chain": true,  "input_file": {   "id": "5d53dc24ab14af8d",   "src": "hda"  },  "reference_source|fasta_ref": "consensus",  "reference_source|reference_source_selector": "cached",  "sec_default|mask": {   "id": "61e07023f9c1faaa",   "src": "hda"  } }, "status": "error", "test_index": 1, "time_seconds": 23.941115617752075, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1", "tool_version": "1.10+galaxy1"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #3)" name="2" time="27.938109397888184">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Note: the --sample option not given, applying all records regardless of the genotypeThe site 1:5 overlaps with another variant, skipping...Applied 12 variants
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10+galaxy1 (Test #4)" name="3" time="23.00851035118103">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Note: the --sample option not given, applying all records regardless of the genotypeThe site 1:5 overlaps with another variant, skipping...Applied 6 variants
+            ]]></system-err>
+        
+    </testcase>
+    
+</testsuite>
