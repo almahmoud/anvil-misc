@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Results (powered by Planemo)"
+           tests="47"
+           errors="5"
+           failures="0"
+           skip="0">
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.10 (Test #1)" name="0" time="25.64454936981201">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of lines: total/processed: 184/184
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.10 (Test #2)" name="1" time="24.00588059425354">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of lines: total/processed: 184/184
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.10 (Test #3)" name="2" time="25.635898113250732">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of lines: total/processed: 184/184
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.10 (Test #4)" name="3" time="28.538764238357544">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of lines: total/processed: 184/184
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_concat/bcftools_concat/1.10 (Test #1)" name="0" time="31.64993143081665">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Checking the headers and starting positions of 2 files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_concat/bcftools_concat/1.10 (Test #2)" name="1" time="43.40935516357422">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Checking the headers of 2 files.Done, the headers are compatible.Concatenating input0.vcf.gz0.001076 secondsConcatenating input1.vcf.gz0.000974 seconds[W::vcf_parse] INFO 'XX' is not defined in the header, assuming Type=String[W::vcf_parse] FILTER 'Fail' is not defined in the header
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_concat/bcftools_concat/1.10 (Test #3)" name="2" time="35.78689169883728">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Checking the headers and starting positions of 2 files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_concat/bcftools_concat/1.10 (Test #4)" name="3" time="32.516791343688965">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Checking the headers and starting positions of 2 files
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_from_vcf/bcftools_convert_from_vcf/1.10 (Test #1)" name="0" time="26.734113931655884">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Gen file: /galaxy/server/database/objects/7/2/3/dataset_7236987b-cd4a-43ab-b51f-e8f5a8dabad9.datSample file: /galaxy/server/database/objects/1/c/3/dataset_1c3784a1-ca8b-47ae-a530-c4fe5404b256.datWarning: non-biallelic records are skipped. Consider splitting multi-allelic records into biallelic records using 'bcftools norm -m-'.32 records written, 1 skipped: 0/1/0/0 no-ALT/non-biallelic/filtered/duplicated
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_from_vcf/bcftools_convert_from_vcf/1.10 (Test #2)" name="1" time="21.93731427192688">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Gen file: /galaxy/server/database/objects/d/7/4/dataset_d74acc90-f41c-4a09-9f2d-a632d261a2a0.datSample file: /galaxy/server/database/objects/b/2/9/dataset_b29125c4-8247-47e3-9859-b8884ed7dc4a.datWarning: non-biallelic records are skipped. Consider splitting multi-allelic records into biallelic records using 'bcftools norm -m-'.32 records written, 1 skipped: 0/1/0/0 no-ALT/non-biallelic/filtered/duplicated
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_from_vcf/bcftools_convert_from_vcf/1.10 (Test #3)" name="2" time="20.9486243724823">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Gen file: /galaxy/server/database/objects/5/3/9/dataset_5393f1d5-8458-4488-a2cb-592c18e7f6d1.datSample file: /galaxy/server/database/objects/b/1/2/dataset_b12b9b43-f55a-41ca-afa0-f87aa24c2899.datWarning: non-biallelic records are skipped. Consider splitting multi-allelic records into biallelic records using 'bcftools norm -m-'.[W::vcf_parse] Contig '2' is not defined in the header. (Quick workaround: index the file with tabix.)10 records written, 8 skipped: 0/6/0/2 no-ALT/non-biallelic/filtered/duplicated
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_from_vcf/bcftools_convert_from_vcf/1.10 (Test #4)" name="3" time="26.486409425735474">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Hap file: /galaxy/server/database/objects/0/3/8/dataset_03829520-b6fe-4137-9746-b4e0eba730dc.datSample file: /galaxy/server/database/objects/5/b/6/dataset_5b6e5f3f-0055-4ae3-91c7-77afdf975344.datWarning: non-biallelic records are skipped. Consider splitting multi-allelic records into biallelic records using 'bcftools norm -m-'.32 records written, 1 skipped: 0/1/0 no-ALT/non-biallelic/filtered
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_from_vcf/bcftools_convert_from_vcf/1.10 (Test #5)" name="4" time="33.61182141304016">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Hap file: /galaxy/server/database/objects/4/9/4/dataset_4943a8e7-3d6b-47eb-9cd8-15c19b0e9ce2.datLegend file: /galaxy/server/database/objects/7/5/a/dataset_75aca016-b590-4f2e-b123-fd5dbeb9044f.datSample file: /galaxy/server/database/objects/5/0/2/dataset_5024672b-cdf7-41cc-a643-9c167b8394b3.datWarning: non-biallelic records are skipped. Consider splitting multi-allelic records into biallelic records using 'bcftools norm -m-'.32 records written, 1 skipped: 0/1/0 no-ALT/non-biallelic/filtered
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #1)" name="0" time="53.7335262298584">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of processed rows: 32
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #2)" name="1" time="46.01192831993103">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of processed rows: 35
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #3)" name="2" time="51.63309335708618">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Number of processed rows: 35
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #4)" name="3" time="47.09302353858948">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #5)" name="4" time="11.720564603805542">
+        
+            <error type="error" message="parameter 'fasta_ref': an invalid option ('gvcf') was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027fasta_ref\u0027: an invalid option (\u0027gvcf\u0027) was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)", "inputs": {  "convert|convert_from": "gvcf",  "convert|input_file": {   "id": "f5e3259d90dac7bc",   "src": "hda"  },  "convert|reference_source|fasta_ref": "gvcf",  "convert|reference_source|reference_source_selector": "cached",  "output_type": "v" }, "status": "error", "test_index": 4, "time_seconds": 11.720564603805542, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10", "tool_version": "1.10"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #6)" name="5" time="35.89403676986694">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Rows total: 27Rows skipped: 0Missing GTs: 1Hom RR: 14Het RA: 7Hom AA: 5Het AA: 0
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10 (Test #7)" name="6" time="14.659520864486694">
+        
+            <error type="error" message="parameter 'fasta_ref': an invalid option ('23andme') was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027fasta_ref\u0027: an invalid option (\u002723andme\u0027) was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)", "inputs": {  "convert|columns": "ID,CHROM,POS,AA",  "convert|convert_from": "tsv",  "convert|input_file": {   "id": "1445885ec9965bbb",   "src": "hda"  },  "convert|reference_source|fasta_ref": "23andme",  "convert|reference_source|reference_source_selector": "cached",  "convert|samples": "SAMPLE1",  "output_type": "v" }, "status": "error", "test_index": 6, "time_seconds": 14.659520864486694, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.10", "tool_version": "1.10"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10 (Test #1)" name="0" time="32.999396324157715">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files[mpileup] maximum number of reads per input file set to -d 250
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10 (Test #2)" name="1" time="10.199490547180176">
+        
+            <error type="error" message="parameter 'ref_file': an invalid option ('mpileup') was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027ref_file\u0027: an invalid option (\u0027mpileup\u0027) was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)", "inputs": {  "input|input_bam": {   "id": "052cc048b39cbc6f",   "src": "hda"  },  "input|input_number": "single",  "output_type": "v",  "reference_source|ref_file": "mpileup",  "reference_source|reference_source_selector": "cached",  "sec_filtering|quality|quality_settings": "adjust" }, "status": "error", "test_index": 1, "time_seconds": 10.199490547180176, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10", "tool_version": "1.10"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10 (Test #3)" name="2" time="61.365785360336304">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 1 samples in 1 input files[mpileup] maximum number of reads per input file set to -d 250
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10 (Test #4)" name="3" time="58.068153619766235">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [warning] tag DV functional, but deprecated. Please switch to `AD` in future.[mpileup] 3 samples in 3 input files[mpileup] maximum number of reads per input file set to -d 250
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10 (Test #5)" name="4" time="57.5385901927948">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [warning] tag DV functional, but deprecated. Please switch to `AD` in future.[mpileup] 3 samples in 3 input files[mpileup] maximum number of reads per input file set to -d 250
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.10 (Test #6)" name="5" time="49.59156894683838">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [mpileup] 3 samples in 3 input files[mpileup] maximum number of reads per input file set to -d 250
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #1)" name="0" time="38.58917474746704">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Lines   total/split/realigned/skipped:21/0/13/0
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #2)" name="1" time="16.474773645401">
+        
+            <error type="error" message="parameter 'fasta_ref': an invalid option ('norm') was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027fasta_ref\u0027: an invalid option (\u0027norm\u0027) was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)", "inputs": {  "input_file": {   "id": "cad878c92bf2644f",   "src": "hda"  },  "normalize_indels": true,  "output_type": "v",  "reference_source|fasta_ref": "norm",  "reference_source|reference_source_selector": "cached" }, "status": "error", "test_index": 1, "time_seconds": 16.474773645401, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10", "tool_version": "1.10"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #3)" name="2" time="28.558526754379272">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Lines   total/split/realigned/skipped:19/7/0/0
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #4)" name="3" time="27.404000520706177">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Lines   total/split/realigned/skipped:19/7/19/0
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #5)" name="4" time="29.776424169540405">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Lines   total/split/realigned/skipped:26/0/0/0
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #6)" name="5" time="25.645145416259766">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Lines   total/split/realigned/skipped:26/0/0/0
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.10 (Test #7)" name="6" time="23.875221014022827">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Lines   total/split/realigned/skipped:8/0/0/0REF/ALT total/modified/added:  8/5/3
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_counts/bcftools_plugin_counts/1.10+galaxy1 (Test #1)" name="0" time="21.533662796020508">
+        
+            
+            <system-out><![CDATA[
+            Number of samples: 3Number of SNPs:    11Number of INDELs:  3Number of MNPs:    0Number of others:  0Number of sites:   15
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_fill_an_ac/bcftools_plugin_fill_an_ac/1.10 (Test #1)" name="0" time="18.35627055168152">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_impute_info/bcftools_plugin_impute_info/1.10 (Test #1)" name="0" time="19.023635149002075">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            [impute-info.c] Warning: info tag not added to sites that are not biallelic diploidLines total/info-added/unchanged-no-tag/unchanged-not-biallelic-diploid:33/32/0/1
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_mendelian/bcftools_plugin_mendelian/1.10 (Test #1)" name="0" time="24.100111961364746">
+        
+            
+            <system-out><![CDATA[
+            # [1]nOK[2]nBad[3]nSkipped[4]Trio (mother,father,child)20130NA00001,NA00002,NA00006
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_mendelian/bcftools_plugin_mendelian/1.10 (Test #2)" name="1" time="27.22799563407898">
+        
+            
+            <system-out><![CDATA[
+            # [1]nOK[2]nBad[3]nSkipped[4]Trio (mother,father,child)20130NA00001,NA00002,NA00006
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_missing2ref/bcftools_plugin_missing2ref/1.10 (Test #1)" name="0" time="33.75253438949585">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Filled 44 REF alleles
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_setgt/bcftools_plugin_setgt/1.10 (Test #1)" name="0" time="21.088497638702393">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Filled 44 alleles
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_query_list_samples/bcftools_query_list_samples/1.10 (Test #1)" name="0" time="21.217118978500366">
+        
+            
+            <system-out><![CDATA[
+            C,D,
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.10 (Test #1)" name="0" time="31.30855107307434">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.10 (Test #2)" name="1" time="26.707016944885254">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.10 (Test #3)" name="2" time="28.401360511779785">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.10 (Test #1)" name="0" time="25.556177616119385">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.10 (Test #2)" name="1" time="10.89508056640625">
+        
+            <error type="error" message="parameter 'fasta_ref': an invalid option ('mpileup') was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)"><![CDATA[
+                { "dynamic_param_error": true, "execution_problem": "parameter \u0027fasta_ref\u0027: an invalid option (\u0027mpileup\u0027) was selected (valid options: bosTau3,musFur1,monDom4,loxAfr1,oryza_sativa_japonica_nipponbare_IRGSP4.0,bordBron,bosTau2,galGal3,eschColi_CFT073,bosTau7,tupBel1,felCat4,hg38,caeRem1,anoCar1,rn5,micMur1,droYak2,gasAcu1,strPur2,pseuAeru_PAO1,hg18,burkPseu_1710B,phiX,droGri2,felCat3,CpipJ1,danRer7,bosTau4,Schizosaccharomyces_pombe_1.1,IscaW1,xenTro1,AgamP3,triCas2,vicPac1,eschColi_K12_DH10B,eschColi_K12_W3110,Xanthomonas_oryzae_MAFF_311018,ce10,Araly1,bosTau5,oryCun1,danRer10,echTel1,eschColi_O157H7_EDL933,AaegL1,panTro2,xenTro3,Arabidopsis_thaliana_TAIR9,panTro1,gadMor1,melGal1,ce6,burkPseu_K96243,canFam1,dasNov1,droVir3,Hydra_JCVI,caeRem3,ce7,venter1,ornAna1,papAnu2,ce3,Tcacao_1.0,calJac1,bosTau6,caePb1,canFam3,hetGla1,caeRem4,baciSubt,oviAri1,hg19_rCRS_pUC18_phiX174,panTro3,sarHar1,Sscrofa9.58,Homo_sapiens_AK1,felCat8,burkPseu_668,bosTauMd3,dasNov3,apiMel3,27835,eschColi_O157H7,saiBol1,danRer6,Arabidopsis_thaliana_TAIR10,caeJap2,eschColi_O157H7_TW14359,ce2,susScr1,Tcas_3.0,ce8,pseuAeru_UCBPP_PA14,cerSim1,vicPac2,dipOrd1,cavPor3,hg_g1k_v37,panTro4,ce9,rheMac3,bosTau8,Spur_v2.6,priPac1,Xanthomonas_oryzae_KACC10331,droEre2,droSec1,eschColi_O157H7_EC4115,chrPic1,dp4,braFlo1,burkPseu_1106A,caePb2,ente638,nomLeu2,strPur3,xenTro2,borEut13,galGal4,nomLeu3,dm6,caeJap3,mm8,apiMel4,pseuAeru_PA7,panPan1,apiMel2,sorAra1,loxAfr3,anoCar2,rheMac2,oryLat2,droPer1,Ptrichocarpa_156,ponAbe2,aplCal1,rn4,speTri2,monDom1,choHof1,Homo_sapiens_nuHg19_mtrCRS,equCab2,taeGut1,monDom5,droAna3,gorGor3,ce5,ce4,mm10,myoLuc2,cb3,geoFor1,susScr2,ci2,papHam1,caeJap1,caeRem2,Bombyx_mori_p50T_2.0,nomLeu1,rn3,melUnd1,Amel_4.5,sacCer3,calJac3,strePneu_R6,canFam2,turTru2,caePb3,Zea_mays_B73_RefGen_v2,droSim1,sacCer2,petMar1,droMoj3,eschColi_K12,susScr3,tarSyr1,apiMel1,otoGar1,oryCun2,Xanthomonas_oryzae_PXO99A,felCat5,PhumU1,ailMel1,eschColi_APEC_O1,rn6,hg19,dm3,mm9,allMis1,droWil1,droVir2,aptMan1,danRer5,caeJap4,otoGar3)", "inputs": {  "input_file": {   "id": "c82a29b34f1f3215",   "src": "hda"  },  "sec_default|reference_source|fasta_ref": "mpileup",  "sec_default|reference_source|reference_source_selector": "cached" }, "status": "error", "test_index": 1, "time_seconds": 10.89508056640625, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.10", "tool_version": "1.10"}
+            ]]></error>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.10 (Test #3)" name="2" time="62.78664183616638">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Parsing bcftools stats output: /galaxy/server/database/objects/3/c/1/dataset_3c1b8454-8aae-459b-8283-8bef66de4402.datPlotting graphs: python3 plot.pyCreating PDF: tectonic summary.tex >plot-vcfstats.log 2>&1Finished: plot_tmp//summary.pdf
+            ]]></system-err>
+        
+    </testcase>
+    
+</testsuite>
