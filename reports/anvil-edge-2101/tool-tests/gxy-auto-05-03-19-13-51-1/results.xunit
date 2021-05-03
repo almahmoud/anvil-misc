@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Results (powered by Planemo)"
+           tests="50"
+           errors="0"
+           failures="3"
+           skip="0">
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #1)" name="0" time="12.373454093933105">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #2)" name="1" time="42.885451555252075">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #3)" name="2" time="41.36389708518982">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            Traceback (most recent call last):  File "/galaxy/server/database/jobs_directory/000/110/configs/tmpf41ydepa", line 39, in <module>    raise Exception('ERROR: Encountered a value [%s] in the file that is not in the replacements file and is not commented with [%s]' % (line_content_column, comment_str))Exception: ERROR: Encountered a value [NC_000964.33] in the file that is not in the replacements file and is not commented with [#]
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/replace_column_by_key_value_file/replace_column_with_key_value_file/0.2 (Test #4)" name="3" time="18.99813437461853">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2 (Test #1)" name="0" time="17.588308334350586">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0 (Test #1)" name="0" time="37.325756549835205">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0 (Test #2)" name="1" time="42.15725660324097">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0 (Test #1)" name="0" time="19.421243906021118">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0 (Test #2)" name="1" time="15.73862361907959">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0 (Test #3)" name="2" time="36.335631370544434">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.2 (Test #1)" name="0" time="44.56107306480408">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3 (Test #1)" name="0" time="18.2088041305542">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3 (Test #2)" name="1" time="24.71516466140747">
+        
+            
+                <error type="error" message="Tool exit code: 255"><![CDATA[
+                    { "inputs": {  "caseinsensitive": false,  "find_pattern": "day",  "global": true,  "infile": {   "id": "faec78ac60931f0e",   "src": "hda"  },  "is_regex": false,  "replace_pattern": "great day",  "searchwhere|column": "1",  "searchwhere|searchwhere_select": "column",  "wholewords": true }, "job": {  "command_line": "perl \u0027/cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/ddf54b12c295/text_processing/find_and_replace\u0027 -c None -o /galaxy/server/database/objects/5/f/1/dataset_5f1313a6-99fb-4997-be00-919d63d2f4fc.dat -g  -w   \u0027day\u0027 \u0027great day\u0027 \u0027/galaxy/server/database/objects/2/9/6/dataset_296514db-73c5-43c8-81ff-83f393efb4c6.dat\u0027",  "command_version": "",  "create_time": "2021-05-03T19:30:04.508118",  "exit_code": 255,  "external_id": "gxy-k9fg9",  "galaxy_version": "21.01",  "history_id": "4bf970fe38101069",  "id": "4d908115609ddb3b",  "inputs": {   "infile": {    "id": "faec78ac60931f0e",    "src": "hda",    "uuid": "296514db-73c5-43c8-81ff-83f393efb4c6"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1620070217.0000000",    "title": "Job Start Time",    "value": "2021-05-03 19:30:17"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1620070217.0000000",    "title": "Job End Time",    "value": "2021-05-03 19:30:17"   },   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   }  ],  "job_stderr": "/cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/ddf54b12c295/text_processing/find_and_replace: invalid column number (None).\n",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "outfile": {    "id": "4d908115609ddb3b",    "src": "hda",    "uuid": "5f1313a6-99fb-4997-be00-919d63d2f4fc"   }  },  "params": {   "__input_ext": "\"txt\"",   "caseinsensitive": "\"false\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "find_pattern": "\"day\"",   "global": "\"true\"",   "is_regex": "\"false\"",   "replace_pattern": "\"great day\"",   "searchwhere": "{\"__current_case__\": 1, \"column\": null, \"searchwhere_select\": \"column\"}",   "skip_first_line": "\"false\"",   "wholewords": "\"true\""  },  "state": "ok",  "stderr": "\n/cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/ddf54b12c295/text_processing/find_and_replace: invalid column number (None).\n",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-05-03T19:30:18.745007",  "user_email": "alex@fake.org" }, "output_problems": [  "Output outfile:  different than expected, difference (using diff):\n( /tmp/tmpsiq887yufind_and_replace_results1.txt v. /tmp/tmp67ylh2zqfind_and_replace_results1.txt )\n--- local_file\n+++ history_data\n@@ -1 +0,0 @@\n-I have a dream that one great day this nation will rise up, and live out the true meaning of its creed: \u2018We hold these truths to be self-evident: that all men are created equal.\u2019 I have a dream that one great day on the red hills of Georgia the sons of former slaves and the sons of former slave owners will be able to sit down together at a table of brotherhood. I have a dream that one great day even the state of Mississippi, a state sweltering with the heat of injustice and sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice. I have a dream that my four little children will one great day live in a nation where they will not be judged by the color of their skin but by the content of their character. I have a dream today!\n" ], "status": "failure", "test_index": 1, "time_seconds": 24.71516466140747, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3", "tool_version": "1.1.3"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            /cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/ddf54b12c295/text_processing/find_and_replace: invalid column number (None).
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.3 (Test #3)" name="2" time="20.06399655342102">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #1)" name="0" time="38.03672933578491">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #2)" name="1" time="17.029776096343994">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #3)" name="2" time="30.38825559616089">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.1 (Test #4)" name="3" time="27.20081067085266">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool/1.1.0 (Test #1)" name="0" time="23.8417329788208">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_multijoin_tool/1.1.1 (Test #1)" name="0" time="35.70148420333862">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3 (Test #1)" name="0" time="36.262413024902344">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.3 (Test #2)" name="1" time="20.526135444641113">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2 (Test #1)" name="0" time="17.11519503593445">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2 (Test #2)" name="1" time="14.871916055679321">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1 (Test #1)" name="0" time="38.608967781066895">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1 (Test #2)" name="1" time="28.934523820877075">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1 (Test #1)" name="0" time="14.001157283782959">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1 (Test #2)" name="1" time="22.87577176094055">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1 (Test #3)" name="2" time="26.468342304229736">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0 (Test #1)" name="0" time="39.60732078552246">
+        
+            
+                <error type="error" message="Tool exit code: 1"><![CDATA[
+                    { "inputs": {  "infile": {   "id": "c71bfc423b711232",   "src": "hda"  } }, "job": {  "command_line": "python -c \u0027for line in ( \"\\t\".join(sorted(line.strip().split(\"\\t\"))) for line in open(\"/galaxy/server/database/objects/f/a/c/dataset_fac4c49c-de3b-44b1-8e47-e41fc25777cb.dat\") ): print line\u0027 \u003e /galaxy/server/database/objects/a/7/0/dataset_a70b232b-d983-4190-90b3-41f87bedbd4f.dat",  "command_version": "",  "create_time": "2021-05-03T19:28:30.346027",  "exit_code": 1,  "external_id": "gxy-8jjcs",  "galaxy_version": "21.01",  "history_id": "4bf970fe38101069",  "id": "ef88cd492fe697ec",  "inputs": {   "infile": {    "id": "c71bfc423b711232",    "src": "hda",    "uuid": "fac4c49c-de3b-44b1-8e47-e41fc25777cb"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1620070121.0000000",    "title": "Job End Time",    "value": "2021-05-03 19:28:41"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1620070121.0000000",    "title": "Job Start Time",    "value": "2021-05-03 19:28:41"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   }  ],  "job_stderr": "  File \"\u003cstring\u003e\", line 1\n    for line in ( \"\\t\".join(sorted(line.strip().split(\"\\t\"))) for line in open(\"/galaxy/server/database/objects/f/a/c/dataset_fac4c49c-de3b-44b1-8e47-e41fc25777cb.dat\") ): print line\n                                                                                                                                                                                  ^\nSyntaxError: invalid syntax\n",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "outfile": {    "id": "ef88cd492fe697ec",    "src": "hda",    "uuid": "a70b232b-d983-4190-90b3-41f87bedbd4f"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\""  },  "state": "ok",  "stderr": "\n  File \"\u003cstring\u003e\", line 1\n    for line in ( \"\\t\".join(sorted(line.strip().split(\"\\t\"))) for line in open(\"/galaxy/server/database/objects/f/a/c/dataset_fac4c49c-de3b-44b1-8e47-e41fc25777cb.dat\") ): print line\n                                                                                                                                                                                  ^\nSyntaxError: invalid syntax\n",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-05-03T19:28:44.196654",  "user_email": "alex@fake.org" }, "output_problems": [  "Output outfile:  different than expected, difference (using diff):\n( /tmp/tmpkfpmfgy7sort_rows_results1.bed v. /tmp/tmpcaqbbq7nsort_rows_results1.bed )\n--- local_file\n+++ history_data\n@@ -1,4 +0,0 @@\n-a\tb\tc\td\te\tf\n-a\tb\tc\td\te\tf\n-2\t3\t4\t5\t6\t7\n-1\t2\t3\t4\t5\t6\n" ], "status": "failure", "test_index": 0, "time_seconds": 39.60732078552246, "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0", "tool_version": "1.1.0"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+              File "<string>", line 1    for line in ( "\t".join(sorted(line.strip().split("\t"))) for line in open("/galaxy/server/database/objects/f/a/c/dataset_fac4c49c-de3b-44b1-8e47-e41fc25777cb.dat") ): print line                                                                                                                                                                                  ^SyntaxError: invalid syntax
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0 (Test #1)" name="0" time="30.851290702819824">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0 (Test #1)" name="0" time="19.30952000617981">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0 (Test #2)" name="1" time="18.45560598373413">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0 (Test #1)" name="0" time="26.588836193084717">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0 (Test #2)" name="1" time="19.77361273765564">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0 (Test #1)" name="0" time="18.063944339752197">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0 (Test #2)" name="1" time="18.926977157592773">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_unfold_column_tool/1.1.1 (Test #1)" name="0" time="44.09268665313721">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1 (Test #1)" name="0" time="16.43892812728882">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1 (Test #2)" name="1" time="29.955737352371216">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/column_order_header_sort/0.0.1 (Test #1)" name="0" time="24.096798181533813">
+        
+            
+                <error type="error" message="Tool exit code: 0"><![CDATA[
+                    { "inputs": {  "input_tabular": {   "id": "9fd3aac70a5e7197",   "src": "hda"  },  "key_column": "1" }, "job": {  "command_line": "python \u0027/cvmfs/cloud.galaxyproject.org/tools/toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/6ae9724caf4d/column_order_header_sort/column_order_header_sort.py\u0027 \u0027/galaxy/server/database/objects/2/c/4/dataset_2c4d6747-bf51-4554-8ecb-b776fbccde85.dat\u0027 \u0027/galaxy/server/database/objects/9/6/9/dataset_9695a4da-cc2f-41dc-9339-ad2a162bdec0.dat\u0027 \u0027\t\u0027 \u00271\u0027",  "command_version": "",  "create_time": "2021-05-03T19:31:54.400131",  "exit_code": 0,  "external_id": "gxy-wrmdv",  "galaxy_version": "21.01",  "history_id": "4bf970fe38101069",  "id": "6b6f312cdf6683dd",  "inputs": {   "input_tabular": {    "id": "9fd3aac70a5e7197",    "src": "hda",    "uuid": "2c4d6747-bf51-4554-8ecb-b776fbccde85"   }  },  "job_messages": [],  "job_metrics": [   {    "name": "runtime_seconds",    "plugin": "core",    "raw_value": "0E-7",    "title": "Job Runtime (Wall Clock)",    "value": "0 seconds"   },   {    "name": "end_epoch",    "plugin": "core",    "raw_value": "1620070326.0000000",    "title": "Job End Time",    "value": "2021-05-03 19:32:06"   },   {    "name": "start_epoch",    "plugin": "core",    "raw_value": "1620070326.0000000",    "title": "Job Start Time",    "value": "2021-05-03 19:32:06"   },   {    "name": "galaxy_memory_mb",    "plugin": "core",    "raw_value": "2000.0000000",    "title": "Memory Allocated (MB)",    "value": "2000"   },   {    "name": "galaxy_slots",    "plugin": "core",    "raw_value": "1.0000000",    "title": "Cores Allocated",    "value": "1"   }  ],  "job_stderr": "",  "job_stdout": "",  "model_class": "Job",  "outputs": {   "output_tabular": {    "id": "6b6f312cdf6683dd",    "src": "hda",    "uuid": "9695a4da-cc2f-41dc-9339-ad2a162bdec0"   }  },  "params": {   "__input_ext": "\"tabular\"",   "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",   "dbkey": "\"?\"",   "key_column": "\"1\""  },  "state": "ok",  "stderr": "",  "stdout": "",  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/column_order_header_sort/0.0.1",  "tool_stderr": "",  "tool_stdout": "",  "update_time": "2021-05-03T19:32:06.912489",  "user_email": "alex@fake.org" }, "output_problems": [  "Output output_tabular:  different than expected, difference (using diff):\n( /tmp/tmpvh9138sbout_1.tabular v. /tmp/tmpak8udchfout_1.tabular )\n--- local_file\n+++ history_data\n@@ -1,4 +1,4 @@\n #KEY\ta\tb\tc\n one\t1-3\t1-1\t1-2\n two\t1-6\t1-4\t1-5\n-three\t1-9\t1-7\t1-8+three\t1-9\t1-7\t1-8\n" ], "status": "failure", "test_index": 0, "time_seconds": 24.096798181533813, "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/column_order_header_sort/column_order_header_sort/0.0.1", "tool_version": "0.0.1"}
+                ]]></error>
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1 (Test #1)" name="0" time="50.87756705284119">
+        
+            
+            <system-out><![CDATA[
+            Kept 3 of 4 columns.
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1 (Test #2)" name="1" time="50.84249424934387">
+        
+            
+            <system-out><![CDATA[
+            Kept 2 of 4 columns.
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/gff3_rebase/gff3.rebase/1.2 (Test #1)" name="0" time="45.79351782798767">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0 (Test #1)" name="0" time="20.24031400680542">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0 (Test #2)" name="1" time="27.565850019454956">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/reshape2_cast/cast/1.4.2 (Test #1)" name="0" time="26.992421627044678">
+        
+            
+            <system-out><![CDATA[
+            options(show.error.messages=F, error=function(){cat(geterrmessage(),file=stderr());q("no",1,F)})loc <- Sys.setlocale("LC_MESSAGES", "en_US.UTF-8")library("reshape2")input <- read.csv('/galaxy/server/database/objects/a/1/a/dataset_a1a52b01-6f4e-4fad-b6c0-670eec0ae79a.dat', sep='\t', header=TRUE)cinput <- dcast(input, ... ~ variable)write.table(cinput, "output.tabular", sep="\t", quote=FALSE, row.names=FALSE)        
+            ]]></system-out>
+            <system-err><![CDATA[
+            Warning message:In Sys.setlocale("LC_MESSAGES", "en_US.UTF-8") :  OS reports request to set locale to "en_US.UTF-8" cannot be honored
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/iuc/reshape2_melt/melt/1.4.2 (Test #1)" name="0" time="39.769354820251465">
+        
+            
+            <system-out><![CDATA[
+            options(show.error.messages=F, error=function(){cat(geterrmessage(),file=stderr());q("no",1,F)})loc <- Sys.setlocale("LC_MESSAGES", "en_US.UTF-8")library("reshape2")input <- read.csv('/galaxy/server/database/objects/4/9/7/dataset_497b4c20-debb-4d26-967a-5e6486b8ebeb.dat', sep='\t', header=TRUE)minput <- melt(input)write.table(minput, "output.tabular", sep="\t", quote=FALSE, row.names=FALSE)        
+            ]]></system-out>
+            <system-err><![CDATA[
+            Warning message:In Sys.setlocale("LC_MESSAGES", "en_US.UTF-8") :  OS reports request to set locale to "en_US.UTF-8" cannot be honoredUsing brand as id variables
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0 (Test #1)" name="0" time="28.749610424041748">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+    <testcase classname="toolshed.g2.bx.psu.edu/repos/mvdbeek/add_input_name_as_column/addName/0.2.0 (Test #2)" name="1" time="27.868408918380737">
+        
+            
+            <system-out><![CDATA[
+            
+            ]]></system-out>
+            <system-err><![CDATA[
+            
+            ]]></system-err>
+        
+    </testcase>
+    
+</testsuite>
