@@ -1,7 +1,13 @@
 name: Run Deployment and Tool Tests for 21.01 pre-release
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 0 * * *"
+    - cron: "0 4 * * *"
+    - cron: "0 8 * * *"
+    - cron: "0 12 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 20 * * *"
+    
   workflow_dispatch:
     inputs:
       chunk:
