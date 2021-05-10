@@ -59,7 +59,7 @@ jobs:
       - name: Install Helm
         run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
       - name: Add Anvil-edge-2101 repository
-        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101-2
+        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
       - name: Deploy GalaxyKubeMan 1
         run: >
           (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-1; helm install -n ${{needs.deploygke.outputs.prefix}}-1 ${{needs.deploygke.outputs.prefix}}-1 edge/galaxykubeman\
@@ -156,7 +156,7 @@ jobs:
       - name: Install Helm
         run: curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
       - name: Add Anvil-edge-2101 repository
-        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101-2
+        run: helm repo add edge https://github.com/almahmoud/helm-charts/raw/gkm-release-2101
       - name: Deploy GalaxyKubeMan 2
         run: >
           (time sh -c "kubectl create ns ${{needs.deploygke.outputs.prefix}}-2; helm install -n ${{needs.deploygke.outputs.prefix}}-2 ${{needs.deploygke.outputs.prefix}}-2 edge/galaxykubeman\
