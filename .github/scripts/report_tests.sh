@@ -16,7 +16,7 @@ setup_git() {
 
 push_report() {
   git stash
-  git pull origin master
+  git pull origin $GIT_BRANCH
   git stash pop | true
   git add $ADD_DIR
   git commit -m "$MESSAGE"
